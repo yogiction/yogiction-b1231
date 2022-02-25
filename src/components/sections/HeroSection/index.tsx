@@ -30,7 +30,7 @@ export default function HeroSection(props) {
                 'flex',
                 'flex-col',
                 'justify-center',
-                `bg-url[${bgImage.}]`,
+                `bg-url[${bgImage.url}]`,
                 mapMinHeightStyles(sectionHeight),
                 sectionStyles.margin,
                 sectionStyles.padding || 'py-12 px-4',
