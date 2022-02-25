@@ -9,6 +9,7 @@ import { Action, Badge } from '../../atoms';
 
 export default function HeroSection(props) {
     const cssId = props.elementId || null;
+    console.log(props);
     const colors = props.colors || 'colors-a';
     const sectionStyles = props.styles?.self || {};
     const sectionWidth = sectionStyles.width || 'wide';
@@ -38,7 +39,7 @@ export default function HeroSection(props) {
             style={{
                 borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
             }}
-         >
+        >
             <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
                 <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
                     <div
@@ -60,7 +61,7 @@ export default function HeroSection(props) {
                         </div>
                         {props.media && (
                             <div className="flex-1 w-full">
-                                <Media media={props.media}/>
+                                <Media media={props.media} />
                             </div>
                         )}
                     </div>
