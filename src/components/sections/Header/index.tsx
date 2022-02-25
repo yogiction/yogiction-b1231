@@ -14,7 +14,7 @@ export default function Header(props) {
     const headerWidth = headerStyles.width || 'narrow';
     return (
         <header
-            className={classNames('sb-component', 'sb-component-header', primaryColors, 'relative', headerStyles.padding || 'py-5 px-4')}
+            className={classNames('hidden sb-component', 'sb-component-header', primaryColors, 'relative', headerStyles.padding || 'py-5 px-4')}
             data-sb-field-path={`${props.annotationPrefix}:header`}
         >
             <div className={classNames('mx-auto', mapMaxWidthStyles(headerWidth))}>
