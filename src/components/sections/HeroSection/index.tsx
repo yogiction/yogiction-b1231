@@ -93,7 +93,7 @@ function heroBody(props) {
                     {props.title}
                 </h2>
             )}
-            {props.subtitle && (
+            {/* {props.subtitle && (
                 <p
                     className={classNames('text-xl', 'sm:text-2xl', styles.subtitle ? mapStyles(styles.subtitle) : null, { 'mt-4': props.title })}
                     data-sb-field-path=".subtitle"
@@ -109,7 +109,7 @@ function heroBody(props) {
                 >
                     {props.text}
                 </Markdown>
-            )}
+            )} */}
         </div>
     );
 }
