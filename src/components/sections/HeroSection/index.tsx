@@ -39,8 +39,8 @@ export default function HeroSection(props) {
                 sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
             )}
             style={{
-                borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
-                
+                borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
+                back
             }}
         >
             <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
