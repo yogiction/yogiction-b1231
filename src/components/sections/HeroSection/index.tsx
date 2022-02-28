@@ -25,7 +25,7 @@ export default function HeroSection(props) {
             {...getDataAttrs(props)}
             style={{
                 borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
-                backgroundImage: `url('${}')`,
+                backgroundImage: `url('${bgImage.url}')`,
             }}
             className={classNames(
                 'sb-component',
