@@ -37,7 +37,7 @@ export default function HeroSection(props) {
                 'justify-center',
                 mapMinHeightStyles(sectionHeight),
                 sectionStyles.margin,
-                `bg-[url('https://images.ctfassets.net/gxd6i571w01a/3ANmYLH2VOjMf59rSucHzX/d6ca887a5ce4f691f8ae35ed9ee324de/pexels-photo-531880.jpeg')]',
+                `bg-[url('https://images.ctfassets.net/gxd6i571w01a/3ANmYLH2VOjMf59rSucHzX/d6ca887a5ce4f691f8ae35ed9ee324de/pexels-photo-531880.jpeg')]`,
                 sectionStyles.padding || 'py-12 px-4',
                 sectionStyles.borderColor,
                 sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
