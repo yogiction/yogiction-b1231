@@ -38,10 +38,6 @@ export default function HeroSection(props) {
                 sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
                 sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
             )}
-            style={{
-                borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
-                'var(--image-url)': bgImage,
-            }}
         >
             <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
                 <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
