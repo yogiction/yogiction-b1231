@@ -35,7 +35,6 @@ export default function HeroSection(props) {
                 sectionStyles.margin,
                 sectionStyles.padding || 'py-12 px-4',
                 sectionStyles.borderColor,
-                bg-[image:var(--image-url)],
                 sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
                 sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
             )}
