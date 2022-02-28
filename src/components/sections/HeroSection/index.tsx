@@ -40,7 +40,7 @@ export default function HeroSection(props) {
             )}
             style={{
                 borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
-                'var(--image-url)': fetchedUrl
+                'var(--image-url)': bgImage,
             }}
         >
             <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
