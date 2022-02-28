@@ -37,7 +37,7 @@ export default function HeroSection(props) {
                 'justify-center',
                 mapMinHeightStyles(sectionHeight),
                 sectionStyles.margin,
-                'bg-no-repeat bg-center bg-contain ',
+                'bg-no-repeat bg-center bg-cov',
                 sectionStyles.padding || 'py-12 px-4',
                 sectionStyles.borderColor,
                 sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
