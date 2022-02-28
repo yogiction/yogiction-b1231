@@ -23,6 +23,10 @@ export default function HeroSection(props) {
         <div
             id={cssId}
             {...getDataAttrs(props)}
+            style={{
+                borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
+                'var(--image-url)': bgImage,
+            }}
             className={classNames(
                 'sb-component',
                 'sb-component-section',
