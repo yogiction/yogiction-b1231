@@ -25,7 +25,7 @@ export default function HeroSection(props) {
             {...getDataAttrs(props)}
             style={{
                 borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
-                backgroundImage: url('https://images.ctfassets.net/gxd6i571w01a/3ANmYLH2VOjMf59rSucHzX/d6ca887a5ce4f691f8ae35ed9ee324de/pexels-photo-531880.jpeg',
+                backgroundImage: url('https://images.ctfassets.net/gxd6i571w01a/3ANmYLH2VOjMf59rSucHzX/d6ca887a5ce4f691f8ae35ed9ee324de/pexels-photo-531880.jpeg'),
             }}
             className={classNames(
                 'sb-component',
