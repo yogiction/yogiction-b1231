@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
 import Markdown from 'markdown-to-jsx';
 import classNames from 'classnames';
-
+import Image from 'next/image';
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
@@ -13,12 +14,15 @@ export default function HeroSection(props) {
     console.log(props);
     const colors = props.colors || 'colors-a';
     const sectionStyles = props.styles?.self || {};
+    const titleStyles = props.styles?.title || {};
     const sectionWidth = sectionStyles.width || 'wide';
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
     const sectionFlexDirection = sectionStyles.flexDirection || 'row';
     const sectionAlignItems = sectionStyles.alignItems || 'center';
     const bgImage = props.backgroundImage || '';
+    const logo = props.logo || '';
+    const title = props.title || '';
     return (
         <div
             id={cssId}
@@ -44,7 +48,13 @@ export default function HeroSection(props) {
                 sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
             )}
         >
-            <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
+            <div>
+                <img src={logo.url} className="h-[142px] w-[284px]" alt="" />
+                <div style={titleStyles} className=''>{title}</div>
+            </div>
+            <div>{heroActions(props)}</div>
+            <div>{heroActions(props)}</div>
+            {/* <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
                 <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
                     <div
                         className={classNames(
@@ -71,7 +81,7 @@ export default function HeroSection(props) {
                         )}
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
@@ -125,11 +135,13 @@ function heroActions(props) {
         return null;
     }
     const styles = props.styles || {};
+    const actionStyle = props.styles.actions || {};
     return (
         <div
             className={classNames('overflow-x-hidden', {
                 'mt-8': props.title || props.subtitle || props.text || props.badge
             })}
+            style={actionStyle}
         >
             <div
                 className={classNames('flex', 'flex-wrap', 'items-center', '-mx-2', styles.actions ? mapStyles(styles.actions) : null)}
