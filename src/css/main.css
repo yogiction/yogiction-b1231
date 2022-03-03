@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
     font-family: Poppins;
-    src: url(./Poppins/Poppins-Light.ttf);
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(./Poppins/Poppins-Medium.ttf);
 }
 :root {
     --unnamed-color-c1ece7: #c1ece7;
