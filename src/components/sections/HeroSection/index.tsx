@@ -83,7 +83,7 @@ export default function HeroSection(props) {
                 </div>
             </div>
 
-            <div className={classNames("block md:hidden w-full bg-[#2c5d87] py-[24px] flex justify-center")}>
+            <div className={classNames("block md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
                 <div className='text-[25px] leading-[25px] text-white text-center'>SIGN UP NOW</div>
             </div>
         </>
