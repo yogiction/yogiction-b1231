@@ -424,7 +424,7 @@
         }
         .sb-component-button-secondary,
         .sb-component-social-secondary {
-            @apply border-dark text-dark;
+            @apply border-0  text-white;
         }
         .sb-component-item-hover {
             @apply hover:bg-primary hover:text-on-primary;

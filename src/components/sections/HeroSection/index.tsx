@@ -49,12 +49,12 @@ export default function HeroSection(props) {
             )}
         >
             <div>
-                <img src={logo.url} className="h-[142px] w-[284px]" alt="" />
-                <div style={titleStyles} className=''>{title}</div>
-            </div>
-            <div>{heroActions(props)}</div>
-            <div>{heroActions(props)}</div>
-            {/* <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
+                <div>
+                    <img src={logo.url} className="h-[142px] w-[284px]" alt="" />
+                    <div style={titleStyles} className=''>{title}</div>
+                </div>
+                <div>{heroActions(props)}</div>
+                {/* <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
                 <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
                     <div
                         className={classNames(
@@ -82,6 +82,7 @@ export default function HeroSection(props) {
                     </div>
                 </div>
             </div> */}
+            </div>
         </div>
     );
 }
@@ -141,11 +142,11 @@ function heroActions(props) {
             className={classNames('overflow-x-hidden', {
                 'mt-8': props.title || props.subtitle || props.text || props.badge
             })}
-            style={actionStyle}
         >
             <div
                 className={classNames('flex', 'flex-wrap', 'items-center', '-mx-2', styles.actions ? mapStyles(styles.actions) : null)}
                 data-sb-field-path=".actions"
+                style={actionStyle}
             >
                 {actions.map((action, index) => (
                     <Action key={index} {...action} className="mb-3 mx-2 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />

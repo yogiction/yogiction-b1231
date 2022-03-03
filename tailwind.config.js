@@ -105,8 +105,6 @@ module.exports = {
                 '.sb-component-button-secondary': {
                     borderRadius: themeStyle.buttonSecondary.borderRadius,
                     font: themeStyle.buttonSecondary.font,
-                    borderStyle: theme(`borderStyle.${themeStyle.buttonSecondary.borderStyle}`),
-                    boxShadow: theme(`boxShadow.${themeStyle.buttonSecondary.shadow}`),
                     color: themeStyle.buttonSecondary.color,
                     letterSpacing: themeStyle.buttonSecondary.letterSpacing,
                     backgroundColor: themeStyle.buttonSecondary.backgroundColor,
