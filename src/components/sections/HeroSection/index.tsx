@@ -11,7 +11,6 @@ import { url } from 'inspector';
 
 export default function HeroSection(props) {
     const cssId = props.elementId || null;
-    console.log(props);
     const colors = props.colors || 'colors-a';
     const sectionStyles = props.styles?.self || {};
     const titleStyles = props.styles?.title || {};
