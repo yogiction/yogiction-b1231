@@ -33,7 +33,7 @@ module.exports = {
                 '9/16': '56.25%'
             },
             fontFamily: {
-                sans: ['Poppins', 'sans-serif'],
+                sans: ['Poppins', 'Poppins'],
                 sansAlt: ['Noto Sans Display', 'sans-serif']
             }
         }
@@ -103,11 +103,11 @@ module.exports = {
                     textTransform: themeStyle.buttonPrimary.case
                 },
                 '.sb-component-button-secondary': {
-                    borderRadius: theme(`borderRadius.${themeStyle.buttonSecondary.borderRadius}`),
-                    borderStyle: theme(`borderStyle.${themeStyle.buttonSecondary.borderStyle}`),
-                    boxShadow: theme(`boxShadow.${themeStyle.buttonSecondary.shadow}`),
-                    fontWeight: themeStyle.buttonSecondary.weight,
-                    letterSpacing: theme(`letterSpacing.${themeStyle.buttonSecondary.letterSpacing}`),
+                    borderRadius: themeStyle.buttonSecondary.borderRadius,
+                    font: themeStyle.buttonSecondary.font,
+                    color: themeStyle.buttonSecondary.color,
+                    letterSpacing: themeStyle.buttonSecondary.letterSpacing,
+                    backgroundColor: themeStyle.buttonSecondary.backgroundColor,
                     padding: `${themeStyle.buttonSecondary.verticalPadding}px ${themeStyle.buttonSecondary.horizontalPadding}px`,
                     textTransform: themeStyle.buttonSecondary.case
                 },

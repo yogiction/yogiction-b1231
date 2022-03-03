@@ -3,7 +3,6 @@ const path = require('path');
 const { cssClassesFromUrlPath, getPageUrl } = require('./src/utils/page-utils');
 
 const isDev = process.env.NODE_ENV === 'development';
-// console.log("CONTENTFUL_DELIVERY_TOKEN",process.env.CONTENTFUL_DELIVERY_TOKEN, "CONTENTFUL_SPACE_ID", process.env.CONTENTFUL_SPACE_ID);
 
 module.exports = {
     plugins: [
