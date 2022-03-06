@@ -52,7 +52,6 @@ export default function HeroSection(props) {
                             "max-w-[300px]  md:max-w-[805px] ")}>{title}</div>
                     </div>
                     <div>{heroActions(props)}</div>
-                    
                 </div>
             </div>
 
