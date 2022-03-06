@@ -84,23 +84,6 @@ function heroBody(props) {
                     {props.title}
                 </h2>
             )}
-            {/* {props.subtitle && (
-                <p
-                    className={classNames('text-xl', 'sm:text-2xl', styles.subtitle ? mapStyles(styles.subtitle) : null, { 'mt-4': props.title })}
-                    data-sb-field-path=".subtitle"
-                >
-                    {props.subtitle}
-                </p>
-            )}
-            {props.text && (
-                <Markdown
-                    options={{ forceBlock: true, forceWrapper: true }}
-                    className={classNames('sb-markdown', 'sm:text-lg', styles.text ? mapStyles(styles.text) : null, { 'mt-6': props.title || props.subtitle })}
-                    data-sb-field-path=".text"
-                >
-                    {props.text}
-                </Markdown>
-            )} */}
         </div>
     );
 }
