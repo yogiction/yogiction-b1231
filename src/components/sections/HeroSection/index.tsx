@@ -52,34 +52,6 @@ export default function HeroSection(props) {
                             "max-w-[300px]  md:max-w-[805px] ")}>{title}</div>
                     </div>
                     <div>{heroActions(props)}</div>
-                    {/* <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
-                <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
-                    <div
-                        className={classNames(
-                            'flex',
-                            mapFlexDirectionStyles(sectionFlexDirection),
-                            mapStyles({ alignItems: sectionAlignItems }),
-                            'space-y-8',
-                            {
-                                'lg:space-y-0 lg:space-x-8': sectionFlexDirection === 'row',
-                                'space-y-reverse lg:space-y-0 lg:space-x-8 lg:space-x-reverse': sectionFlexDirection === 'row-reverse',
-                                'space-y-reverse': sectionFlexDirection === 'col-reverse'
-                            }
-                        )}
-                    >
-                        <div className="flex-1 w-full">
-                            {heroBody(props)}
-                            {heroActions(props)}
-                        </div>
-                        {props.media && (
-                            <div className="flex-1 w-full">
-                                
-                            {heroActions(props)}
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </div> */}
                 </div>
             </div>
 
