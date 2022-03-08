@@ -14,11 +14,11 @@ export default function Footer(props) {
     const legalLinks = props.legalLinks || [];
     return (
         <footer
-            className={classNames('sb-component', 'sb-component-footer', colors, footerStyles.padding || 'py-16 px-4')}
+            className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[50px] px-1 md:py-[100px] md:px-[140px]')}
             data-sb-field-path={`${props.annotationPrefix}:footer`}
         >
-            <div className={classNames('mx-auto', mapMaxWidthStyles(footerWidth))}>
-                {(props.logo || props.title || props.text) && (
+            <div className={classNames('')}>
+                {/* {(props.logo || props.title || props.text) && (
                     <div className="mb-12">
                         <Link href="/" className="sb-footer-logo flex items-center" data-sb-field-path=".title#span[1] .logo#img[1]">
                             {props.logo && <ImageBlock {...props.logo} className={classNames('max-h-12', { 'mr-2': props.title })} />}
@@ -30,34 +30,27 @@ export default function Footer(props) {
                             </Markdown>
                         )}
                     </div>
-                )}
+                )} */}
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
-                    <div className="sm:flex sm:justify-between sm:items-end">
-                        {primaryLinks.length > 0 && (
-                            <div className="mb-6">
-                                <ul className="flex flex-col items-start mb-6 space-y-6 text-lg" data-sb-field-path=".primaryLinks">
-                                    {primaryLinks.map((link, index) => (
+                    <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
+                        <div className="mb-6">
+                            <div className='mb-[60px] text-[60px]'>Contact Us</div>
+                            <div className='mb-6'>CHave any questions? We are standing by to support you.</div>
+                            {props.contacts && <Contacts {...props.contacts} />}
+                        </div>
+                        <div className="mb-6">
+                            <div>Connect with us</div>
+                            {socialLinks.length > 0 && (
+                                <ul className="flex items-center mb-6 space-x-10" data-sb-field-path=".socialLinks">
+                                    {socialLinks.map((link, index) => (
                                         <li key={index}>
-                                            <Action {...link} data-sb-field-path={`.${index}`} />
+                                            <Social {...link} data-sb-field-path={`.${index}`} />
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
-                        )}
-                        {(socialLinks.length > 0 || props.contacts) && (
-                            <div className="mb-6">
-                                {socialLinks.length > 0 && (
-                                    <ul className="flex items-center mb-6 space-x-10" data-sb-field-path=".socialLinks">
-                                        {socialLinks.map((link, index) => (
-                                            <li key={index}>
-                                                <Social {...link} data-sb-field-path={`.${index}`} />
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                                {props.contacts && <Contacts {...props.contacts} />}
-                            </div>
-                        )}
+                            )}
+                            {props.contacts && <Contacts {...props.contacts} />}
+                        </div>
                     </div>
                 )}
                 <div className="sb-divider" />
