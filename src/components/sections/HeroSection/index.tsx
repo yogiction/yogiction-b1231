@@ -56,7 +56,7 @@ export default function HeroSection(props) {
             </div>
 
             <div className={classNames("block md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
-                <div className='text-[25px] leading-[25px] text-white text-center'>SIGN UP NOW</div>
+                <div className='text-[25px] font-medium leading-[38px] text-white text-center'>SIGN UP NOW</div>
             </div>
         </>
     );
@@ -121,6 +121,20 @@ function mapMaxWidthStyles(width) {
             return 'max-w-screen-xl';
         case 'full':
             return 'max-w-full';
+    }
+    return null;
+}
+
+function mapFlexDirectionStyles(flexDirection) {
+    switch (flexDirection) {
+        case 'row':
+            return ['flex-col', 'lg:flex-row'];
+        case 'row-reverse':
+            return ['flex-col-reverse', 'lg:flex-row-reverse'];
+        case 'col':
+            return ['flex-col'];
+        case 'col-reverse':
+            return ['flex-col-reverse'];
     }
     return null;
 }
