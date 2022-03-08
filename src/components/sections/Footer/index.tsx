@@ -18,19 +18,7 @@ export default function Footer(props) {
             data-sb-field-path={`${props.annotationPrefix}:footer`}
         >
             <div className={classNames('')}>
-                {/* {(props.logo || props.title || props.text) && (
-                    <div className="mb-12">
-                        <Link href="/" className="sb-footer-logo flex items-center" data-sb-field-path=".title#span[1] .logo#img[1]">
-                            {props.logo && <ImageBlock {...props.logo} className={classNames('max-h-12', { 'mr-2': props.title })} />}
-                            {props.title && <span className="text-2xl tracking-wide">{props.title}</span>}
-                        </Link>
-                        {props.text && (
-                            <Markdown options={{ forceBlock: true, forceWrapper: true }} className={classNames('sb-markdown', 'max-w-xl', { 'mt-8': props.title || props.logo })} data-sb-field-path=".text">
-                                {props.text}
-                            </Markdown>
-                        )}
-                    </div>
-                )} */}
+
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
                     <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
                         <div className="mb-6">
