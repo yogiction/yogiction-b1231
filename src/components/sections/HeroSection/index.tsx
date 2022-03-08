@@ -62,17 +62,6 @@ export default function HeroSection(props) {
     );
 }
 
-function Media({ media }: { media: any }) {
-    const modelName = media.__metadata.modelName;
-    if (!modelName) {
-        throw new Error(`hero section media does not have the 'modelName' property`);
-    }
-    const MediaComponent = getComponent(modelName);
-    if (!MediaComponent) {
-        throw new Error(`no component matching the hero section media model name: ${modelName}`);
-    }
-    return <MediaComponent {...media} data-sb-field-path=".media" />;
-}
 
 function heroBody(props) {
     const styles = props.styles || {};
