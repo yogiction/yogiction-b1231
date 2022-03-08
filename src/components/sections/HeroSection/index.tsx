@@ -124,17 +124,3 @@ function mapMaxWidthStyles(width) {
     }
     return null;
 }
-
-function mapFlexDirectionStyles(flexDirection) {
-    switch (flexDirection) {
-        case 'row':
-            return ['flex-col', 'lg:flex-row'];
-        case 'row-reverse':
-            return ['flex-col-reverse', 'lg:flex-row-reverse'];
-        case 'col':
-            return ['flex-col'];
-        case 'col-reverse':
-            return ['flex-col-reverse'];
-    }
-    return null;
-}
