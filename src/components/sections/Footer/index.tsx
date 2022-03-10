@@ -24,7 +24,7 @@ export default function Footer(props) {
                         <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-6 md:mx-0">
                             <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-bold' style={{ fontFamily: "Poppins" }}>Contact Us</div>
                             <div className='flex h-full flex-col justify-between'>
-                                <div className='leading-[27px] md:leading-[46px]  md:text-[30px] text-[18px]'
+                                <div className='leading-[27px] md:mb-[52px] mb-8 md:leading-[46px]  md:text-[30px] text-[18px]'
                                     style={{
                                         textAlign: "left",
                                         fontFamily: "Poppins",
