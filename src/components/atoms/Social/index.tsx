@@ -9,17 +9,17 @@ export default function Social(props) {
     const fieldPath = props['data-sb-field-path'] ?? '';
     const annotations = fieldPath
         ? {
-              'data-sb-field-path': [
-                  fieldPath,
-                  `${fieldPath}.url#@href`,
-                  `${fieldPath}.altText#@aria-label`,
-                  `${fieldPath}.elementId#@id`,
-                  `${fieldPath}.label#span[1]`,
-                  `${fieldPath}.icon#svg[1]`
-              ]
-                  .join(' ')
-                  .trim()
-          }
+            'data-sb-field-path': [
+                fieldPath,
+                `${fieldPath}.url#@href`,
+                `${fieldPath}.altText#@aria-label`,
+                `${fieldPath}.elementId#@id`,
+                `${fieldPath}.label#span[1]`,
+                `${fieldPath}.icon#svg[1]`
+            ]
+                .join(' ')
+                .trim()
+        }
         : {};
 
     return (
@@ -34,7 +34,7 @@ export default function Social(props) {
             {...annotations}
         >
             {label && <span className="sr-only">{label}</span>}
-            {IconComponent && <IconComponent className="fill-current h-5 w-5" />}
+            {IconComponent && <IconComponent className="fill-current h-[50px] w-[50px]" />}
         </Link>
     );
 }

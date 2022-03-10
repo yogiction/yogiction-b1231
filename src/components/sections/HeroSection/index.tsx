@@ -48,7 +48,7 @@ export default function HeroSection(props) {
                 <div>
                     <div>
                         <img src={logo.url} className="h-[50px] w-[94px] md:h-[142px] md:w-[284px]" alt="" />
-                        <div style={titleStyles} className={classNames('mt-[15px]  md:mt-[85px] text-[40px] leading-[50px] md:leading-[120px] md:text-[100px]',
+                        <div style={titleStyles} className={classNames('mt-[15px]  md:mt-[85px] text-[35px] leading-[53px] md:leading-[150px] md:text-[100px]',
                             "max-w-[300px]  md:max-w-[805px] ")}>{title}</div>
                     </div>
                     <div>{heroActions(props)}</div>
@@ -56,23 +56,12 @@ export default function HeroSection(props) {
             </div>
 
             <div className={classNames("block md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
-                <div className='text-[25px] leading-[25px] text-white text-center'>SIGN UP NOW</div>
+                <div className='text-[25px] font-medium leading-[38px] text-white text-center'>SIGN UP NOW</div>
             </div>
         </>
     );
 }
 
-function Media({ media }: { media: any }) {
-    const modelName = media.__metadata.modelName;
-    if (!modelName) {
-        throw new Error(`hero section media does not have the 'modelName' property`);
-    }
-    const MediaComponent = getComponent(modelName);
-    if (!MediaComponent) {
-        throw new Error(`no component matching the hero section media model name: ${modelName}`);
-    }
-    return <MediaComponent {...media} data-sb-field-path=".media" />;
-}
 
 function heroBody(props) {
     const styles = props.styles || {};
