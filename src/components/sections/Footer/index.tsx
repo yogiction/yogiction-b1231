@@ -21,47 +21,49 @@ export default function Footer(props) {
 
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
                     <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
-                        <div className="mb-6">
-                            <div className='mb-[60px] text-[60px]'>Contact Us</div>
-                            <div className='mb-6'>CHave any questions? We are standing by to support you.</div>
-                            {props.contacts && <Contacts {...props.contacts} />}
+                        <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-6 md:mx-0">
+                            <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-bold' style={{ fontFamily: "Poppins" }}>Contact Us</div>
+                            <div className='flex h-full flex-col justify-between'>
+                                <div className='leading-[27px] md:leading-[46px]  md:text-[30px] text-[18px]'
+                                    style={{
+                                        textAlign: "left",
+                                        fontFamily: "Poppins",
+                                        fontStyle: "normal",
+                                        fontWeight: "normal",
+                                        color: 'rgba(255,255,255,1)',
+                                    }}>Have any questions? We are standing by to support you.</div>
+                                <div>
+                                    {props.contacts && <Contacts {...props.contacts} />}
+                                </div>
+                            </div>
                         </div>
-                        <div className="mb-6">
-                            <div>Connect with us</div>
+                        <div className="md:mb-6 mb-[10px] md:w-full mt-[60px] md:mt-0 md:max-w-[680px] mx-[41px]">
+                            <div className='md:mb-[60px] mb-[40px] leading-[38px] md:leading-[60px]  md:text-left text-center text-[25px] md:text-[40px]   font-bold' style={{ fontFamily: "Poppins" }}>Connect with us</div>
                             {socialLinks.length > 0 && (
-                                <ul className="flex items-center mb-6 space-x-10" data-sb-field-path=".socialLinks">
+                                <ul className="flex justify-center md:justify-start items-center mb-[40.5px] md:mb-[83px] space-x-10" data-sb-field-path=".socialLinks">
                                     {socialLinks.map((link, index) => (
-                                        <li key={index}>
-                                            <Social {...link} data-sb-field-path={`.${index}`} />
+                                        <li className='md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]' key={index} style={{
+                                            color: '#a6bf36',
+                                            transform: 'matrix(1,0,0,1,0,0)',
+                                        }}>
+                                            <Social {...link} className="md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]" data-sb-field-path={`.${index}`} />
                                         </li>
                                     ))}
                                 </ul>
                             )}
-                            {props.contacts && <Contacts {...props.contacts} />}
+                            <div className='text-[18px] leading-[27px] md:text-[30px] md:leading-[46px]' style={{
+                                textAlign: 'left',
+                                fontFamily: 'Poppins',
+                                fontStyle: 'normal',
+                                overflow: "auto",
+                                fontWeight: 'normal',
+                                color: 'rgba(255,255,255,1)',
+                            }}>
+                                Join us on our social channels to get tips on how to improve your nutrition, exercise and well-being.
+                            </div>
                         </div>
                     </div>
                 )}
-                <div className="sb-divider" />
-                <div className="flex flex-col-reverse justify-between pt-6 lg:flex-row">
-                    {props.copyrightText && (
-                        <Markdown
-                            options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
-                            className={classNames('sb-markdown')}
-                            data-sb-field-path=".copyrightText"
-                        >
-                            {props.copyrightText}
-                        </Markdown>
-                    )}
-                    {legalLinks.length > 0 && (
-                        <ul className="flex flex-col mb-6 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row" data-sb-field-path=".legalLinks">
-                            {legalLinks.map((link, index) => (
-                                <li key={index}>
-                                    <Action {...link} data-sb-field-path={`.${index}`} />
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </div>
             </div>
         </footer>
     );
@@ -69,7 +71,15 @@ export default function Footer(props) {
 
 function Contacts(props) {
     return (
-        <div className="mb-6 space-y-4 text-lg" data-sb-field-path=".contacts">
+        <div className="text-lg leading-[27px] md:leading-[40px] text-[18px] md:text-[30px]" data-sb-field-path=".contacts"
+            style={{
+                textAlign: "left",
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: "normal",
+                color: '#a6bf36',
+                textDecoration: "underline",
+            }}>
             {props.phoneNumber && (
                 <p>
                     <a
