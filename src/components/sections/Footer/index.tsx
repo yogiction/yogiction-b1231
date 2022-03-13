@@ -1,9 +1,7 @@
 import * as React from 'react';
-import Markdown from 'markdown-to-jsx';
 import classNames from 'classnames';
 
 import { Social, Action, Link } from '../../atoms';
-import ImageBlock from '../../molecules/ImageBlock';
 
 export default function Footer(props) {
     const colors = props.colors || 'colors-a';
@@ -22,9 +20,9 @@ export default function Footer(props) {
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
                     <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
                         <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-6 md:mx-0">
-                            <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-bold' style={{ fontFamily: "Poppins" }}>Contact Us</div>
+                            <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-semibold' style={{ fontFamily: "Poppins" }}>Contact Us</div>
                             <div className='flex h-full flex-col justify-between'>
-                                <div className='leading-[27px] md:mb-[52px] mb-8 md:leading-[46px]  md:text-[30px] text-[18px]'
+                                <div className='leading-[27px] md:mb-[48px] mb-8 md:leading-[46px]  md:text-[30px] text-[18px]'
                                     style={{
                                         textAlign: "left",
                                         fontFamily: "Poppins",
@@ -37,8 +35,8 @@ export default function Footer(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:mb-6 mb-[10px] md:w-full mt-[60px] md:mt-0 md:max-w-[680px] mx-[41px]">
-                            <div className='md:mb-[60px] mb-[40px] leading-[38px] md:leading-[60px]  md:text-left text-center text-[25px] md:text-[40px]   font-bold' style={{ fontFamily: "Poppins" }}>Connect with us</div>
+                        <div className="md:mb-0 mb-[10px] md:w-full mt-[60px] md:mt-0 md:max-w-[680px] mx-[41px]">
+                            <div className='md:mb-[60px] mb-[40px] leading-[38px] md:leading-[60px]  md:text-left text-center text-[25px] md:text-[40px]   font-semibold' style={{ fontFamily: "Poppins" }}>Connect with us</div>
                             {socialLinks.length > 0 && (
                                 <ul className="flex justify-center md:justify-start items-center mb-[40.5px] md:mb-[83px] space-x-10" data-sb-field-path=".socialLinks">
                                     {socialLinks.map((link, index) => (
@@ -71,7 +69,7 @@ export default function Footer(props) {
 
 function Contacts(props) {
     return (
-        <div className="text-lg leading-[27px] md:leading-[40px] text-[18px] md:text-[30px]" data-sb-field-path=".contacts"
+        <div className="text-lg leading-[27px] md:leading-[46px] text-[18px] md:text-[30px]" data-sb-field-path=".contacts"
             style={{
                 textAlign: "left",
                 fontFamily: "Poppins",
