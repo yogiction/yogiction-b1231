@@ -32,18 +32,15 @@ export default function AboutusSection(props) {
         >
             <div
                 className={classNames(
-                    colors,
                     'flex',
                     'flex-col',
-                    'justify-center',
+                    'justify-center h-[300px]  w-full',
                     bgSize === 'inset' ? 'w-full' : null,
                     bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
                     mapMinHeightStyles(sectionHeight),
-                    sectionStyles.padding || 'py-12 px-4',
-                    sectionStyles.borderColor,
-                    sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
-                    sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null,
-                    sectionStyles.boxShadow ? mapStyles({ boxShadow: sectionStyles.boxShadow }) : null
+                    'after:absolute after:h-[1018px]',
+                    'after:top-[-200px] after:left-0  after:bg-no-repeat after:bg-contain after:bg-left',
+                    "after:content-[''] after:relative  after:w-[56px] after:z-10  after:bg-aboutustopleft"
                 )}
                 style={{
                     borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
@@ -52,6 +49,7 @@ export default function AboutusSection(props) {
                 <div
                     className={classNames(
                         'w-full',
+                        'pt-[200px] px-4',
                         bgSize === 'full' ? 'flex' : null,
                         bgSize === 'full' ? mapStyles({ justifyContent: sectionJustifyContent }) : null
                     )}

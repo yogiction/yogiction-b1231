@@ -54,7 +54,6 @@ export default function HeroSection(props) {
                     <div>{heroActions(props)}</div>
                 </div>
             </div>
-
             <div className={classNames("md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
                 <div className='text-[25px] font-medium leading-[38px] text-white text-center'>SIGN UP NOW</div>
             </div>

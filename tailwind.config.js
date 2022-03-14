@@ -35,6 +35,10 @@ module.exports = {
             fontFamily: {
                 sans: ['Poppins', 'Poppins'],
                 sansAlt: ['Noto Sans Display', 'sans-serif']
+            },
+            backgroundImage: {
+                aboutustopleft: "url('/images/aboutusleftbg.png')",
+                aboutusbottomright: "url('/images/aboutusrightbg.png')",
             }
         }
     },
