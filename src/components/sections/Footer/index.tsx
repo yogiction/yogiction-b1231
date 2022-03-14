@@ -19,7 +19,7 @@ export default function Footer(props) {
 
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
                     <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
-                        <div className="max-w-[680px] mx-[41px] mb-[53px] md:mx-0">
+                        <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-0 md:mx-0">
                             <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-semibold' style={{ fontFamily: "Poppins" }}>Contact Us</div>
                             <div className='flex h-full flex-col justify-between'>
                                 <div className='leading-[27px] md:mb-[48px] mb-8 md:leading-[46px]  md:text-[30px] text-[18px]'
