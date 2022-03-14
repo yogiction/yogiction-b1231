@@ -38,7 +38,7 @@ export default function Footer(props) {
                         <div className="md:mb-0 mb-[0px] md:w-full mt-[120px] md:mt-0 md:max-w-[680px] mx-[41px]">
                             <div className='md:mb-[60px] mb-[40px] leading-[38px] md:leading-[60px]  md:text-left text-center text-[25px] md:text-[40px]   font-semibold' style={{ fontFamily: "Poppins" }}>Connect with us</div>
                             {socialLinks.length > 0 && (
-                                <ul className="flex justify-evenly md:space-x-[34.18px] px-[27.79px] md:justify-start items-center mb-[40.5px] md:mb-[83px]" data-sb-field-path=".socialLinks">
+                                <ul className="flex justify-evenly md:space-x-[34.18px] md:px-0 px-[27.79px] md:justify-start items-center mb-[40.5px] md:mb-[83px]" data-sb-field-path=".socialLinks">
                                     {socialLinks.map((link, index) => (
                                         <li className='md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]' key={index} style={{
                                             color: '#a6bf36',
