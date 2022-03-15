@@ -39,6 +39,8 @@ module.exports = {
             backgroundImage: {
                 aboutustopleft: "url('/images/aboutusleftbg.png')",
                 aboutusbottomright: "url('/images/aboutusrightbg.png')",
+                aboutusbg1: "url('/images/aboutusbg1.png')",
+                aboutusbg2: "url('/images/aboutusbg2.png')",
             }
         }
     },
