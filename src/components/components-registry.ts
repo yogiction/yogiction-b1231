@@ -58,5 +58,6 @@ const components = {
     'PostLayout': dynamic(() => import('./layouts/PostLayout')),
     'PostFeedLayout': dynamic(() => import('./layouts/PostFeedLayout')),
     'PostFeedCategoryLayout': dynamic(() => import('./layouts/PostFeedCategoryLayout')),
-    'AboutusSection': dynamic(() => import('./sections/AboutusSection'))
+    'AboutusSection': dynamic(() => import('./sections/AboutusSection')),
+    'HowItWorksSection': dynamic(() => import('./sections/HowItWorksSection')),
 };

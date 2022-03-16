@@ -53,7 +53,7 @@ export default function AboutusSection(props) {
                     <img className='absolute top-0 z-[20] left-0 max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[516px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                     <div className={classNames(
                         'hidden md:block after:absolute after:h-[319px]',
-                        'after:top-[95vh] after:left-[-3vw]  after:bg-no-repeat after:bg-contain after:bg-left',
+                        'after:top-[114vh] after:left-[-3vw]  after:bg-no-repeat after:bg-contain after:bg-left',
                         "after:content-[''] after:w-[434px] after:z-[10]  after:bg-aboutusbg1"
                     )} />
                 </div>
@@ -62,7 +62,7 @@ export default function AboutusSection(props) {
                         'uppercase',
                         'text-center md:text-left',
                         'font-[Poppins] md:font-[PoppinsMedium]',
-                        'font-bold',
+                        'font-semibold leading-[60px]',
                         'mb-[30px]',
                         'text-[25px] md:text-[40px]',
                     )}
@@ -99,11 +99,13 @@ export default function AboutusSection(props) {
                 </div>
             </div>
 
-            <div className='hidden realtive md:block mt-[267px]'>{heroActions(props)}
+            <div className='hidden relative md:block mt-[267px]'>
+
+                {heroActions(props)}
                 <div className={classNames(
-                    'hidden md:block after:absolute after:h-[370px]',
-                    'after:top-[135vh] after:right-[5px]  after:bg-no-repeat after:bg-contain after:bg-left',
-                    "after:content-[''] after:w-[488px] after:z-[10]  after:bg-aboutusbg2"
+                    'hidden md:block absolute h-[370px]',
+                    'top-[-16vh] right-[-0.7vw]  bg-no-repeat bg-contain bg-left',
+                    "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
                 )} />
             </div>
         </div>
@@ -123,7 +125,7 @@ function heroActions(props) {
     return (
         <>
             <div
-                className={classNames('overflow-x-hidden hidden md:block', {
+                className={classNames('z-20 hidden md:block', {
                     'mt-8': props.title || props.subtitle || props.text || props.badge
                 })}
             >
