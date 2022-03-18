@@ -13,113 +13,113 @@ export default function AboutusSection(props) {
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
     return (
-        <div
-            id={cssId}
-            {...getDataAttrs(props)}
-            className={classNames(
-                'sb-component  bg-white',
-                'sb-component-section relative',
-                'sb-component-contact-section',
-                'pt-[60px] md:pt-[200px] px-[41px] md:px-[140px] pb-[60px] md:pb-[306px]',
-                bgSize === 'inset' ? 'flex' : null,
-                bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
-                sectionStyles.margin
-            )}
-        >
+        <div>
             <div
+                id={cssId}
+                {...getDataAttrs(props)}
                 className={classNames(
-                    'flex',
-                    'flex-col lg:flex-row',
-                    'justify-center w-full mx-auto ',
-                    bgSize === 'inset' ? '' : null,
-                    bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
-                    mapMinHeightStyles(sectionHeight),
+                    'sb-component  bg-white',
+                    'sb-component-section relative',
+                    'sb-component-contact-section',
+                    'pt-[60px] md:pt-[200px] px-[41px] md:px-[140px] pb-[60px] md:pb-[306px]',
+                    bgSize === 'inset' ? 'flex' : null,
+                    bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
+                    sectionStyles.margin,
+
                 )}
-                style={{
-                    borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
-                }}
             >
-                {/* <div className={classNames(
-                    'after:absolute after:h-[1018px]',
-                    'after:top-[-200px] after:right-0  after:bg-no-repeat after:bg-contain after:bg-left',
-                    "after:content-[''] after:relative  after:w-[1018px] after:opacity-[0.7] after:z-[-10]  after:bg-aboutustopleft"
-                )} /> */}
                 <div
                     className={classNames(
-                        'max-w-[741px] w-full hidden md:block relative mx-[56px] md:mx-auto md:mr-[82px]',
+                        'flex',
+                        'flex-col lg:flex-row',
+                        'justify-center w-full mx-auto ',
+                        bgSize === 'inset' ? '' : null,
+                        bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
+                        mapMinHeightStyles(sectionHeight),
                     )}
+                    style={{
+                        borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
+                    }}
                 >
-                    <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
-                    <img className=' max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[-419px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
-                    <div className={classNames(
-                        'hidden md:block  h-[319px]',
-                        'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
-                        "content-[''] w-[434px] bg-aboutusbg1"
-                    )} />
-                </div>
-                <div>
-                    <h1 className={classNames(
-                        'uppercase',
-                        'text-center md:text-left',
-                        'font-[Poppins] md:font-[PoppinsMedium]',
-                        'font-semibold leading-[60px]',
-                        'mb-[30px]',
-                        'text-[25px] md:text-[40px]',
-                    )}
-                        style={{
-                            color: "rgba(166,191,54,1)",
-                        }}>{props.titleHeader}</h1>
-                    <h1 className={classNames('leading-[38px] md:leading-[90px]',
-                        'text-center md:text-left',
-                        'font-[Poppins]',
-                        'font-semibold',
-                        'text-[25px] md:text-[60px]',
-                    )}
-                        style={{
-                            color: 'rgba(23,52,80,1)',
-                        }}>{props.title}</h1>
+
                     <div
                         className={classNames(
-                            'w-full block md:hidden relative',
+                            'max-w-[741px] w-full hidden md:block relative mx-[56px] md:mx-auto md:mr-[82px]',
                         )}
                     >
-                        <img className=' mx-auto max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
-                        <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[32%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
+                        <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
+                        <img className=' max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[-419px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                         <div className={classNames(
                             'hidden md:block  h-[319px]',
                             'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
                             "content-[''] w-[434px] bg-aboutusbg1"
                         )} />
                     </div>
-                    <p className={classNames(
-                        'md:mt-[60px] mt-[60px]',
-                        'md:leading-[60px] leading-[27px]',
-                        'text-left',
-                        'font-[Poppins]',
-                        'font-normal',
-                        'md:text-[40px] text-[18px]',
-                        'text-[#173450]'
-                    )}>{props.text}</p>
-                    <p className={classNames(
-                        'md:mt-[60px] mt-[54px]',
-                        'md:leading-[60px] leading-[27px]',
-                        'text-left',
-                        'font-[Poppins]',
-                        'font-normal',
-                        'md:text-[40px] text-[18px]',
-                        'text-[#173450]'
-                    )}>{props.text1}</p>
+                    <div>
+                        <h1 className={classNames(
+                            'uppercase',
+                            'text-center md:text-left',
+                            'font-[Poppins] md:font-[PoppinsMedium]',
+                            'font-semibold leading-[60px]',
+                            'mb-[30px]',
+                            'text-[25px] md:text-[40px]',
+                        )}
+                            style={{
+                                color: "rgba(166,191,54,1)",
+                            }}>{props.titleHeader}</h1>
+                        <h1 className={classNames('leading-[38px] md:leading-[90px]',
+                            'text-center md:text-left',
+                            'font-[Poppins]',
+                            'font-semibold',
+                            'text-[25px] md:text-[60px]',
+                        )}
+                            style={{
+                                color: 'rgba(23,52,80,1)',
+                            }}>{props.title}</h1>
+                        <div
+                            className={classNames(
+                                'w-full block md:hidden relative',
+                            )}
+                        >
+                            <img className=' mx-auto max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
+                            <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[32%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
+                            <div className={classNames(
+                                'hidden md:block  h-[319px]',
+                                'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
+                                "content-[''] w-[434px] bg-aboutusbg1"
+                            )} />
+                        </div>
+                        <p className={classNames(
+                            'md:mt-[60px] mt-[60px]',
+                            'md:leading-[60px] leading-[27px]',
+                            'text-left',
+                            'font-[Poppins]',
+                            'font-normal',
+                            'md:text-[40px] text-[18px]',
+                            'text-[#173450]'
+                        )}>{props.text}</p>
+                        <p className={classNames(
+                            'md:mt-[60px] mt-[54px]',
+                            'md:leading-[60px] leading-[27px]',
+                            'text-left',
+                            'font-[Poppins]',
+                            'font-normal',
+                            'md:text-[40px] text-[18px]',
+                            'text-[#173450]'
+                        )}>{props.text1}</p>
+                    </div>
+                </div>
+
+                <div className='hidden relative md:block mt-[267px]'>
+                    {heroActions(props)}
+                    <div className={classNames(
+                        'hidden lg:block absolute h-[370px]',
+                        'top-[-16vh] right-[-0.7vw]  bg-no-repeat bg-contain bg-left',
+                        "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
+                    )} />
                 </div>
             </div>
-
-            <div className='hidden relative md:block mt-[267px]'>
-                {heroActions(props)}
-                <div className={classNames(
-                    'hidden lg:block absolute h-[370px]',
-                    'top-[-16vh] right-[-0.7vw]  bg-no-repeat bg-contain bg-left',
-                    "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
-                )} />
-            </div>
+            {mobileCTA(props)}
         </div>
     );
 }
@@ -174,4 +174,16 @@ function mapMaxWidthStyles(width) {
             return 'max-w-full';
     }
     return null;
+}
+
+function mobileCTA(props) {
+    const actions = props.actions || [];
+    if (actions.length === 0) {
+        return null;
+    }
+    return (
+        <div className={classNames("md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
+            <div className='text-[25px] font-medium leading-[38px] text-white text-center'>{actions.label}</div>
+        </div>
+    );
 }

@@ -37,8 +37,8 @@ module.exports = {
                 sansAlt: ['Noto Sans Display', 'sans-serif']
             },
             backgroundImage: {
-                aboutustopleft: "url('/images/aboutusleftbg.png')",
-                aboutusbottomright: "url('/images/aboutusrightbg.png')",
+                bgtopleft: "url('/images/aboutusleftbg.png')",
+                bgbottomright: "url('/images/aboutusrightbg.png')",
                 aboutusbg1: "url('/images/aboutusbg1.png')",
                 aboutusbg2: "url('/images/aboutusbg2.png')",
                 howitworksbgsticker: "url('/images/howitworksbg1.png')"

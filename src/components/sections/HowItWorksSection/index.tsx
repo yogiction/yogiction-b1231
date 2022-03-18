@@ -55,7 +55,8 @@ export default function HowItWorksSection(props) {
             <div className={classNames('pt-[60px] md:pt-[156px]')}>
                 {props.steps.map((step, index) => {
                     return (<div key={index} className='flex mb-[50px]  md:mb-[130px] flex-col md:flex-row justify-center'>
-                        <div className={classNames(" pt-0 md:text-left text-center mr-0 md:mr-[40px]",
+                        <div className={classNames(
+                            "pt-0 md:text-left text-center mr-0 md:mr-[40px]",
                             "md:mb-[40px] mb-[30px] min-h-[140px] md:min-h-full min-w-[132px]",
                             "text-[100px] md:text-[200px] leading-[150px]",
                             'font-[Poppins] font-normal',
