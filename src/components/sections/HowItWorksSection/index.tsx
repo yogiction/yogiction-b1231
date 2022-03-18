@@ -18,7 +18,7 @@ export default function HowItWorksSection(props) {
             id={cssId}
             {...getDataAttrs(props)}
             className={classNames(
-                'sb-component overflow-x-hidden bg-white relative',
+                'sb-component  bg-white relative',
                 'sb-component-section',
                 'sb-component-contact-section',
                 'pt-[60px] md:pt-[200px] px-[41px] md:px-[140px] pb-[60px] md:pb-[306px]',
@@ -27,63 +27,53 @@ export default function HowItWorksSection(props) {
                 sectionStyles.margin
             )}
         >
-            <img src={`/images/howitworksbg1.png`} className={classNames("absolute top-[-8vh] left-[138px]",
+            <img src={`/images/howitworksbg1.png`} className={classNames("hidden lg:block absolute top-[-4.5vh] left-[138px]",
                 'z-40')} alt="" />
-            {/* <div className={classNames(
-                'hidden md:block after:absolute after:h-[370px]',
-                'after:top-[-19vh] after:left-[138px]  after:bg-no-repeat after:bg-contain after:bg-left',
-                "after:content-[''] after:w-[488px] after:z-[40]  after:bg-howitworksbgsticker"
-            )} /> */}
             <h1 className={classNames(
-                'text-center',
+                'text-center ',
                 'font-[PoppinsMedium]',
                 'font-semibold',
-                'text-[60px]',
-                'leading-[90px]'
+                'text-[25px] md:text-[60px]',
+                'leading-[38px] md:leading-[90px]'
             )}
                 style={{
                     color: 'rgba(23,52,80,1)',
                 }}>{props.title}</h1>
+            <img src={`/images/howitworksbg1.png`} className={classNames("lg:hidden w-full max-w-[219.5px] mt-[60px] mx-auto block ",
+                'max-w-[219.51px] max-h-[227px]',
+            )} alt="" />
             <p className={classNames(
                 'mt-[60px]',
-                'text-center',
+                'text-left md:text-center',
                 'font-[Poppins]',
                 'font-normal',
-                'text-[40px]',
+                'text-[18px] md:text-[40px]',
                 'text-[#173450]',
-                'leading-[60px]',
+                'leading-[27px] md:leading-[60px]',
             )}
             >{props.description}</p>
-            <div className={classNames('pt-[156px]')}>
+            <div className={classNames('pt-[60px] md:pt-[156px]')}>
                 {props.steps.map((step, index) => {
-                    return (<div key={index} className='flex mb-[130px] flex-row justify-center'>
-                        <div className={classNames("pt-[81px] mr-[40px] min-w-[132px]")} style={{
-                            textAlign: 'left',
-                            fontFamily: 'Poppins',
-                            fontStyle: 'normal',
-                            fontWeight: 'bold',
-                            fontSize: '200px',
-                            color: 'rgba(166,191,54,1)',
-                        }}>
+                    return (<div key={index} className='flex mb-[50px]  md:mb-[130px] flex-col md:flex-row justify-center'>
+                        <div className={classNames(" pt-0 md:text-left text-center mr-0 md:mr-[40px]",
+                            "md:mb-[40px] mb-[30px] min-h-[140px] md:min-h-full min-w-[132px]",
+                            "text-[100px] md:text-[200px] leading-[150px]",
+                            'font-[Poppins] font-normal',
+                            'font-semibold text-[#a6bf36]'
+                        )}>
                             {index + 1}
                         </div>
                         <div className='flex flex-col max-w-[1048px]'>
-                            <div className='leading-[60px] mb-[30px]    ' style={{
-                                textAlign: 'left',
-                                fontFamily: ' Poppins',
-                                fontStyle: 'normal',
-                                fontWeight: ' bold',
-                                fontSize: '40px',
-                                color: 'rgba(23,52,80,1)'
-                            }}>{step.title}</div>
-                            <div className={classNames("leading-[60px] ")} style={{
-                                textAlign: 'left',
-                                fontFamily: 'Poppins',
-                                fontStyle: ' normal',
-                                fontWeight: 'normal',
-                                fontSize: ' 40px',
-                                color: ' rgba(23,52,80,1)',
-                            }}>{step.description}</div>
+                            <div className={classNames('leading-[27px] md:leading-[60px] mb-[20px] md:mb-[30px]',
+                                'text-center md:text-left md:font-bold font-semibold',
+                                'md:text-[40px] text-[18px]',
+                                'font-[Poppins] font-normal text-[#173450]'
+                            )}>{step.title}</div>
+                            <div className={classNames("leading-[27px] md:leading-[60px] text-center md:text-left ",
+                                'font-[Poppins] not-italic',
+                                'font-normal max-w-[1037px] w-full',
+                                'md:text-[40px] font-[18px] text-[#173450]')}>
+                                {step.description}</div>
                         </div>
                     </div>)
                 })}
@@ -92,26 +82,37 @@ export default function HowItWorksSection(props) {
                 'text-center',
                 'font-[PoppinsMedium]',
                 'font-[500]',
-                'text-[40px]',
-                'leading-[60px]',
-                'text-[#173450]'
+                'text-[18px] md:text-[40px]',
+                'leading-[27px] md:leading-[60px]',
+                'text-[#173450]',
+                'font-semibold'
             )}
             >{props.benefitsTitle}</h1>
-            <div className={classNames('flex mt-[60px] flex-row justify-center')}>
-                {props.benefits.map((benefit, index) => {
-                    console.log(benefit)
-                    return <div key={index}
-                        className={classNames("max-w-[585px] ml-[50px] bg-[#a6bf36]")}>
-                        <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[60px]")} style={{
-                            fontFamily: 'Poppins',
-                            fontStyle: 'normal',
-                            fontWeight: 'bold',
-                            fontSize: '40px',
-                            color: 'rgba(23,52,80,1)',
-                        }}>{benefit.title}</h1>
-                        <p className={classNames('mb-[55px] leading-[60px] mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[40px]', 'text-[#173450]')}>{benefit.description}</p>
-                    </div>
-                })}
+            <div className={classNames('flex mt-[35px] md:mt-[60px] flex-col  md:flex-row justify-center')}>
+                <div
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto md:mr-[25px] md:mt-0 bg-[#a6bf36]")}>
+                    <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] md:leading-[60px]",
+                        'font-sans',
+                        'not-italic',
+                        'font-semibold',
+                        'text-[18px] md:text-[40px]',
+                        'text-[#173450]'
+                    )} style={{
+                    }}>{props.benefits[0].title}</h1>
+                    <p className={classNames('mb-[55px] leading-[27px] md:leading-[60px] mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[18px] md:text-[40px]', 'text-[#173450]')}>{props.benefits[0].description}</p>
+                </div>
+                <div
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] md:mt-0 md:ml-[25px] bg-[#a6bf36]")}>
+                    <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] md:leading-[60px]",
+                        'font-sans',
+                        'not-italic',
+                        'font-semibold',
+                        'text-[18px] md:text-[40px]',
+                        'text-[#173450]'
+                    )}
+                    >{props.benefits[1].title}</h1>
+                    <p className={classNames('mb-[55px] leading-[27px] md:leading-[60px] mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[18px] md:text-[40px]', 'text-[#173450]')}>{props.benefits[1].description}</p>
+                </div>
             </div>
         </div>
     );

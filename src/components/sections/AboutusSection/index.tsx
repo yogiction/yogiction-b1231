@@ -17,7 +17,7 @@ export default function AboutusSection(props) {
             id={cssId}
             {...getDataAttrs(props)}
             className={classNames(
-                'sb-component overflow-x-hidden bg-white',
+                'sb-component  bg-white',
                 'sb-component-section relative',
                 'sb-component-contact-section',
                 'pt-[60px] md:pt-[200px] px-[41px] md:px-[140px] pb-[60px] md:pb-[306px]',
@@ -29,8 +29,8 @@ export default function AboutusSection(props) {
             <div
                 className={classNames(
                     'flex',
-                    'flex-col md:flex-row',
-                    'justify-center w-full mx-auto',
+                    'flex-col lg:flex-row',
+                    'justify-center w-full mx-auto ',
                     bgSize === 'inset' ? '' : null,
                     bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
                     mapMinHeightStyles(sectionHeight),
@@ -46,15 +46,15 @@ export default function AboutusSection(props) {
                 )} /> */}
                 <div
                     className={classNames(
-                        'min-w-[741px] w-full relative mx-[56px] md:mx-auto',
+                        'max-w-[741px] w-full hidden md:block relative mx-[56px] md:mx-auto md:mr-[82px]',
                     )}
                 >
-                    <img className='absolute z-[20] top-0 left-0 max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
-                    <img className='absolute top-0 z-[20] left-0 max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[516px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
+                    <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
+                    <img className=' max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[-419px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                     <div className={classNames(
-                        'hidden md:block after:absolute after:h-[319px]',
-                        'after:top-[114vh] after:left-[-3vw]  after:bg-no-repeat after:bg-contain after:bg-left',
-                        "after:content-[''] after:w-[434px] after:z-[10]  after:bg-aboutusbg1"
+                        'hidden md:block  h-[319px]',
+                        'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
+                        "content-[''] w-[434px] bg-aboutusbg1"
                     )} />
                 </div>
                 <div>
@@ -78,8 +78,21 @@ export default function AboutusSection(props) {
                         style={{
                             color: 'rgba(23,52,80,1)',
                         }}>{props.title}</h1>
+                    <div
+                        className={classNames(
+                            'w-full block md:hidden relative',
+                        )}
+                    >
+                        <img className=' mx-auto max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
+                        <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[32%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
+                        <div className={classNames(
+                            'hidden md:block  h-[319px]',
+                            'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
+                            "content-[''] w-[434px] bg-aboutusbg1"
+                        )} />
+                    </div>
                     <p className={classNames(
-                        'md:mt-[60px] mt-[700px]',
+                        'md:mt-[60px] mt-[60px]',
                         'md:leading-[60px] leading-[27px]',
                         'text-left',
                         'font-[Poppins]',
@@ -100,10 +113,9 @@ export default function AboutusSection(props) {
             </div>
 
             <div className='hidden relative md:block mt-[267px]'>
-
                 {heroActions(props)}
                 <div className={classNames(
-                    'hidden md:block absolute h-[370px]',
+                    'hidden lg:block absolute h-[370px]',
                     'top-[-16vh] right-[-0.7vw]  bg-no-repeat bg-contain bg-left',
                     "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
                 )} />
