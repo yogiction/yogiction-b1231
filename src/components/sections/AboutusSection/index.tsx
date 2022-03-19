@@ -25,9 +25,18 @@ export default function AboutusSection(props) {
                     bgSize === 'inset' ? 'flex' : null,
                     bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                     sectionStyles.margin,
-
                 )}
             >
+                <img src={`/images/aboutusrightbg.png`} className={classNames(
+                    "hidden lg:block absolute",
+                    "top-[15px] left-[-164px] z-20",
+                    'w-[586px] h-[1018px]'
+                )} alt="" />
+                <img src={`/images/aboutusleftbg.png`} className={classNames(
+                    "hidden lg:block absolute",
+                    "bottom-[185px] right-[0px] z-20",
+                    'w-[299px] h-[1018px] opacity-[0.7]'
+                )} alt="" />
                 <div
                     className={classNames(
                         'flex',
@@ -41,10 +50,9 @@ export default function AboutusSection(props) {
                         borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
                     }}
                 >
-
                     <div
                         className={classNames(
-                            'max-w-[741px] w-full hidden md:block relative mx-[56px] md:mx-auto md:mr-[82px]',
+                            'max-w-[741px] w-full hidden md:block z-30 relative mx-[56px] md:mx-auto md:mr-[82px]',
                         )}
                     >
                         <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
@@ -109,11 +117,10 @@ export default function AboutusSection(props) {
                         )}>{props.text1}</p>
                     </div>
                 </div>
-
-                <div className='hidden relative md:block mt-[267px]'>
+                <div className='aboutusbottoms relative md:block mt-[267px]'>
                     {heroActions(props)}
                     <div className={classNames(
-                        'hidden lg:block absolute h-[370px]',
+                        'aboutusbottoms absolute h-[370px]',
                         'top-[-16vh] right-[-0.7vw]  bg-no-repeat bg-contain bg-left',
                         "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
                     )} />

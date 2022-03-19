@@ -10,8 +10,6 @@ export default function HowItWorksSection(props) {
     const cssId = props.elementId || null;
     const bgSize = props.backgroundSize || 'full';
     const sectionStyles = props.styles?.self || {};
-    const sectionWidth = sectionStyles.width || 'wide';
-    const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
     return (
         <div
@@ -27,8 +25,18 @@ export default function HowItWorksSection(props) {
                 sectionStyles.margin
             )}
         >
-            <img src={`/images/howitworksbg1.png`} className={classNames("hidden lg:block absolute top-[-4.5vh] left-[138px]",
-                'z-40')} alt="" />
+            <img src={`/images/aboutusrightbg.png`} className={classNames(
+                "hidden lg:block absolute",
+                "top-0 left-[-200px] z-20",
+                'w-[586px] h-[1018px]'
+            )} alt="" />
+            <img src={`/images/aboutusleftbg.png`} className={classNames(
+                "hidden lg:block absolute",
+                "bottom-[600px] right-[0px] z-20",
+                'w-[299px] h-[1018px] opacity-[0.7]'
+            )} alt="" />
+            <img src={`/images/howitworksbg1.png`} className={classNames("absolute top-[-4.5vh] left-[138px]",
+                'z-40', 'howitworkstopsticker')} alt="" />
             <h1 className={classNames(
                 'text-center ',
                 'font-[PoppinsMedium]',
@@ -39,9 +47,12 @@ export default function HowItWorksSection(props) {
                 style={{
                     color: 'rgba(23,52,80,1)',
                 }}>{props.title}</h1>
-            <img src={`/images/howitworksbg1.png`} className={classNames("lg:hidden w-full max-w-[219.5px] mt-[60px] mx-auto block ",
-                'max-w-[219.51px] max-h-[227px]',
-            )} alt="" />
+            <img src={`/images/howitworksbg1.png`}
+                className={classNames(
+                    "lg:hidden w-full max-w-[219.5px]",
+                    "mt-[60px] mx-auto block",
+                    'max-w-[219.51px] max-h-[227px]',
+                )} alt="" />
             <p className={classNames(
                 'mt-[60px]',
                 'text-left md:text-center',

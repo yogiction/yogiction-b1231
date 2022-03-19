@@ -594,7 +594,28 @@
 }
 
 .herosectiontitle {
-    letter-spacing: var(--unnamed-character-spacing-0);
+    
     font: normal normal 600 100px/150px Poppins;
     color: var(--unnamed-color-ffffff);
+}
+
+@media screen and (max-width: 1375px) {
+    .howitworkstopsticker{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1375px) {
+    .aboutusbottomsection{
+        display: none;
+    }
+}
+
+.aboutusbottoms{
+    display: block;
+}
+@media screen and (max-width: 1314px) {
+    .aboutusbottoms{
+        display: none;
+    }
 }
