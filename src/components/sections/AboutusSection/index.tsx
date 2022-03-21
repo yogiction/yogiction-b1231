@@ -40,7 +40,7 @@ export default function AboutusSection(props) {
                 <div
                     className={classNames(
                         'flex',
-                        'flex-col lg:flex-row',
+                        'flex-col xl:flex-row',
                         'justify-center w-full mx-auto ',
                         bgSize === 'inset' ? '' : null,
                         bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,

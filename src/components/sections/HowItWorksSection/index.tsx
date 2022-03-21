@@ -100,21 +100,26 @@ export default function HowItWorksSection(props) {
                 'font-semibold'
             )}
             >{props.benefitsTitle}</h1>
-            <div className={classNames('flex mt-[35px] md:mt-[60px] flex-col  md:flex-row justify-center')}>
+            <div className={classNames('flex mt-[35px] lg:mt-[60px] flex-col  lg:flex-row justify-center')}>
                 <div
-                    className={classNames("max-w-[585px] w-full ml-auto mr-auto md:mr-[25px] md:mt-0 bg-[#a6bf36]")}>
-                    <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] md:leading-[60px]",
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto lg:mr-[25px] lg:mt-0 bg-[#a6bf36]")}>
+                    <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] lg:leading-[60px]",
                         'font-sans',
                         'not-italic',
                         'font-semibold',
                         'text-[18px] md:text-[40px]',
                         'text-[#173450]'
                     )} style={{
-                    }}>{props.benefits[0].title}</h1>
-                    <p className={classNames('mb-[55px] leading-[27px] md:leading-[60px] mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[18px] md:text-[40px]', 'text-[#173450]')}>{props.benefits[0].description}</p>
+                    }}>{props.benefit1Title}</h1>
+                    <p className={classNames('mb-[55px] leading-[27px]',
+                        'md:leading-[60px] mx-[55px] text-center',
+                        'font-[Poppins]',
+                        'font-normal',
+                        'text-[18px] md:text-[40px]',
+                        'text-[#173450]')}>{props.benefit1Description}</p>
                 </div>
                 <div
-                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] md:mt-0 md:ml-[25px] bg-[#a6bf36]")}>
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] lg:mt-0 lg:ml-[25px] bg-[#a6bf36]")}>
                     <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] md:leading-[60px]",
                         'font-sans',
                         'not-italic',
@@ -122,8 +127,8 @@ export default function HowItWorksSection(props) {
                         'text-[18px] md:text-[40px]',
                         'text-[#173450]'
                     )}
-                    >{props.benefits[1].title}</h1>
-                    <p className={classNames('mb-[55px] leading-[27px] md:leading-[60px] mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[18px] md:text-[40px]', 'text-[#173450]')}>{props.benefits[1].description}</p>
+                    >{props.benefit2Title}</h1>
+                    <p className={classNames('mb-[55px] leading-[27px] md:leading-[60px] mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[18px] md:text-[40px]', 'text-[#173450]')}>{props.benefit2Description}</p>
                 </div>
             </div>
         </div>
