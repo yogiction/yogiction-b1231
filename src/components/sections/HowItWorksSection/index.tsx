@@ -77,7 +77,7 @@ export default function HowItWorksSection(props) {
                         </div>
                         <div className='flex flex-col max-w-[1048px]'>
                             <div className={classNames('leading-[27px] md:leading-[60px] mb-[20px] md:mb-[30px]',
-                                'text-center md:text-left md:font-bold font-semibold',
+                                'text-center md:text-left font-semibold',
                                 'md:text-[40px] text-[18px]',
                                 'font-[Poppins] font-normal text-[#173450]'
                             )}>{step.title}</div>
