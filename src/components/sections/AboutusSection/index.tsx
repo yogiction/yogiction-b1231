@@ -52,7 +52,7 @@ export default function AboutusSection(props) {
                 >
                     <div
                         className={classNames(
-                            'max-w-[741px] w-full hidden md:block z-30 relative mx-[56px] md:mx-auto md:mr-[82px]',
+                            'max-w-[741px] md:mt-[60px] w-full hidden md:block z-30 relative mx-[56px] md:mx-auto md:mr-[82px]',
                         )}
                     >
                         <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
@@ -117,7 +117,7 @@ export default function AboutusSection(props) {
                         )}>{props.text1}</p>
                     </div>
                 </div>
-                <div className='aboutusbottoms relative md:block mt-[267px]'>
+                <div className='aboutusbottoms h-[104px] relative md:block mt-[267px]'>
                     {heroActions(props)}
                     <div className={classNames(
                         'aboutusbottoms absolute h-[370px]',
@@ -149,7 +149,7 @@ function heroActions(props) {
                 })}
             >
                 <div
-                    className={classNames('flex', 'flex-wrap', 'items-center', '-mx-2',)}
+                    className={classNames('flex', 'flex-wrap', 'items-center align-base', '-mx-2',)}
                     data-sb-field-path=".actions"
                     style={actionStyle}
                 >
