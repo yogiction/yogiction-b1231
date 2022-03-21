@@ -28,14 +28,14 @@ export default function AboutusSection(props) {
                 )}
             >
                 <img src={`/images/aboutusrightbg.png`} className={classNames(
-                    "hidden lg:block absolute",
-                    "top-[15px] left-[-164px] z-20",
-                    'w-[586px] h-[1018px]'
+                    " absolute",
+                    "top-[785px] md:top-[15px] left-[-30px] md:left-[-164px] z-20",
+                    'w-[154px] md:w-[586px] h-[200px] md:h-[1018px]'
                 )} alt="" />
                 <img src={`/images/aboutusleftbg.png`} className={classNames(
-                    "hidden lg:block absolute",
-                    "bottom-[185px] right-[0px] z-20",
-                    'w-[299px] h-[1018px] opacity-[0.7]'
+                    "absolute",
+                    "top-[15rem]  md:bottom-[185px] right-[-25px] md:right-[0px] z-20",
+                    'w-[156px] md:w-[299px] h-[201px] md:h-[1018px] opacity-[0.7]'
                 )} alt="" />
                 <div
                     className={classNames(
@@ -67,8 +67,8 @@ export default function AboutusSection(props) {
                         <h1 className={classNames(
                             'uppercase',
                             'text-center md:text-left',
-                            'font-[Poppins] md:font-[PoppinsMedium]',
-                            'font-semibold leading-[60px]',
+                            'font-[Poppins] md:font-[Poppins]',
+                            'font-semibold leading-[38px] md:leading-[60px]',
                             'mb-[30px]',
                             'text-[25px] md:text-[40px]',
                         )}
