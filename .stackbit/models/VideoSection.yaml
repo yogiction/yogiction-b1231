@@ -1,0 +1,16 @@
+type: object
+name: VideoSection
+label: Video Section
+extends:
+  - Section
+groups:
+  - sectionComponent
+fieldGroups:
+  - name: styles
+    label: Styles
+  - name: settings
+    label: Settings
+fields:
+  - type: string
+    name: videoLink
+    label: Video Link

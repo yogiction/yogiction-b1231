@@ -100,9 +100,9 @@ export default function HowItWorksSection(props) {
                 'font-semibold'
             )}
             >{props.benefitsTitle}</h1>
-            <div className={classNames('flex mt-[35px] lg:mt-[60px] flex-col  lg:flex-row justify-center')}>
+            <div className={classNames('flex mt-[35px] lg:mt-[60px] flex-col  xl:flex-row justify-center')}>
                 <div
-                    className={classNames("max-w-[585px] w-full ml-auto mr-auto lg:mr-[25px] lg:mt-0 bg-[#a6bf36]")}>
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto xl:mr-[25px] lg:mt-0 bg-[#a6bf36]")}>
                     <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] lg:leading-[60px]",
                         'font-sans',
                         'not-italic',
@@ -119,7 +119,7 @@ export default function HowItWorksSection(props) {
                         'text-[#173450]')}>{props.benefit1Description}</p>
                 </div>
                 <div
-                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] lg:mt-0 lg:ml-[25px] bg-[#a6bf36]")}>
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] xl:mt-0 xl:ml-[25px] bg-[#a6bf36]")}>
                     <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] md:leading-[60px]",
                         'font-sans',
                         'not-italic',

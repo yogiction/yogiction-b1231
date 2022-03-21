@@ -60,4 +60,5 @@ const components = {
     'PostFeedCategoryLayout': dynamic(() => import('./layouts/PostFeedCategoryLayout')),
     'AboutusSection': dynamic(() => import('./sections/AboutusSection')),
     'HowItWorksSection': dynamic(() => import('./sections/HowItWorksSection')),
+    'VideoSection': dynamic(() => import('./sections/VideoSection')),
 };
