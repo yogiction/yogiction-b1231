@@ -118,7 +118,6 @@ export default function AboutusSection(props) {
                     </div>
                 </div>
                 <div className='aboutusbottoms h-[104px] relative md:block mt-[267px]'>
-                    {console.log(props)}
                     {heroActions(props)}
                     <div className={classNames(
                         'aboutusbottoms absolute h-[370px]',
