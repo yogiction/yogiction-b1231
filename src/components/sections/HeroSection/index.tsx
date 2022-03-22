@@ -34,7 +34,7 @@ export default function HeroSection(props) {
                     'sb-component-hero-section',
                     colors,
                     'flex',
-                    'flex-col',
+                    'flex-col z-0',
                     'justify-center',
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.margin,
@@ -49,13 +49,12 @@ export default function HeroSection(props) {
                     <div>
                         <img src={logo.url} className="h-[50px] w-[94px] md:h-[142px] md:w-[284px]" alt="" />
                         <div style={titleStyles} className={classNames('mt-[15px]  md:mt-[85px] text-[35px] leading-[53px] md:leading-[150px] md:text-[100px]',
-                            "max-w-[300px]  md:max-w-[805px] ")}>{title}</div>
+                            "max-w-[300px]  md:max-w-[805px]")}>{title}</div>
                     </div>
                     <div>{heroActions(props)}</div>
                 </div>
             </div>
-
-            <div className={classNames("block md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
+            <div className={classNames("md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
                 <div className='text-[25px] font-medium leading-[38px] text-white text-center'>SIGN UP NOW</div>
             </div>
         </>
