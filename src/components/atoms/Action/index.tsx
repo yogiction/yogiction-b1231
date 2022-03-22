@@ -36,7 +36,7 @@ export default function Action(props) {
             {...annotations}
         >
             {label && <span>{label}</span>}
-             {showIcon && IconComponent && (
+            {showIcon !== null && showIcon && IconComponent && (
                 <IconComponent
                     className={classNames('fill-current h-5 w-5', {
                         'order-first': iconPosition === 'left',
