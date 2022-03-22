@@ -153,8 +153,7 @@ function heroActions(props) {
                     data-sb-field-path=".actions"
                     style={actionStyle}
                 >
-                    {actions.map((action, index) => (
-            ion key={index} {...action} className="mb-3 mx-auto lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
+                    {actions.map((action, index) => (ion key={index} {...action} className="mb-3 mx-auto lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
                     ))}
                 </div>
             </div>
