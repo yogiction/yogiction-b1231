@@ -64,19 +64,7 @@ export default function CtaSection(props) {
                             bgSize === 'full' ? mapMaxWidthStyles(sectionWidth) : null
                         )}
                     >
-                        <div
-                            className={classNames(
-                                'flex',
-                                mapFlexDirectionStyles(sectionFlexDirection),
-                                mapStyles({ alignItems: sectionAlignItems }),
-                                'space-y-8',
-                                {
-                                    'lg:space-y-0 lg:space-x-8': sectionFlexDirection === 'row'
-                                }
-                            )}
-                        >
-
-                        </div>
+                        
                     </div>
                 </div>
             </div>
