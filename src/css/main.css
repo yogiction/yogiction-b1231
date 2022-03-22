@@ -619,3 +619,9 @@
         display: none;
     }
 }
+
+.howitworksbg{
+background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
+background-repeat: no-repeat, no-repeat;
+background-position: -500px -40px, 1480px 1300px;
+}

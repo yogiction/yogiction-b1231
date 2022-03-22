@@ -6,7 +6,6 @@ import { getDataAttrs } from '../../../utils/get-data-attrs';
 import { Action } from '../../atoms';
 
 export default function HowItWorksSection(props) {
-
     const cssId = props.elementId || null;
     const bgSize = props.backgroundSize || 'full';
     const sectionStyles = props.styles?.self || {};
@@ -22,21 +21,15 @@ export default function HowItWorksSection(props) {
                 'pt-[60px] md:pt-[200px] px-[41px] md:px-[140px] pb-[60px] md:pb-[306px]',
                 bgSize === 'inset' ? 'flex' : null,
                 bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
-                sectionStyles.margin
+                sectionStyles.margin,
+                'howitworksbg'
             )}
         >
-            <img src={`/images/aboutusrightbg.png`} className={classNames(
-                "hidden lg:block absolute",
-                "top-0 left-[-200px] z-20",
-                'w-[586px] h-[1018px]'
-            )} alt="" />
-            <img src={`/images/aboutusleftbg.png`} className={classNames(
-                "hidden lg:block absolute",
-                "bottom-[600px] right-[0px] z-20",
-                'w-[299px] h-[1018px] opacity-[0.7]'
-            )} alt="" />
-            <img src={`/images/howitworksbg1.png`} className={classNames("absolute top-[-4.5vh] left-[138px]",
-                'z-40', 'howitworkstopsticker')} alt="" />
+            <div className='max-w-[353px] max-h-[365px] absolute top-[-4.5vh] left-[138px] w-full'>
+                <img src={`/images/howitworksbg1.png`} className={classNames("",
+                    ' z-40 ',
+                    'howitworkstopsticker')} width="353px" height="365px" alt="" />
+            </div>
             <h1 className={classNames(
                 'text-center ',
                 'font-[PoppinsMedium]',
@@ -65,7 +58,9 @@ export default function HowItWorksSection(props) {
             >{props.description}</p>
             <div className={classNames('pt-[60px] md:pt-[156px]')}>
                 {props.steps.map((step, index) => {
-                    return (<div key={index} className='flex mb-[50px]  md:mb-[130px] flex-col md:flex-row justify-center'>
+                    return (<div key={index} className={classNames('flex mb-[50px]  flex-col md:flex-row justify-center',
+                        (index === 3 ? ' md:mb-[118px]' : ' md:mb-[130px]'))}>
+                        {console.log(index)}
                         <div className={classNames(
                             "pt-0 md:text-left text-center mr-0 md:mr-[40px]",
                             "md:mb-[40px] mb-[30px] min-h-[140px] md:min-h-full min-w-[132px]",

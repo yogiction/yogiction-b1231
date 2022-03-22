@@ -11,11 +11,7 @@ export default function HeroSection(props) {
     const colors = props.colors || 'colors-a';
     const sectionStyles = props.styles?.self || {};
     const titleStyles = props.styles?.title || {};
-    const sectionWidth = sectionStyles.width || 'wide';
     const sectionHeight = sectionStyles.height || 'auto';
-    const sectionJustifyContent = sectionStyles.justifyContent || 'center';
-    const sectionFlexDirection = sectionStyles.flexDirection || 'row';
-    const sectionAlignItems = sectionStyles.alignItems || 'center';
     const bgImage = props.backgroundImage || '';
     const logo = props.logo || '';
     const title = props.title || '';

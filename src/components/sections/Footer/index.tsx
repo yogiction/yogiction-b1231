@@ -13,7 +13,6 @@ export default function Footer(props) {
     return (
         <footer
             className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[60px] px-0 md:py-[100px] md:px-[140px]')}
-            data-sb-field-path={`${props.annotationPrefix}:footer`}
         >
             <div className={classNames('')}>
 
