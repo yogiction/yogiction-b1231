@@ -25,6 +25,7 @@ export default function AboutusSection(props) {
                     bgSize === 'inset' ? 'flex' : null,
                     bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                     sectionStyles.margin,
+                    'aboutusbottomrightbg'
                 )}
             >
                 <img src={`/images/aboutusrightbg.png`} className={classNames(
@@ -32,11 +33,11 @@ export default function AboutusSection(props) {
                     "top-[785px] md:top-[15px] left-[-30px] md:left-[-164px] z-20",
                     'w-[154px] md:w-[586px] h-[200px] md:h-[1018px]'
                 )} alt="" />
-                <img src={`/images/aboutusleftbg.png`} className={classNames(
+                {/* <img src={`/images/aboutusleftbg.png`} className={classNames(
                     "absolute",
                     "top-[15rem]  md:bottom-[185px] right-[0px] md:right-[0px] z-20",
                     'w-[156px] md:w-[299px] h-[201px] md:h-[1018px] opacity-[0.7]'
-                )} alt="" />
+                )} alt="" /> */}
                 <div
                     className={classNames(
                         'flex',

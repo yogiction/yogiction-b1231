@@ -625,3 +625,34 @@ background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.
 background-repeat: no-repeat, no-repeat;
 background-position: -500px -40px, 1480px 1300px;
 }
+
+.howitworksmobilebg{
+    background-image: none;
+}
+.aboutusbottomrightbg{
+    background-repeat: no-repeat;
+    background-image: url('/images/aboutusleftbg.png');
+    background-size: 426px 1018px;
+    background-position: 117% 800px;
+}
+
+@media screen and (max-width: 768px) {
+.aboutusbottomrightbg{
+    background-image: url('/images/howitworkscolorbg.png');
+    background-repeat: no-repeat;
+    background-size: 156px 201px;
+    background-position: 101% 260px;
+}
+.howitworksbg1{
+    background-repeat: no-repeat;
+    background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
+    background-size: 120px 212px, 120px 212px;
+    background-position: -20px 200px, 101% 463px;
+}
+.howitworksmobilebg{
+    background-repeat: no-repeat;
+    background-image: url('/images/aboutusrightbg.png'), url('/images/howitworkscolorbg.png');
+    background-size: 154px 200px, 156px 201px;
+    background-position: -58px 851px, 100% 786px;
+}
+}
