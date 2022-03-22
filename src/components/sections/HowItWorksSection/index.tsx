@@ -84,7 +84,7 @@ export default function HowItWorksSection(props) {
                             <div className={classNames("leading-[27px] md:leading-[60px] text-center md:text-left ",
                                 'font-[Poppins] not-italic',
                                 'font-normal max-w-[1037px] w-full',
-                                'md:text-[40px] font-[18px] text-[#173450]')}>
+                                'md:text-[40px] text-[18px] text-[#173450]')}>
                                 {step.description}</div>
                         </div>
                     </div>)

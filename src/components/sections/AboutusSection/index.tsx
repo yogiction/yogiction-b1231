@@ -34,7 +34,7 @@ export default function AboutusSection(props) {
                 )} alt="" />
                 <img src={`/images/aboutusleftbg.png`} className={classNames(
                     "absolute",
-                    "top-[15rem]  md:bottom-[185px] right-[-25px] md:right-[0px] z-20",
+                    "top-[15rem]  md:bottom-[185px] right-[0px] md:right-[0px] z-20",
                     'w-[156px] md:w-[299px] h-[201px] md:h-[1018px] opacity-[0.7]'
                 )} alt="" />
                 <div
@@ -154,7 +154,7 @@ function heroActions(props) {
                     style={actionStyle}
                 >
                     {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3 mx-auto lg:whitespace-nowrap"  />
+                        <Action key={index} {...action} className="mb-3 mx-auto lg:whitespace-nowrap" />
                     ))}
                 </div>
             </div>
