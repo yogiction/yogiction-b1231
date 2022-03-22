@@ -37,27 +37,7 @@ export default function FeaturedPeopleSection(props) {
                 borderWidth: styles.self?.borderWidth ? `${styles.self?.borderWidth}px` : null
             }}
         >
-            <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
-                <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
-                    {props.title && (
-                        <h2 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
-                            {props.title}
-                        </h2>
-                    )}
-                    {props.subtitle && (
-                        <p
-                            className={classNames('text-lg', 'sm:text-xl', styles.subtitle ? mapStyles(styles.subtitle) : null, {
-                                'mt-6': props.title
-                            })}
-                            data-sb-field-path=".subtitle"
-                        >
-                            {props.subtitle}
-                        </p>
-                    )}
-                    {featuredPeopleVariants(props)}
-                    {featuredPeopleActions(props)}
-                </div>
-            </div>
+          
         </div>
     );
 }
