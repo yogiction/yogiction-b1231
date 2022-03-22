@@ -24,7 +24,7 @@ export default function CtaSection(props) {
                 'sb-component',
                 'sb-component-section',
                 'sb-component-cta-section',
-                bgSize === 'inset' ? 'flex': null,
+                bgSize === 'inset' ? 'flex' : null,
                 bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                 sectionStyles.margin
             )}
@@ -36,7 +36,7 @@ export default function CtaSection(props) {
                     'flex-col',
                     'justify-center',
                     'relative',
-                    bgSize === 'inset' ? 'w-full': null,
+                    bgSize === 'inset' ? 'w-full' : null,
                     bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.padding || 'py-12 px-4',
@@ -54,7 +54,7 @@ export default function CtaSection(props) {
                     className={classNames(
                         'relative',
                         'w-full',
-                        bgSize === 'full' ? 'flex': null,
+                        bgSize === 'full' ? 'flex' : null,
                         bgSize === 'full' ? mapStyles({ justifyContent: sectionJustifyContent }) : null
                     )}
                 >
@@ -75,8 +75,7 @@ export default function CtaSection(props) {
                                 }
                             )}
                         >
-                            {ctaBody(props)}
-                            {ctaActions(props)}
+
                         </div>
                     </div>
                 </div>
