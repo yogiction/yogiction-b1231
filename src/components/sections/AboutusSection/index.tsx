@@ -29,7 +29,7 @@ export default function AboutusSection(props) {
                 )}
             >
                 <img src={`/images/aboutusrightbg.png`} className={classNames(
-                    " absolute",
+                    "absolute",
                     "top-[785px] md:top-[15px] left-[-30px] md:left-[-164px] z-20",
                     'w-[154px] md:w-[586px] h-[200px] md:h-[1018px]'
                 )} alt="" />
@@ -108,7 +108,7 @@ export default function AboutusSection(props) {
                             'text-[#173450]'
                         )}>{props.text}</p>
                         <p className={classNames(
-                            'md:mt-[60px] mt-[54px]',
+                            'md:mt-[60px] mt-[28px]',
                             'md:leading-[60px] leading-[27px]',
                             'text-left',
                             'font-[Poppins]',
