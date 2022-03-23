@@ -656,3 +656,38 @@ background-position: -500px -40px, 1480px 1300px;
     background-position: -58px 851px, 100% 786px;
 }
 }
+
+.sliderbg {
+    background-repeat: no-repeat;
+    background-image: url('/images/aboutusrightbg.png'), url('/images/sliderbg.png');
+    background-size: 664px 1018px, 664px 1018px;
+    background-position: -100px 256px, 108% 70px;
+}
+
+#slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+.slidertransi {
+    transform: translate3d(-50%, -40%, 70px);
+}

@@ -13,12 +13,7 @@ export default function Header(props) {
     const headerStyles = props.styles?.self || {};
     const headerWidth = headerStyles.width || 'narrow';
     return (
-        <header
-            className={classNames('hidden sb-component', 'sb-component-header', primaryColors, 'relative', headerStyles.padding || 'py-5 px-4')}
-            data-sb-field-path={`${props.annotationPrefix}:header`}
-        >
-           
-        </header>
+        <div></div>
     );
 }
 
