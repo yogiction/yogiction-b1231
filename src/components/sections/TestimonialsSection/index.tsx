@@ -93,9 +93,11 @@ export default function TestimonialsSection(props) {
                         {testimonials.map((testim, index) => {
                             return <div key={index}
                                 className={classNames(
-                                    'mx-[5px] md:mx-[10px] h-[15px] w-[15px] rounded-lg',
+                                    'mx-[5px] hover:cursor-pointer md:mx-[10px] h-[15px] w-[15px] rounded-lg',
                                     slideIndex === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
-                                )} />
+                                )} onClick={() => {
+                                    setSlideIndex(index);
+                                }} />
                         })}
                     </div>
                 )}

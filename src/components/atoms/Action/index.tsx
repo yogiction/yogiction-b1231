@@ -9,17 +9,17 @@ export default function Action(props) {
     const fieldPath = props['data-sb-field-path'] ?? '';
     const annotations = fieldPath
         ? {
-              'data-sb-field-path': [
-                  fieldPath,
-                  `${fieldPath}.url#@href`,
-                  `${fieldPath}.altText#@aria-label`,
-                  `${fieldPath}.elementId#@id`,
-                  `${fieldPath}.label#span[1]`,
-                  `${fieldPath}.icon#svg[1]`
-              ]
-                  .join(' ')
-                  .trim()
-          }
+            'data-sb-field-path': [
+                fieldPath,
+                `${fieldPath}.url#@href`,
+                `${fieldPath}.altText#@aria-label`,
+                `${fieldPath}.elementId#@id`,
+                `${fieldPath}.label#span[1]`,
+                `${fieldPath}.icon#svg[1]`
+            ]
+                .join(' ')
+                .trim()
+        }
         : {};
     const defaultStyle = props.__metadata.modelName === 'Link' ? 'link' : 'secondary';
     const style = 'style' in props ? props?.style ?? defaultStyle : defaultStyle;
@@ -29,7 +29,7 @@ export default function Action(props) {
             href={url}
             aria-label={altText}
             id={elementId}
-            className={classNames('sb-component', 'sb-component-block', style === 'link' ? 'sb-component-link' : 'sb-component-button', className, {
+            className={classNames('sb-component', 'sb-component-block ', style === 'link' ? 'sb-component-link' : 'sb-component-button', className, {
                 'sb-component-button-primary': style === 'primary',
                 'sb-component-button-secondary': style === 'secondary'
             })}
