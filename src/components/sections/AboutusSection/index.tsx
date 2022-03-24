@@ -53,7 +53,7 @@ export default function AboutusSection(props) {
                 >
                     <div
                         className={classNames(
-                            'max-w-[741px] md:mt-[60px] w-full hidden md:block z-30 relative mx-[56px] md:mx-auto md:mr-[82px]',
+                            'max-w-[741px] md:mt-[60px] w-full hidden md:block z-30 relative mx-[56px] xl:ml-0 md:mx-auto md:mr-[82px]',
                         )}
                     >
                         <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
@@ -64,7 +64,7 @@ export default function AboutusSection(props) {
                             "content-[''] w-[434px] bg-aboutusbg1"
                         )} />
                     </div>
-                    <div>
+                    <div className={classNames('max-w-[899px]')}>
                         <h1 className={classNames(
                             'uppercase',
                             'text-center md:text-left',
@@ -87,7 +87,7 @@ export default function AboutusSection(props) {
                             }}>{props.title}</h1>
                         <div
                             className={classNames(
-                                'w-full block md:hidden relative',
+                                'w-full block md:hidden  relative',
                             )}
                         >
                             <img className=' mx-auto ml-0 max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
@@ -118,11 +118,11 @@ export default function AboutusSection(props) {
                         )}>{props.text1}</p>
                     </div>
                 </div>
-                <div className='aboutusbottoms h-[104px] relative md:block mt-[267px]'>
+                <div className='aboutusbottoms h-[104px] relative md:block '>
                     {heroActions(props)}
                     <div className={classNames(
                         'aboutusbottoms absolute h-[370px]',
-                        'top-[-16vh] right-[-0.7vw]  bg-no-repeat bg-contain bg-left',
+                        'top-[-5vh] lg:right-[-0.7vw] xl:right-[2%]  bg-no-repeat bg-contain bg-left',
                         "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
                     )} />
                 </div>
@@ -155,7 +155,7 @@ function heroActions(props) {
                     style={actionStyle}
                 >
                     {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3 mx-auto lg:whitespace-nowrap" />
+                        <Action key={index} {...action} className="mb-3 mt-[6rem] mx-auto lg:whitespace-nowrap" />
                     ))}
                 </div>
             </div>
