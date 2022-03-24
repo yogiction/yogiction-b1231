@@ -5,7 +5,6 @@ import React from 'react'
 export default function VedioSection(props) {
     return (
         <div>
-            {/* <iframe src="https://player.vimeo.com/video/**yourvideonumberhere**" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe> */}
             <iframe
                 width="100%"
                 className={classNames(
