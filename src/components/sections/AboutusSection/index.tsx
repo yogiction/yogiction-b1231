@@ -25,11 +25,12 @@ export default function AboutusSection(props) {
                     bgSize === 'inset' ? 'flex' : null,
                     bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                     sectionStyles.margin,
-                    'aboutusbottomrightbg'
+                    'aboutusbottomrightbg',
+                    'aboutusSmBg'
                 )}
             >
                 <img src={`/images/aboutusrightbg.png`} className={classNames(
-                    "absolute",
+                    "absolute hidden md:block ",
                     "top-[785px] md:top-[15px] left-[-30px] md:left-[-164px] z-20",
                     'w-[154px] md:w-[586px] h-[200px] md:h-[1018px]'
                 )} alt="" />
@@ -91,7 +92,7 @@ export default function AboutusSection(props) {
                             )}
                         >
                             <img className=' mx-auto ml-0 max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
-                            <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[32%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
+                            <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[29%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                             <div className={classNames(
                                 'hidden md:block  h-[319px]',
                                 'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
@@ -105,7 +106,7 @@ export default function AboutusSection(props) {
                             'font-[Poppins]',
                             'font-normal',
                             'md:text-[40px] text-[18px]',
-                            'text-[#173450]'
+                            'text-[#173450]',
                         )}>{props.text}</p>
                         <p className={classNames(
                             'md:mt-[60px] mt-[28px]',

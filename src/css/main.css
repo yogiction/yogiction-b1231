@@ -693,3 +693,10 @@
 .slidertransi {
     transform: translate3d(-50%, -40%, 70px);
 }
+.aboutusSmBg{
+background-image: url('/images/aboutusrightbg.png');
+background-repeat: no-repeat;
+background-size: 154px 200px;
+background-position:  -18px 832px;
+
+}

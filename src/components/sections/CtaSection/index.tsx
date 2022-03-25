@@ -14,8 +14,6 @@ export default function CtaSection(props) {
     const sectionWidth = sectionStyles.width || 'wide';
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
-    const sectionFlexDirection = sectionStyles.flexDirection || 'row';
-    const sectionAlignItems = sectionStyles.alignItems || 'center';
     return (
         <div
             id={cssId}
@@ -64,7 +62,7 @@ export default function CtaSection(props) {
                             bgSize === 'full' ? mapMaxWidthStyles(sectionWidth) : null
                         )}
                     >
-                        
+
                     </div>
                 </div>
             </div>
