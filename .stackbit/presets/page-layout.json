@@ -14,15 +14,16 @@
                         "internalName": "CTA Section",
                         "leftSectionTitle": "Healthier habits to last you a lifetime.",
                         "rightSectionTitle": "Get Started Today!",
-                        "actions": 
+                        "actions": [
                             {
                                 "$$type": "Button",
                                 "label": "SIGN UP NOW",
                                 "style": "secondary",
                                 "url": "/"
                             }
-                        
+                        ]
                     },
+                    v
                     {
                         "$$type": "AboutusSection",
                         "internalName": "Aboutus Section",
