@@ -79,7 +79,7 @@ function ctaActions(props) {
 }
 
 function mobileCTA(props) {
-    const actions = props.actions[0] || [];
+    const actions = props.actions || [];
     if (actions.length === 0) {
         return null;
     }
