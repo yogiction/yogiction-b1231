@@ -9,20 +9,8 @@
                 "sections": [
                    {
                         "$$type": "CtaSection",
-                        "backgroundColor": "#173450",
-                        "elementId": "null",
-                        "internalName": "CTA Section",
-                        "leftSectionTitle": "Healthier habits to last you a lifetime.",
-                        "rightSectionTitle": "Get Started Today!",
-                        "actions": [
-                                {
-                                    "icon": "arrowRight",
-                                    "iconPosition": "right",
-                                    "label": "SIGN UP NOW",
-                                    "style": "secondary",
-                                    "url": "https://member.dev.newtopia.com/a/account-creation"
-                                }
-                            ]
+                       id: "1vX2zeuyc7R9XJRZ2nKQJE"
+modelName: "Button"
                     }
                 ]
             }
