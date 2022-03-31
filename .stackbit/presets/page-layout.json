@@ -14,7 +14,18 @@
                         "internalName": "CTA Section",
                         "leftSectionTitle": "Healthier habits to last you a lifetime.",
                         "rightSectionTitle": "Get Started Today!",
-                        
+                        "actions": [
+                                {
+                                    "altText": "null",
+                                    "elementId": "null",
+                                    "icon": "arrowRight",
+                                    "iconPosition": "right",
+                                    "label": "SIGN UP NOW",
+                                    "showIcon": "null",
+                                    "style": "secondary",
+                                    "url": "https://member.dev.newtopia.com/a/account-creation"
+                                }
+                            ]
                     }
                 ]
             }
