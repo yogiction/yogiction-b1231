@@ -7,10 +7,22 @@
             "data": {
                 "title": "Empty page",
                 "sections": [
-                        {
+                     {
                         "$$type": "CtaSection",
                         "internalName": "CTA Section",
-                        "leftSectionTitle": "Healthier habits"
+                        "leftSectionTitle": "Healthier habits",
+                        "actions": [
+                            {
+                                "altText": "null",
+                                "elementId": "null",
+                                "icon": "arrowRight",
+                                "iconPosition": "right",
+                                "label": "SIGN UP NOW",
+                                "showIcon": "null",
+                                "style": "secondary",
+                                "url": "https://member.dev.newtopia.com/a/account-creation"
+                            }
+                        ]
                     }
                 ]
             }
