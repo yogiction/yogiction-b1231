@@ -14,17 +14,7 @@
                         "internalName": "CTA Section",
                         "leftSectionTitle": "Healthier habits to last you a lifetime.",
                         "rightSectionTitle": "Get Started Today!",
-                        "actions": [
-                            {
-                                "altText": "null",
-                                "icon": "arrowRight",
-                                "iconPosition": "right",
-                                "label": "SIGN UP NOW",
-                                "showIcon": "null",
-                                "style": "secondary",
-                                "url": "/"
-                            }
-                        ]
+                       
                     }
                 ]
             }
