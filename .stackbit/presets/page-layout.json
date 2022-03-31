@@ -16,7 +16,6 @@
                         "rightSectionTitle": "Get Started Today!",
                         "actions": [
                                 {
-                                    "elementId": "null",
                                     "icon": "arrowRight",
                                     "iconPosition": "right",
                                     "label": "SIGN UP NOW",
