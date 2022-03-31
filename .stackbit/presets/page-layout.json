@@ -23,7 +23,7 @@
                             }
                         ]
                     },
-                       {
+                    {
                         "$$type": "CtaSection",
                         "backgroundColor": "#173450",
                         "elementId": "null",
