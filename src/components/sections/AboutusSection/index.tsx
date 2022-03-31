@@ -134,7 +134,7 @@ export default function AboutusSection(props) {
 }
 
 function heroActions(props) {
-    const actions = [props.actions] || [];
+    const actions = props.actions || [];
     if (actions.length === 0) {
         return null;
     }
