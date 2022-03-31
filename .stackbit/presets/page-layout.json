@@ -17,7 +17,6 @@
                         "actions": [
                             {
                                 "$$type": "Button",
-                                "altText": "null",
                                 "icon": "arrowRight",
                                 "iconPosition": "right",
                                 "label": "SIGN UP NOW",
