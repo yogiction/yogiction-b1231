@@ -18,7 +18,6 @@
                             {
                                 "$$type": "Button",
                                 "label": "SIGN UP NOW",
-                                "showIcon": "null",
                                 "style": "secondary",
                                 "url": "/"
                             }
