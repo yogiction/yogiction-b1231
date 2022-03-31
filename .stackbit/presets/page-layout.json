@@ -7,6 +7,12 @@
             "data": {
                 "title": "Empty page",
                 "sections": [
+                     {
+                        "$$type": "CtaSection",
+                        "internalName": "CTA Section",
+                        "leftSectionTitle": "Healthier habits",
+                        "backgroundColor": ''
+                    }
                 ]
             }
         },
