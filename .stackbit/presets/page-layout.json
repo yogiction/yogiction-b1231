@@ -2,10 +2,10 @@
     "model": "PageLayout",
     "presets": [
         {
-            "label": "Newtopia Theme",
+            "label": "Newtopia Template",
             "thumbnail": "images/page-empty.png",
             "data": {
-                "title": "Newtopia Theme",
+                "title": "Newtopia Template",
                 "sections": [
                     {
                         "$$type": "CtaSection",
