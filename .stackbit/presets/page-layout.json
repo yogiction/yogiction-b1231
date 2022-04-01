@@ -2,7 +2,7 @@
     "model": "PageLayout",
     "presets": [
         {
-            "label": "Empty page",
+            "label": "Newtopia page",
             "thumbnail": "images/page-empty.png",
             "data": {
                 "title": "Empty page",
