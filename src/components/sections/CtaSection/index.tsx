@@ -16,7 +16,6 @@ export default function CtaSection(props) {
                 'sb-component-cta-section'
             )}
         >
-            {console.log(props)}
             <div
                 className={classNames(
                     colors,
@@ -70,7 +69,6 @@ function ctaActions(props) {
                 data-sb-field-path=".actions"
             >
                 {actions.map((action, index) => {
-                    console.log(action)
                     return <Action key={index} {...action} className="mt-[40px]  lg:whitespace-nowrap" />
                 })}
             </div>
