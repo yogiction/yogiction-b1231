@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Newtopia Template",
-            "thumbnail": "images/page-empty.png",
+            "thumbnail": "images/newtopia.png",
             "data": {
                 "title": "Newtopia Template",
                 "sections": [
