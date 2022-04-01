@@ -5,7 +5,7 @@
             "label": "Newtopia Theme",
             "thumbnail": "images/page-empty.png",
             "data": {
-                "title": "Empty page",
+                "title": "Brand Name",
                 "sections": [
                     {
                         "$$type": "CtaSection",
