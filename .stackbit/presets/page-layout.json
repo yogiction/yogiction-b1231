@@ -66,22 +66,6 @@
                         "title": "Health Habits for Life"
                     },
                     {
-                        "$$type": "CtaSection",
-                        "backgroundColor": "#173450",
-                        "elementId": "null",
-                        "internalName": "CTA Section",
-                        "leftSectionTitle": "Healthier habits to last you a lifetime.",
-                        "rightSectionTitle": "Get Started Today!",
-                        "actions": [
-                            {
-                                "$$type": "Button",
-                                "label": "SIGN UP NOW",
-                                "style": "secondary",
-                                "url": "/"
-                            }
-                        ]
-                    },
-                    {
                         "$$type": "HowItWorksSection",
                         "benefit1Description": "Learn from like-minded participants who are experiencing similar challenges on their own health journeys.",
                         "benefit1Title": "Find Community",
