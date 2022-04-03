@@ -72,7 +72,7 @@
                                 "$$type": "Testimonial",
                                 "clientDesignation": "Participant, Regional Manager",
                                 "clientImage": {
-                                    "$$type": "vImageBlock",
+                                    "$$type": "ImageBlock",
                                     "altText": "Client Image",
                                     "caption": "Caption of the image",
                                     "url": "https://images.ctfassets.net/gxd6i571w01a/7CL8JbtFNwAFLssXF72NV4/4b35f83f0561d01d50fd93551fa0f277/istockphoto-1221755378-612x612.png"
