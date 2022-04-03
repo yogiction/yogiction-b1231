@@ -65,8 +65,8 @@
                             }
                         ]
                     },
-                    {        
-                        "$$type": "Testimonial",
+                    {
+                        
                         "testimonials": [
                             {
                                 "clientDesignation": "Participant, Regional Manager",
