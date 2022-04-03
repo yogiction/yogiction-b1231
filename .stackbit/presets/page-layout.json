@@ -121,7 +121,7 @@
                         "videoLink": "https://youtu.be/QojXRvYgXxo"
                     },
                     {
-                        "$$type": "VideoSection",
+                        "$$type": "HeroSection",
                         "actions": [
                             {
                                 "$$type": "Button",
