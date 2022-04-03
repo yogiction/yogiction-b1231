@@ -166,7 +166,7 @@
                                 "textAlign": "left"
                             },
                             "title": {
-                                "color": "var(--unnamed-color-ffffff)",
+                                "color": "#fffff",
                                 "textAlign": "left",
                                 "fontFamily": "Poppins",
                                 "fontWeight": "600"
