@@ -131,12 +131,13 @@
                             }
                         ],
                         "backgroundImage": {
+                                    "$$type": "ImageBlock",
                             "altText": "altText of the image",
                             "caption": "Caption of the image",
                             "url": { "$$ref": "ozaTxtiv6kUtbrPdr0efJ" }
                         },
                         "logo": {
-                            "altText": "altText of the image",
+                            "altText": "altText of the i
                             "caption": "Caption of the image",
                             "url": { "$$ref": "5nzUIZe6uXznvUjz0YmP3x"}
                         },
