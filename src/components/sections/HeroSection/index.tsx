@@ -82,7 +82,7 @@ function heroActions(props) {
     return (
         <>
             <div
-                className={classNames('overflow-x-hidden z-20 hidden md:block', {
+                className={classNames('overflow-x-hidden hidden md:block', {
                     'mt-8': props.title || props.subtitle || props.text || props.badge
                 })}
             >
