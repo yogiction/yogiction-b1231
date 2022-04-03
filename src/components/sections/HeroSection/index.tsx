@@ -91,7 +91,7 @@ function heroActions(props) {
                     style={actionStyle}
                 >
                     {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3 mx-2  border-t-0 border - b - 0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
+                        <Action key={index} {...action} className="mb-3 mx-2  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
                     ))}
                 </div>
             </div>
