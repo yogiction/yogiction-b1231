@@ -72,7 +72,7 @@ elementId: "Testimoinal Section"
 testimonials: (5) [{…}, {…}, {…}, {…}, {…}]
 title: "Here is what our participants are saying"
 variant: "variant-a"
-                    }
+                    },
                     {
                         "$$type": "AboutusSection",
                         "internalName": "Aboutus Section",
