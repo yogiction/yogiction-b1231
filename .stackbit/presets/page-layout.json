@@ -137,6 +137,7 @@
                             "url": { "$$ref": "ozaTxtiv6kUtbrPdr0efJ" }
                         },
                         "logo": {
+                            "$$type": "ImageBlock",
                             "altText": "altText of the image",
                             "caption": "Caption of the image",
                             "url": { "$$ref": "5nzUIZe6uXznvUjz0YmP3x"}
