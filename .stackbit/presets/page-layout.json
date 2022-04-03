@@ -6,7 +6,7 @@
             "thumbnail": "images/newtopia.png",
             "data": {
                 "title": "Newtopia Template",
-                "sections": [,
+                "sections": [
                     {
                         "$$type": "HeroSection",
                         "actions": [
