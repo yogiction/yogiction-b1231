@@ -28,7 +28,6 @@ export default function HeroSection(props) {
                     'sb-component',
                     'sb-component-section',
                     'sb-component-hero-section',
-                    colors,
                     'flex',
                     'flex-col z-0',
                     'justify-center',
