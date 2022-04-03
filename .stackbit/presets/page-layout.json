@@ -66,9 +66,10 @@
                         ]
                     },
                     {
-                        
+
                         "testimonials": [
                             {
+                                "$$type": "Testimonial",
                                 "clientDesignation": "Participant, Regional Manager",
                                 "clientImage": {
                                     "altText": "Client Image",
