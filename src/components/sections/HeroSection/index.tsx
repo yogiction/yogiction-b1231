@@ -101,7 +101,7 @@ function heroActions(props) {
                 })}
             >
                 <div
-                    className={classNames('flex', 'flex-wrap', 'items-center align-base', '-mx-2',)}
+                    className={classNames('flex border-0', 'flex-wrap', 'items-center align-base', '-mx-2',)}
                     data-sb-field-path=".actions"
                 >
                     {actions.map((action, index) => (
