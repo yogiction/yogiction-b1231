@@ -132,7 +132,7 @@
                         "backgroundImage": {
                             "altText": "altText of the image",
                             "caption": "Caption of the image",
-                            "url": {}
+                            "url": "url": { "$$ref": "7CL8JbtFNwAFLssXF72NV4" }
                         },
                         "logo": {},
                         "media": {},
