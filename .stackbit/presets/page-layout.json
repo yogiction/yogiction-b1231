@@ -74,6 +74,7 @@
                         "benefitsTitle": "ADDITIONAL BENEFITS",
                         "description": "The missing link to better health is often from not knowing enough about yourself. Join Newtopia for personalized health coaching based on your personality, lifestyle, motivation and genetic makeup! A few quick steps will unlock your deeply personalized experience, complete with access to a personality-matched coach to support your best self",
                         "internalName": "How It Works Section",
+                        "title": "How it works",
                         "actions": {
                             "$$type": "Button",
                             "label": "SIGN UP NOW",
