@@ -103,7 +103,6 @@ function heroActions(props) {
                 <div
                     className={classNames('flex', 'flex-wrap', 'items-center align-base', '-mx-2',)}
                     data-sb-field-path=".actions"
-                    style={actionStyle}
                 >
                     {actions.map((action, index) => (
                         <Action key={index} {...action} className="mb-3 mt-[6rem] mx-auto lg:whitespace-nowrap" />
