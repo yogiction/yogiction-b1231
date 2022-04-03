@@ -121,6 +121,7 @@
                         "videoLink": "https://youtu.be/QojXRvYgXxo"
                     },
                     {
+                        "$$type": "VideoSection",
                         "actions": [
                             {
                                 "$$type": "Button",
