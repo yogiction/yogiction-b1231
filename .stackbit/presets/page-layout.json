@@ -56,6 +56,12 @@
                                 "internalName": "Step 2",
                                 "title": "Meet your inspirator', description: 'Book a meeting with your personality-matched Inspirator (health coach) for a one-on-one session.'}, {internalName: 'Step 3', title: 'Get going', description: 'Time to put in the work. Follow along with your ta…ur Inspirators support you every step of the way.",
                                 "description": "Book a meeting with your personality-matched Inspirator (health coach) for a one-on-one session."
+                            },
+                            {
+                                "$$type": "howItWorksSteps",
+                                "internalName": "Step 2",
+                                "title": "Meet your inspirator', description: 'Book a meeting with your personality-matched Inspirator (health coach) for a one-on-one session.'}, {internalName: 'Step 3', title: 'Get going', description: 'Time to put in the work. Follow along with your ta…ur Inspirators support you every step of the way.",
+                                "description": "Book a meeting with your personality-matched Inspirator (health coach) for a one-on-one session."
                             }
                         ]
                     },
