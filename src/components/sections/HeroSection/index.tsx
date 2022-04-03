@@ -81,7 +81,7 @@ function heroActions(props) {
     return (
         <>
             <div
-                className={classNames('overflow-x-hidden z-20 hidden md:block', {
+                className={classNames('overflow-x-hidden hidden md:block', {
                     'mt-8': props.title || props.subtitle || props.text || props.badge
                 })}
             >
@@ -92,20 +92,6 @@ function heroActions(props) {
                 >
                     {actions.map((action, index) => (
                         <Action key={index} {...action} className="mb-3 mx-2 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
-                    ))}
-                </div>
-            </div>
-             <div
-                className={classNames('z-20 hidden md:block', {
-                    'mt-8': props.title || props.subtitle || props.text || props.badge
-                })}
-            >
-                <div
-                    className={classNames('flex', 'flex-wrap', 'items-center align-base', '-mx-2',)}
-                    data-sb-field-path=".actions"
-                >
-                    {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3  mt-[6rem] mx-auto lg:whitespace-nowrap" />
                     ))}
                 </div>
             </div>
