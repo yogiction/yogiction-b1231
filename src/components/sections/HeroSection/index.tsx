@@ -65,7 +65,7 @@ function heroBody(props) {
             {props.badge && <Badge {...props.badge} data-sb-field-path=".badge" />}
             {props.title && (
                 <h2 className={classNames('h1', styles.title ? mapStyles(styles.title) : null, { 'mt-4': props.badge?.label })} data-sb-field-path=".title">
-                    {props.title}
+                 
                 </h2>
             )}
         </div>
