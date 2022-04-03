@@ -66,6 +66,14 @@
                         ]
                     },
                     {
+                        colors: "colors-h"
+data-sb-field-path: "sections.4"
+elementId: "Testimoinal Section"
+testimonials: (5) [{…}, {…}, {…}, {…}, {…}]
+title: "Here is what our participants are saying"
+variant: "variant-a"
+                    }
+                    {
                         "$$type": "AboutusSection",
                         "internalName": "Aboutus Section",
                         "text": "Newtopia inspires healthy habit change through personalized one-on-one coaching. You'll learn to eat healthier, stay active, lower your stress, and lose weight to become your best self.",
