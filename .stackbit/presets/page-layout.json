@@ -10,7 +10,8 @@
                 [
                     {
                         "$$type": "HeroSection",
-                        "actions": [ {
+                        "actions": [ 
+                        {
                             "$$type": "Button",
                             "label": "SIGN UP NOW",
                             "style": "secondary",
