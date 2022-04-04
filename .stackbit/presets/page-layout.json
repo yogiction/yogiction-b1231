@@ -16,7 +16,7 @@
                             "label": "SIGN UP NOW",
                             "style": "secondary",
                             "url": "https://member.dev.newtopia.com/a/account-creation"
-                        },
+                        }
                         ],
                         "backgroundImage": {
                             "$$type": "ImageBlock",
