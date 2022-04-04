@@ -10,8 +10,12 @@
                 [
                     {
                         "$$type": "HeroSection",
-                        "actions": [
-                            { "$$ref": "2Nq8j6W20VlT5I9bjfxFwV" }
+                        "actions": [ {
+                            "$$type": "Button",
+                            "label": "SIGN UP NOW",
+                            "style": "secondary",
+                            "url": "https://member.dev.newtopia.com/a/account-creation"
+                        },
                         ],
                         "backgroundImage": {
                             "$$type": "ImageBlock",
