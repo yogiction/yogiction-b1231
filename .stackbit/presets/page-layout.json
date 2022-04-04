@@ -11,12 +11,7 @@
                     {
                         "$$type": "HeroSection",
                         "actions": [
-                            {
-                                "$$type": "Button",
-                                "label": "SIGN UP NOW",
-                                "style": "secondary",
-                                "url": "/"
-                            }
+                            { "$$ref": "ozaTxtiv6kUtbrPdr0efJ" }
                         ],
                         "backgroundImage": {
                             "$$type": "ImageBlock",
