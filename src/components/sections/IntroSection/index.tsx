@@ -123,7 +123,7 @@ export default function IntroSection(props) {
                 fontSize: "60px",
                 color: "rgba(23,52,80,1)"
             }}>{bottomTitle}</div>
-            <div className={classNames("flex pl-[52px]")}>
+            <div className={classNames("flex pl-[52px] justify-center")}>
                 {props.benefits.map((item, index) => {
                     return (
                         <div key={index} className={classNames(
