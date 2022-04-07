@@ -1,27 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
 import classNames from 'classnames';
-import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
-import { Action, Badge } from '../../atoms';
+import { Action } from '../../atoms';
+import CheckedCircle from '../../svgs/checkicon';
 
 export default function IntroSection(props) {
     const cssId = props.elementId || null;
-    const colors = props.colors || 'colors-a';
     const sectionStyles = props.styles?.self || {};
-    const titleStyles = props.styles?.title || {};
     const sectionHeight = sectionStyles.height || 'auto';
-    const bgImage = props.backgroundImage || '';
-    const logo = props.logo || '';
+    const sectionImage = props.sectionImage.url || '';
     const title = props.title || '';
+    const description = props.description || '';
+    const bottomTitle = props.bottomTitle || '';
     return (
         <div
             id={cssId}
             {...getDataAttrs(props)}
             style={{
                 borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
-                backgroundImage: `url('${bgImage.url}')`,
             }}
             className={classNames(
                 'sb-component',
@@ -32,13 +30,119 @@ export default function IntroSection(props) {
                 'justify-center',
                 mapMinHeightStyles(sectionHeight),
                 sectionStyles.margin,
-                'bg-no-repeat bg-center bg-cover',
-                'pl-[39px] md:pl-[140px] pt-[25px] md:pt-[100px] pb-[20px] md:pb-[209px] pr-1',
+                'bg-no-repeat bg-center bg-[#e1e6ea] bg-cover',
+                'pl-[140px] pb-[200px] relative',
                 sectionStyles.borderColor,
                 sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
                 sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
-            )}
-        >Intro Section
+            )}>
+            <div className={classNames(
+                'max-w-[1200px] w-full h-[250px]',
+                'flex absolute top-[-110px] mx-auto left-[20vw]',
+                'bg-white'
+            )}>
+                {console.log(props)}
+                <img src={props.headerBoxImage.url} className={classNames(
+                    'max-w-[387px] mt-[16px] mr-[56px] ml-[100px]',
+                    'max-h-[218px]'
+                )} alt="" />
+                <div className={classNames(
+                    'leading-[46px] max-w-[557px] w-full mt-[81px]'
+                )} style={{
+                    fontFamily: 'Poppins',
+                    fontStyle: 'normal',
+                    fontWeight: 'normal',
+                    fontSize: '30px',
+                    color: 'rgba(23,52,80,1)'
+                }}>{props.headerBoxTitle}</div>
+            </div>
+            <div className={classNames(
+                'flex'
+            )}>
+                <div className={classNames(
+                    "max-w-[899px] w-full"
+                )}>
+                    <div className={classNames(
+                        "text-[60px] leading-[90px] mt-[305px]"
+                    )} style={{
+                        textAlign: "left",
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "bold",
+                        fontSize: "60px",
+                        color: "rgba(23,52,80,1)"
+                    }}>{title}</div>
+                    <div className={classNames(
+                        "text-[40px] leading-[60px] mt-[60px]"
+                    )} style={{
+                        textAlign: "left",
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "normal",
+                        fontSize: "40px",
+                        color: "rgba(23,52,80,1)",
+                    }}>{description}</div>
+                    {heroActions(props)}
+                </div>
+                <div className={classNames(
+                    'w-full',
+                    'relative',
+                )} style={{
+                    overflowX: "hidden"
+                }}>
+                    <div className={classNames(
+                        'bg-white  h-[351px] rounded-[50%] mt-[436px] w-[351px] mx-auto',
+                        'overflow-hidden'
+                    )}> </div>
+                    <img src={sectionImage} className={classNames(
+                        "h-[100%] max-h-[798px] min-w-[1012px]  w-full",
+                        'absolute top-[334px] left-[-14px]'
+                    )} alt="" />
+                </div>
+            </div>
+            <div className={classNames(
+                'bg-gray-600 h-[1px] max-w-[1395px] w-[100%]',
+                'mx-auto mt-[200px] mb-[200px]',
+            )} style={{
+                opacity: '0.35',
+                fill: 'transparent',
+                stroke: 'rgba(23,52,80,1)',
+                strokeWidth: '1px',
+                strokeLinejoin: 'miter',
+                strokeLinecap: 'butt',
+                strokeMiterlimit: '4',
+                shapeRendering: 'auto',
+            }} />
+            <div className={classNames(
+
+            )} style={{
+                textAlign: "center",
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: "bold",
+                fontSize: "60px",
+                color: "rgba(23,52,80,1)"
+            }}>{bottomTitle}</div>
+            <div className={classNames("flex pl-[52px]")}>
+                {props.benefits.map((item, index) => {
+                    return (
+                        <div key={index} className={classNames(
+                            'flex mt-[68px]',
+                            index !== 0 ? "ml-[89px]" : "ml-0"
+                        )}>
+                            <CheckedCircle className={classNames(
+                                'mt-2'
+                            )} />
+                            <div className={classNames(
+                                'text-left font-sans',
+                                'text-[40px] leading-[60px] ml-[20px] font-normal'
+                            )} style={{
+                                color: "rgba(23,52,80,1)"
+                            }}>{item}</div>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     );
 }
@@ -50,7 +154,6 @@ function heroActions(props) {
         return null;
     }
     const styles = props.styles || {};
-    const actionStyle = props.styles.actions || {};
     return (
         <>
             <div
@@ -61,7 +164,6 @@ function heroActions(props) {
                 <div
                     className={classNames('flex', 'flex-wrap', 'items-center', '-mx-2', styles.actions ? mapStyles(styles.actions) : null)}
                     data-sb-field-path=".actions"
-                    style={actionStyle}
                 >
                     {actions.map((action, index) => (
                         <Action key={index} {...action} className="mb-3 mx-2  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
