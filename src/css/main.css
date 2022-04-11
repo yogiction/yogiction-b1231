@@ -3,10 +3,12 @@
     font-family: Poppins;
     src: url(./Poppins/Poppins-Regular.ttf);
 }
+
 @font-face {
     font-family: PoppinsMedium;
     src: url(./Poppins/Poppins-Medium.ttf);
 }
+
 :root {
     --unnamed-color-c1ece7: #c1ece7;
     --unnamed-color-5bc3b9: #5bc3b9;
@@ -15,7 +17,6 @@
     --unnamed-color-e1e6ea: #e1e6ea;
     --unnamed-color-173450: #173450;
     --unnamed-color-a6bf36: #a6bf36;
-
     /* Font/text values */
     --unnamed-font-family-poppins: Poppins;
     --unnamed-font-style-normal: normal;
@@ -44,6 +45,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-2 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -53,6 +55,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-3 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -62,6 +65,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-4 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -71,6 +75,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-5 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -80,6 +85,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-6 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -89,6 +95,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-7 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -98,6 +105,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-8 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -107,6 +115,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-9 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -116,6 +125,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-10 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -125,6 +135,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-11 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -134,6 +145,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-12 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -143,6 +155,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-13 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -152,6 +165,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-14 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -161,6 +175,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-173450);
 }
+
 .unnamed-character-style-15 {
     font-family: var(--unnamed-font-family-poppins);
     font-style: var(--unnamed-font-style-normal);
@@ -174,7 +189,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
     body {
         @apply bg-main text-base;
@@ -230,8 +244,8 @@
             margin: 1.5rem 0;
             padding-left: 1.25em;
         }
-        li > ul,
-        li > ol {
+        li>ul,
+        li>ol {
             margin: 0;
         }
         blockquote {
@@ -292,20 +306,18 @@
         table:first-child {
             margin-top: 0;
         }
-        h1 + h2,
-        h2 + h3,
-        h3 + h4,
-        h4 + h5,
-        h5 + h6 {
+        h1+h2,
+        h2+h3,
+        h3+h4,
+        h4+h5,
+        h5+h6 {
             margin-top: 1.5rem;
         }
     }
-
     /* Buttons */
     .sb-component-button {
-        @apply border-2 inline-flex items-center justify-center no-underline text-center transition duration-200 ease-in hover:opacity-80;
+        @apply border-2 inline-flex items-center justify-center no-underline text-center transition duration-200 ease-in;
     }
-
     /* Links */
     .sb-component-link {
         @apply inline-flex items-center justify-center no-underline relative;
@@ -321,41 +333,33 @@
     .sb-component-link:hover:after {
         @apply w-full;
     }
-
     /* Socials */
     .sb-component-social {
-        @apply inline-flex items-center justify-center no-underline transition duration-200 ease-in hover:opacity-80;
+        @apply inline-flex items-center justify-center no-underline transition duration-200 ease-in;
     }
-
     .sb-component-social-primary,
     .sb-component-social-secondary {
         @apply border-2 rounded-full p-2;
     }
-
     /* Dividers */
     .sb-divider {
-        @apply flex items-center h-4 before:flex-grow before:h-px before:bg-current;
+        @apply flex items-center h-4 before: flex-grow before: h-px before: bg-current;
     }
-
     /* Badge */
     .sb-component-badge {
         @apply uppercase tracking-wider text-primary;
     }
-
     /* Featured items */
     .sb-component-item-hover {
         @apply transition duration-200 ease-in;
     }
-
     /* Form controls */
     .sb-label {
         @apply inline-block mb-1;
     }
     .sb-input,
     .sb-select,
-    .sb-textarea {
-        @apply bg-transparent border border-current px-3 w-full focus:outline-none;
-    }
+    .sb-textarea {}
     .sb-input,
     .sb-select {
         @apply py-0;
@@ -376,17 +380,17 @@
         height: 1.5em;
         width: 1.5em;
     }
-    .sb-checkbox + .sb-label {
+    .sb-checkbox+.sb-label {
         @apply cursor-pointer pl-8 relative;
     }
-    .sb-checkbox + .sb-label:before {
+    .sb-checkbox+.sb-label:before {
         @apply absolute left-0 top-1/2 transform -translate-y-1/2 border border-current cursor-pointer text-center;
         content: '';
         height: 1.5em;
         width: 1.5em;
         line-height: 1.5em;
     }
-    .sb-checkbox:checked + .sb-label:before {
+    .sb-checkbox:checked+.sb-label:before {
         content: '\2713';
     }
     .sb-select {
@@ -396,24 +400,20 @@
         background-size: 6px 6px, 6px 6px;
         background-repeat: no-repeat;
     }
-
     /* Cards */
     .sb-card {
         @apply border border-current;
     }
-
     /* Sections */
     .sb-component-hero-section .sb-component-image-block[src*='.jpg'],
     .sb-component-feature-highlight-section .sb-component-image-block[src*='.jpg'],
     .sb-component-media-gallery-section .sb-component-image-block[src*='.jpg'] {
         @apply rounded-2xl;
     }
-
-    .text-center + .sb-contact-section-form,
+    .text-center+.sb-contact-section-form,
     .sb-contact-section-form:only-child {
         text-align: center;
     }
-
     /* Color palettes */
     .colors-a {
         @apply bg-light text-on-light;
@@ -428,11 +428,11 @@
         }
         .sb-component-button-secondary,
         .sb-component-social-secondary {
-            @apply border-0  text-white;
+            @apply border-0 text-white;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-primary hover:text-on-primary;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-primary hover: text-on-primary;
+        } */
     }
     .colors-b {
         @apply bg-light text-primary;
@@ -452,9 +452,9 @@
         .sb-card {
             @apply bg-dark bg-opacity-5;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-primary hover:text-on-primary;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-primary hover: text-on-primary;
+        } */
     }
     .colors-c {
         @apply bg-dark text-on-dark;
@@ -474,9 +474,9 @@
         .sb-card {
             @apply bg-light text-on-light;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-light hover:text-on-light;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-light hover: text-on-light;
+        } */
     }
     .colors-d {
         @apply bg-dark text-primary;
@@ -496,9 +496,9 @@
         .sb-card {
             @apply bg-light;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-light hover:text-primary;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-light hover: text-primary;
+        } */
     }
     .colors-e {
         @apply bg-primary text-on-primary;
@@ -521,9 +521,9 @@
         .sb-card {
             @apply bg-light text-on-light;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-light hover:text-on-light;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-light hover: text-on-light;
+        } */
     }
     .colors-f {
         @apply bg-secondary text-on-secondary;
@@ -543,9 +543,9 @@
         .sb-card {
             @apply bg-light text-on-light;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-primary hover:text-light;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-primary hover: text-light;
+        } */
     }
     .colors-g {
         @apply bg-secondary text-primary;
@@ -565,9 +565,9 @@
         .sb-card {
             @apply bg-light;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-primary hover:text-light;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-primary hover: text-light;
+        } */
     }
     .colors-h {
         @apply bg-complementary text-on-complementary;
@@ -587,49 +587,50 @@
         .sb-card {
             @apply bg-light text-on-light;
         }
-        .sb-component-item-hover {
-            @apply hover:bg-primary hover:text-light;
-        }
+        /* .sb-component-item-hover {
+            @apply hover: bg-primary hover: text-light;
+        } */
     }
 }
 
 .herosectiontitle {
-    
     font: normal normal 600 100px/150px Poppins;
     color: var(--unnamed-color-ffffff);
 }
 
 @media screen and (max-width: 1375px) {
-    .howitworkstopsticker{
+    .howitworkstopsticker {
         display: none;
     }
 }
 
 @media screen and (max-width: 1375px) {
-    .aboutusbottomsection{
+    .aboutusbottomsection {
         display: none;
     }
 }
 
-.aboutusbottoms{
+.aboutusbottoms {
     display: block;
 }
+
 @media screen and (max-width: 1400px) {
-    .aboutusbottoms{
+    .aboutusbottoms {
         display: none;
     }
 }
 
-.howitworksbg{
+.howitworksbg {
     background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
     background-repeat: no-repeat, no-repeat;
     background-position: -500px -40px, 1480px 1300px;
 }
 
-.howitworksmobilebg{
+.howitworksmobilebg {
     background-image: none;
 }
-.aboutusbottomrightbg{
+
+.aboutusbottomrightbg {
     background-repeat: no-repeat;
     background-image: url('/images/aboutusleftbg.png');
     background-size: 426px 1018px;
@@ -643,19 +644,25 @@
     background-position: -100px 256px, 108% 70px;
 }
 
-@media screen and (max-width: 768px) {
+.introsectionbg {
+    background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 746px 615px, 607px 1018px;
+    background-position: -115px 582px, 100% 100px;
+}
 
-    .aboutusbottomrightbg{
+@media screen and (max-width: 768px) {
+    .aboutusbottomrightbg {
         background-image: url('/images/howitworkscolorbg.png');
         background-repeat: no-repeat;
         background-size: 156px 201px;
         background-position: 101% 260px;
     }
-    .howitworksbg1{ 
+    .howitworksbg1 {
         background-repeat: no-repeat;
         background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
-       background-size: 120px 212px, 120px 212px;
-       background-position: -20px 200px, 120% 506px;
+        background-size: 120px 212px, 120px 212px;
+        background-position: -20px 200px, 120% 506px;
     }
     .howitworksmobilebg {
         background-repeat: no-repeat;
@@ -663,22 +670,27 @@
         background-size: 154px 200px, 156px 201px;
         background-position: -58px 851px, 100% 786px;
     }
-    .sliderbg{
+    .sliderbg {
         background-repeat: no-repeat;
         background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
         background-size: 120px 212px, 120px 212px;
         background-position: -20px 118px, 108% 475px;
     }
+    .introsectionbg {
+        background-image: url('/images/aboutusrightbg.png');
+        background-repeat: no-repeat;
+        background-size: 154px 200px;
+        background-position: -40px 230px;
+    }
 }
-
 
 .slidertransi {
     transform: translate3d(-50%, -40%, 70px);
 }
-.aboutusSmBg{
-background-image: url('/images/aboutusrightbg.png'),url('/images/howitworkscolorbg.png');
-background-repeat: no-repeat,no-repeat;
-background-size: 154px 200px,156px 201px;
-background-position:  -18px 832px, 100% 253px;
 
+.aboutusSmBg {
+    background-image: url('/images/aboutusrightbg.png'), url('/images/howitworkscolorbg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 154px 200px, 156px 201px;
+    background-position: -18px 832px, 100% 253px;
 }

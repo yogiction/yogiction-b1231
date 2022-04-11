@@ -57,14 +57,15 @@ export default function IntroSection(props) {
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.margin,
                     'bg-no-repeat bg-center bg-[#e1e6ea] bg-cover',
-                    'pl-[140px] pb-[200px] relative',
+                    'lg:pl-[140px] pl-0 pb-[60px] md:pb-[200px] relative',
+                    'introsectionbg',
                     sectionStyles.borderColor,
                     sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
                     sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
                 )}>
 
                 <div className={classNames(
-                    'max-w-[70%] md:flex  w-[100%]  h-auto min-h-[250px]',
+                    'max-w-[63%] md:flex  w-[100%] h-auto min-h-[250px]',
                     'hidden flex-col xl:flex-row absolute top-[-110px] mx-auto left-[20vw]',
                     'bg-white'
                 )} style={{
@@ -73,7 +74,7 @@ export default function IntroSection(props) {
                     {console.log(props)}
                     <div className={classNames(
                         'max-w-[387px] w-[100%] h-auto',
-                        'max-h-[218px] mr-[56px] ml-[100px]'
+                        'max-h-[218px] mx-auto xl:mr-[56px] xl:ml-[100px]'
                     )}>
                         <img src={props.headerBoxImage.url} className={classNames(
                             'w-[100%] h-auto mt-[16px]]',
@@ -81,7 +82,7 @@ export default function IntroSection(props) {
                         )} alt="" />
                     </div>
                     <div className={classNames(
-                        'leading-[46px] max-w-[557px] mr-[100px] w-full mt-[81px]'
+                        'leading-[46px] max-w-[557px] mb-4 mt-4 xl:mb-0 mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]'
                     )} style={{
                         fontFamily: 'Poppins',
                         fontStyle: 'normal',
@@ -91,13 +92,19 @@ export default function IntroSection(props) {
                     }}>{props.headerBoxTitle}</div>
                 </div>
                 <div className={classNames(
-                    'flex'
+                    "mt-[60px] md:mt-0 block md:hidden",
+                    'text-center mb-[30px] md:mb-0 font-sans mx-auto max-w-[346px] font-bold text-[25px] leading-[38px]'
+                )} style={{
+                    color: "rgba(23,52,80,1)"
+                }}>{title}</div>
+                <div className={classNames(
+                    'flex xl:flex-row flex-col justify-center'
                 )}>
                     <div className={classNames(
-                        "max-w-[899px] w-full"
+                        "max-w-[899px] w-full order-last xl:order-1"
                     )}>
                         <div className={classNames(
-                            "text-[60px] leading-[90px] mt-[305px]"
+                            "text-[60px] hidden md:block leading-[90px] mt-0 xl:mt-[305px]"
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
@@ -107,35 +114,37 @@ export default function IntroSection(props) {
                             color: "rgba(23,52,80,1)"
                         }}>{title}</div>
                         <div className={classNames(
-                            "text-[40px] leading-[60px] mt-[60px]"
+                            "max-w-[346px] md:max-w-[899px] mx-auto md:leading-[60px] mt-[60px]",
+                            "text-[18px] md:text-[40px]",
+                            'leading-[27px]'
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
                             fontStyle: "normal",
                             fontWeight: "normal",
-                            fontSize: "40px",
                             color: "rgba(23,52,80,1)",
                         }}>{description}</div>
                         {heroActions(props)}
                     </div>
                     <div className={classNames(
                         'w-full',
-                        'relative',
+                        'order-1 xl:order-last',
+                        'mt-0 md:mt-[300px]'
                     )} style={{
                         overflowX: "hidden"
                     }}>
-                        <div className={classNames(
-                            'bg-white  h-[351px] rounded-[50%] mt-[436px] w-[351px] mx-auto',
-                            'overflow-hidden'
-                        )}> </div>
+                        {/* <div className={classNames(
+                            'bg-white  h-[351px] rounded-[50%] mt-[436px] w-[351px] mr-auto ml-[18%]',
+                            'absolute top-[-9px] left-[4vw]',
+                        )}> </div> */}
                         <img src={sectionImage} className={classNames(
-                            "h-[100%] max-h-[798px] min-w-[1012px]  w-full",
-                            'absolute top-[334px] left-[-14px]'
+                            "h-full md:max-h-[798px] md:max-w-[800px]  w-auto",
+                            'max-h-[227px] max-w-[302px] mx-auto',
                         )} alt="" />
                     </div>
                 </div>
                 <div className={classNames(
-                    'bg-gray-600 h-[1px] max-w-[1395px] w-[100%]',
+                    'bg-gray-600 h-[1px] md:block hidden max-w-[1395px] w-[100%]',
                     'mx-auto mt-[200px] mb-[200px]',
                 )} style={{
                     opacity: '0.35',
@@ -148,24 +157,23 @@ export default function IntroSection(props) {
                     shapeRendering: 'auto',
                 }} />
                 <div className={classNames(
-
+                    'md:leading-[90px]',
+                    'md:text-[60px] font-normal',
+                    'text-center font-bold',
+                    'md:block hidden'
                 )} style={{
-                    textAlign: "center",
                     fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    fontWeight: "bold",
-                    fontSize: "60px",
                     color: "rgba(23,52,80,1)"
                 }}>{bottomTitle}</div>
-                <div className={classNames("flex pl-[52px] justify-center")}>
+                <div className={classNames("md:flex hidden flex-col lg:flex-row pl-[52px] justify-center")}>
                     {props.benefits.map((item, index) => {
                         return (
                             <div key={index} className={classNames(
                                 'flex mt-[68px]',
-                                index !== 0 ? "ml-[89px]" : "ml-0"
+                                index !== 0 ? "ml-0 lg:ml-[89px]" : "ml-0"
                             )}>
                                 <CheckedCircle className={classNames(
-                                    'mt-2'
+                                    'mt-2 h-[40px] w-[40px]'
                                 )} />
                                 <div className={classNames(
                                     'text-left font-sans',
@@ -177,6 +185,37 @@ export default function IntroSection(props) {
                         )
                     })}
                 </div>
+            </div>
+            {mobileCTA(props)}
+            <div className={classNames(
+                'leading-[38px] pt-[60px]',
+                'text-[25px] block md:hidden bg-[#e1e6ea] '
+            )} style={{
+                textAlign: "center",
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: "bold",
+                color: "rgba(23,52,80,1)"
+            }}>{bottomTitle}</div>
+            <div className={classNames("bg-[#e1e6ea] flex pb-[60px] md:hidden flex-col lg:flex-row justify-center")}>
+                {props.benefits.map((item, index) => {
+                    return (
+                        <div key={index} className={classNames(
+                            'flex flex-col  mt-[35px]',
+                        )}>
+                            <CheckedCircle className={classNames(
+                                'mx-auto',
+                                'h-[35px] w-[35px]'
+                            )} />
+                            <div className={classNames(
+                                'text-center mt-[15px] mx-auto font-sans',
+                                'text-[18px] leading-[27px] font-normal'
+                            )} style={{
+                                color: "rgba(23,52,80,1)"
+                            }}>{item}</div>
+                        </div>
+                    )
+                })}
             </div>
         </>
     );
@@ -215,4 +254,16 @@ function mapMinHeightStyles(height) {
             return 'min-h-screen';
     }
     return null;
+}
+
+function mobileCTA(props) {
+    const actions = props.actions[0] || [];
+    if (actions.length === 0) {
+        return null;
+    }
+    return (
+        <div className={classNames("active:bg-[#2b4c68] hover:cursor-pointer md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
+            <div className='text-[25px]  font-medium leading-[38px] text-white text-center'>{actions.label}</div>
+        </div>
+    );
 }
