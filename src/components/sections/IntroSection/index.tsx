@@ -66,7 +66,7 @@ export default function IntroSection(props) {
 
                 <div className={classNames(
                     'max-w-[63%] md:flex  w-[100%] h-auto min-h-[250px]',
-                    'hidden flex-col xl:flex-row absolute top-[-110px] mx-auto left-[20vw]',
+                    'hidden flex-col xl:flex-row absolute top-[-120px] mx-auto left-[17vw]',
                     'bg-white'
                 )} style={{
                     boxShadow: "0px 10px 30px #00000029"
@@ -82,11 +82,10 @@ export default function IntroSection(props) {
                         )} alt="" />
                     </div>
                     <div className={classNames(
-                        'leading-[46px] max-w-[557px] mb-4 mt-4 xl:mb-0 mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]'
+                        'leading-[46px] max-w-[557px] mb-4 mt-4 xl:mb-0 mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px] font-medium'
                     )} style={{
                         fontFamily: 'Poppins',
                         fontStyle: 'normal',
-                        fontWeight: 'normal',
                         fontSize: '30px',
                         color: 'rgba(23,52,80,1)'
                     }}>{props.headerBoxTitle}</div>
@@ -98,18 +97,17 @@ export default function IntroSection(props) {
                     color: "rgba(23,52,80,1)"
                 }}>{title}</div>
                 <div className={classNames(
-                    'flex xl:flex-row flex-col justify-center'
+                    'flex xl:flex-row pl-0 md:pl-[140px] flex-col justify-center'
                 )}>
                     <div className={classNames(
                         "max-w-[899px] w-full order-last xl:order-1"
                     )}>
                         <div className={classNames(
-                            "text-[60px] hidden md:block leading-[90px] mt-0 xl:mt-[305px]"
+                            "text-[60px] hidden md:block font-semibold leading-[90px] mt-0 xl:mt-[305px]"
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
                             fontStyle: "normal",
-                            fontWeight: "bold",
                             fontSize: "60px",
                             color: "rgba(23,52,80,1)"
                         }}>{title}</div>
@@ -138,8 +136,8 @@ export default function IntroSection(props) {
                             'absolute top-[-9px] left-[4vw]',
                         )}> </div> */}
                         <img src={sectionImage} className={classNames(
-                            "h-full md:max-h-[798px] md:max-w-[800px]  w-auto",
-                            'max-h-[227px] max-w-[302px] mx-auto',
+                            "h-auto md:max-h-[798px] md:max-w-[800px]  w-full",
+                            'max-h-[227px] max-w-[238px] mx-auto',
                         )} alt="" />
                     </div>
                 </div>
@@ -159,13 +157,13 @@ export default function IntroSection(props) {
                 <div className={classNames(
                     'md:leading-[90px]',
                     'md:text-[60px] font-normal',
-                    'text-center font-bold',
+                    'text-center font-semibold',
                     'md:block hidden'
                 )} style={{
                     fontFamily: "Poppins",
                     color: "rgba(23,52,80,1)"
                 }}>{bottomTitle}</div>
-                <div className={classNames("md:flex hidden flex-col lg:flex-row pl-[52px] justify-center")}>
+                <div className={classNames("md:flex hidden items-center	 flex-col lg:flex-row justify-center")}>
                     {props.benefits.map((item, index) => {
                         return (
                             <div key={index} className={classNames(
@@ -240,7 +238,7 @@ function heroActions(props) {
                     data-sb-field-path=".actions"
                 >
                     {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3 mx-2  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
+                        <Action key={index} {...action} className="mb-3 mx-2  max-w-[456px] w-full max-h-[95px]  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
                     ))}
                 </div>
             </div>
