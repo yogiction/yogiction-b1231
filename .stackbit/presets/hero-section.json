@@ -5,7 +5,7 @@
             "label": "Hero light - image right",
             "thumbnail": "images/hero-section.png",
             "data":   {
-                        "internalName": ""
+                        "internalName": "Default Hero Section",
                         "actions": [ 
                         {
                             "$$type": "Button",
