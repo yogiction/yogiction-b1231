@@ -7,223 +7,33 @@
             "data": {
                 "title": "Newtopia Template",
                 "sections": 
-                [
+                 [
                     {
-                        "$$type": "HeroSection",
-                        "actions": [ 
-                        {
-                            "$$type": "Button",
-                            "label": "SIGN UP NOW",
-                            "style": "secondary",
-                            "url": "https://member.dev.newtopia.com/a/account-creation"
-                        }
-                        ],
-                        "backgroundImage": {
-                            "$$type": "ImageBlock",
-                            "altText": "altText of the image",
-                            "caption": "Caption of the image",
-                            "url": { "$$ref": "ozaTxtiv6kUtbrPdr0efJ" }
-                        },
-                        "logo": {
-                            "$$type": "ImageBlock",
-                            "altText": "altText of the image",
-                            "caption": "Caption of the image",
-                            "url": { "$$ref": "3SZifNNSyfp39WZJD2WuQC"}
-                        },
-                        "styles": {
-                            "self": {
-                                "width": "wide",
-                                "height": "auto",
-                                "margin": [
-                                    "mt-0",
-                                    "mb-0",
-                                    "ml-0",
-                                    "mr-0"
-                                ],
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "justifyContent": "center"
-                            },
-                            "text": {
-                                "textAlign": "left"
-                            },
-                            "title": {
-                                "color": "#ffffff",
-                                "textAlign": "left",
-                                "fontFamily": "Poppins",
-                                "fontWeight": "600"
-                            },
-                            "actions": {
-                                "marginRight": "16%",
-                                "justifyContent": "flex-end"
-                            },
-                            "subtitle": {
-                                "textAlign": "left"
-                            }
-                        },
-                        "subtitle": "One platform, one community.",
-                        "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.\nAenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet\nerat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat\nvitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
-                        "title": "Health Habits for Life"
+                        "$$ref": "1OGLUNXixmGWr4guaR6OrB"
                     },
                     {
-                        "$$type": "HowItWorksSection",
-                        "benefit1Description": "Learn from like-minded participants who are experiencing similar challenges on their own health journeys.",
-                        "benefit1Title": "Find Community",
-                        "benefit2Description": "Take an optional and simple saliva test to help us understand how your genes play a role in your health.",
-                        "benefit2Title": "Genetics Testing",
-                        "benefitsTitle": "ADDITIONAL BENEFITS",
-                        "description": "The missing link to better health is often from not knowing enough about yourself. Join Newtopia for personalized health coaching based on your personality, lifestyle, motivation and genetic makeup! A few quick steps will unlock your deeply personalized experience, complete with access to a personality-matched coach to support your best self",
-                        "internalName": "How It Works Section",
-                        "title": "How it works",
-                        "actions": {
-                            "$$type": "Button",
-                            "label": "SIGN UP NOW",
-                            "style": "secondary",
-                            "url": "https://member.dev.newtopia.com/a/account-creation"
-                        },
-                        "steps": [
-                            {
-                                "$$type": "howItWorksSteps",
-                                "internalName": "Step 1",
-                                "title": "Take 10 minutes to get started",
-                                "description": "Tell us about yourself so we can create a program that's tailored to you and your goals."
-                            },
-                            {
-                                "$$type": "howItWorksSteps",
-                                "internalName": "Step 2",
-                                "title": "Meet your inspirator",
-                                "description": "Book a meeting with your personality-matched Inspirator (health coach) for a one-on-one session."
-                            },
-                            {
-                                "$$type": "howItWorksSteps",
-                                "internalName": "Step 3",
-                                "title": "Get going",
-                                "description": "Time to put in the work. Follow along with your tailored program and track progress. Our Inspirators support you every step of the way."
-                            },
-                            {
-                                "$$type": "howItWorksSteps",
-                                "internalName": "Step 4",
-                                "title": "Become your best self",
-                                "description": "Improve your overall well-being, enjoy life with increased energy, and find a support system to help maintain your goals."
-                            }
-                        ]
+                        "$$ref": "1vuhKKBu0JWcgSUdPSagnj"
                     },
                     {
-                        "$$type": "TestimonialsSection",
-                        "testimonials": [
-                            {
-                                "$$type": "Testimonial",
-                                "clientDesignation": "Participant, Regional Manager",
-                                "clientImage": {
-                                    "$$type": "ImageBlock",
-                                    "altText": "Client Image",
-                                    "caption": "Caption of the image",
-                                    "url": { "$$ref": "7CL8JbtFNwAFLssXF72NV4" }
-                                },
-                                "clientName": "MARY-ANNE",
-                                "reviewDescription": "I chose Newtopia because I'd never done a program that had a coach and also because of the genetic testing component. I'm trying to do more things in my daily life to get more steps. I'm not as winded when I do a flight of stairs. I used to climb one flight, now I can climb three!",
-                                "reviewTitle": "\"I feel much better. My blood pressure has decreased. My medication has decreased by half. By next year I'll be off my meds completely.\""
-                            },
-                            {
-                                "$$type": "Testimonial",
-                                "clientDesignation": "Participant, Regional Manager",
-                                "clientImage": {
-                                    "$$type": "ImageBlock",
-                                    "altText": "Client Image",
-                                    "caption": "Caption of the image",
-                                    "url": { "$$ref": "7CL8JbtFNwAFLssXF72NV4" }
-                                },
-                                "clientName": "MARY-ANNE",
-                                "reviewDescription": "I chose Newtopia because I'd never done a program that had a coach and also because of the genetic testing component. I'm trying to do more things in my daily life to get more steps. I'm not as winded when I do a flight of stairs. I used to climb one flight, now I can climb three!",
-                                "reviewTitle": "\"I feel much better. My blood pressure has decreased. My medication has decreased by half. By next year I'll be off my meds completely.\""
-                            }
-                        ],
-                        "elementId": "Testimoinal Section",
-                        "title": "Here is what our participants are saying",
-                        "variant": "variant-a"
+                        "$$ref": "1zDtl38iOs6PVcmQ0nOySb"
                     },
                     {
-                        "$$type": "CtaSection",
-                        "backgroundColor": "#173450",
-                        "elementId": "null",
-                        "internalName": "CTA Section",
-                        "leftSectionTitle": "Healthier habits to last you a lifetime.",
-                        "rightSectionTitle": "Get Started Today!",
-                        "actions": [
-                            {
-                                "$$type": "Button",
-                                "label": "SIGN UP NOW",
-                                "style": "secondary",
-                                "url": "/"
-                            }
-                        ]
+                        "$$ref": "2SFduY5Sfv4ADri6C7huIP"
                     },
                     {
-                        "$$type": "AboutusSection",
-                        "internalName": "Aboutus Section",
-                        "text": "Newtopia inspires healthy habit change through personalized one-on-one coaching. You'll learn to eat healthier, stay active, lower your stress, and lose weight to become your best self.",
-                        "text1": "You will be personality matched with a Newtopia Inspirator (health coach). We provide you with personalized recommendations tailored to fit your personality, lifestyle and genetic profile. You'll also receive a free Fitbit [for clients that offer], smart scale and mobile app to track your goals, nutrition, activity, and weight progress all in one place.",
-                        "title": "This isn't your traditional weight loss program. It's so much more!",
-                        "titleHeader": "Our Story",
-                        "actions": [
-                            {
-                                "$$type": "Button",
-                                "label": "SIGN UP NOW",
-                                "style": "secondary",
-                                "url": "/"
-                            }
-                        ]
+                        "$$ref": "2kYjmeeB4Niv3hlu26vYNG"
                     },
                     {
-                        "$$type": "VideoSection",
-                        "internalName": "Video Section",
-                        "videoLink": "https://player.vimeo.com/video/686836566?h=46706a9218"
+                        "$$ref": "5eCI7MQKcbaNVJTTl8h3aG"
                     },
                     {
-                        "$$type": "Footer",
-                        "label": "Default Footer Section",
-                        "thumbnail": "images/footer-section.png",
-                          "data":   {
-                                   "internalName": "Default Footer Section",
-                                    "colors": "colors-h",
-                                    "title": "Newtopia",
-                                    "contacts": {
-                                        "$$ref": "3qdyiTHNBPH6uHugpdjOV4"
-                                    },
-                                    "copyrightText": "Powered by [Stackbit](https://www.stackbit.com/)",
-                                    "legalLinks": [
-                                        {
-                                            "$$ref": "2CfRrwRst5VzrvdnfoR2gb"
-                                        },
-                                        {
-                                            "$$ref": "42TvNaSA9LBlK1yJHXLXeb"
-                                        }
-                                    ],
-                                    "primaryLinks": [
-                                        { "$$ref": "4ScmAw8GTNOQaHgq3xcB0t" },
-                                        { "$$ref": "SpSENVlQ5mqgGkgS8Tbaq" },
-                                        { "$$ref": "40DUY7peQA4fgMycvFEjm7" },
-                                        { "$$ref": "43EdqpYM83tOolfuidXVcd" }
-                                    ],
-                                    "socialLinks": [
-                                        { "$$ref": "5TrW3CK97Qd0FBwMt3g9Je" },
-                                        { "$$ref": "62rxx1zTKPhTJPEGDgyuLK" },
-                                        { "$$ref": "1yByujjR3WggshHSOLehSN" },
-                                        { "$$ref": "564996V1uB57C4NLuZOK1b" }
-                                    ],
-                                    "text": "A description of your brand",
-                                    "styles": {
-                                        "self": {
-                                            "width": "narrow",
-                                            "padding": [
-                                                "pt-16",
-                                                "pb-16",
-                                                "pr-[140px]",
-                                                "pl-[140px]"
-                                            ]
-                                        }
-                                    }
-                          }
+                        "$$ref": "2SFduY5Sfv4ADri6C7huIP"
+                    },
+                    {
+                        "$$ref": "1vZBW7yJ0B1BjjEiVadmmI"
+                    },
+                    {
+                        "$$ref": "7qGPC4Ysy264MdIgPMZ97M"
                     }
                 ]
             }
