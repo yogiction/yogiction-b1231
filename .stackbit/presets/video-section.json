@@ -2,7 +2,7 @@
     "model": "VideoSection",
     "presets": [
         {
-            "label": "Default Testimonial Section",
+            "label": "Default Video Section",
             "thumbnail": "images/testimonialsection.png",
               "data":   {
                         "internalName": "Default Testimonial Section",
