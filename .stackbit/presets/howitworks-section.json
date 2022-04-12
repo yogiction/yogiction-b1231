@@ -6,11 +6,9 @@
             "thumbnail": "images/howitworksection.png",
             "data":   {
                         "internalName": "Default HowItWorks Section",
-                        "actions": [ 
-                         {
+                        "actions": {
                               "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
-                        }
-                        ],
+                        },
                         "benefit1Description": "Learn from like-minded participants who are experiencing similar challenges on their own health journeys.",
                         "benefit1Title": "Find Community",
                         "benefit2Description": "Take an optional and simple saliva test to help us understand how your genes play a role in your health.",
