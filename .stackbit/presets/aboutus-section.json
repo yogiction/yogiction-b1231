@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Aboutus Default Section",
-            "thumbnail": "images/.png",
+            "thumbnail": "images/aboutus-section-default.png",
             "data": {
                 "colors": "colors-h",
                 "title": "Contact us",
