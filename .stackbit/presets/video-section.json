@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Default Video Section",
-            "thumbnail": "images/testimonialsection.png",
+            "thumbnail": "images/video-section.png",
               "data":   {
                         "internalName": "Default Video Section",
                         "videoLink": "https://player.vimeo.com/video/686836566?h=46706a9218"
