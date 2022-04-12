@@ -2,7 +2,7 @@
     "model": "HowItWorksSection",
     "presets": [
         {
-            "label": "Default Intro Section",
+            "label": "Default HowItWorksSection Section",
             "thumbnail": "images/intro-section.png",
             "data":   {
                         "internalName": "Default Intro Section",
