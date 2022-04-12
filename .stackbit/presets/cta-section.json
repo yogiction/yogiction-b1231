@@ -2,7 +2,7 @@
     "model": "CtaSection",
     "presets": [
         {
-            "label": "Aboutus Default Section",
+            "label": "Default Section",
             "thumbnail": "images/aboutus-section-default.png",
             "data": {
                         "text": "Newtopia inspires healthy habit change through personalized one-on-one coaching. You'll learn to eat healthier, stay active, lower your stress, and lose weight to become your best self.",
