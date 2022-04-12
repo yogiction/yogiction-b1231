@@ -10,6 +10,7 @@ export default function HowItWorksSection(props) {
     const bgSize = props.backgroundSize || 'full';
     const sectionStyles = props.styles?.self || {};
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
+    const steps = props.steps;
     return (
         <div
             id={cssId}
