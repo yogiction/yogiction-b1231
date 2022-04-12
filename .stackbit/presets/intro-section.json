@@ -5,7 +5,7 @@
             "label": "Default Intro Section",
             "thumbnail": "images/intro-section.png",
             "data":   {
-                        "internalName": "Default Hero Section",
+                        "internalName": "Default Intro Section",
                         "actions": [ 
                          {
                               "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
