@@ -1,5 +1,5 @@
 type: object
-name: Intro Section
+name: IntroSection
 label: IntroSection
 labelField: title
 thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
