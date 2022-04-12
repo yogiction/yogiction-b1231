@@ -7,7 +7,7 @@ fields:
   - type: string
     name: internalName
     label: Internal Name
-    default: This is a new page
+    default: New Page
   - type: string
     name: title
     label: Title
