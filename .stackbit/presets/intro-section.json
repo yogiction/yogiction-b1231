@@ -1,5 +1,5 @@
 {
-    "model": "HeroSection",
+    "model": "IntroSection",
     "presets": [
         {
             "label": "Hero light - image right",
