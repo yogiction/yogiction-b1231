@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Default Footer Section",
-            "thumbnail": "images/video-section.png",
+            "thumbnail": "images/footer-section.png",
               "data":   {
                        "internalName": "Default Footer Section",
                         "colors": "colors-h",
