@@ -2,7 +2,36 @@
     "model": "TestimonialsSection",
     "presets": [
         {
-            
+             "testimonials": [
+                            {
+                                "$$type": "Testimonial",
+                                "clientDesignation": "Participant, Regional Manager",
+                                "clientImage": {
+                                    "$$type": "ImageBlock",
+                                    "altText": "Client Image",
+                                    "caption": "Caption of the image",
+                                    "url": { "$$ref": "7CL8JbtFNwAFLssXF72NV4" }
+                                },
+                                "clientName": "MARY-ANNE",
+                                "reviewDescription": "I chose Newtopia because I'd never done a program that had a coach and also because of the genetic testing component. I'm trying to do more things in my daily life to get more steps. I'm not as winded when I do a flight of stairs. I used to climb one flight, now I can climb three!",
+                                "reviewTitle": "\"I feel much better. My blood pressure has decreased. My medication has decreased by half. By next year I'll be off my meds completely.\""
+                            },
+                            {
+                                "$$type": "Testimonial",
+                                "clientDesignation": "Participant, Regional Manager",
+                                "clientImage": {
+                                    "$$type": "ImageBlock",
+                                    "altText": "Client Image",
+                                    "caption": "Caption of the image",
+                                    "url": { "$$ref": "7CL8JbtFNwAFLssXF72NV4" }
+                                },
+                                "clientName": "MARY-ANNE",
+                                "reviewDescription": "I chose Newtopia because I'd never done a program that had a coach and also because of the genetic testing component. I'm trying to do more things in my daily life to get more steps. I'm not as winded when I do a flight of stairs. I used to climb one flight, now I can climb three!",
+                                "reviewTitle": "\"I feel much better. My blood pressure has decreased. My medication has decreased by half. By next year I'll be off my meds completely.\""
+                            }
+                        ],
+                        "title": "Here is what our participants are saying",
+                        "variant": "variant-a"
         }
     ]
 }
