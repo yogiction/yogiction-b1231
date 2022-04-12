@@ -2,7 +2,7 @@
     "model": "AboutusSection",
     "presets": [
         {
-            "label": "Aboutus Da",
+            "label": "Aboutus Default Section",
             "thumbnail": "images/contact-light-no-media.png",
             "data": {
                 "colors": "colors-h",
