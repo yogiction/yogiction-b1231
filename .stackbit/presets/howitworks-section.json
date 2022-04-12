@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Default HowItWorks Section",
-            "thumbnail": "images/intro-section.png",
+            "thumbnail": "images/howitworks.png",
             "data":   {
                         "internalName": "Default Intro Section",
                         "actions": [ 
