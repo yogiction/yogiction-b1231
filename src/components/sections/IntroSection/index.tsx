@@ -21,7 +21,6 @@ export default function IntroSection(props) {
                 'flex flex-col  mx-auto ',
                 'bg-white containershadow'
             )}>
-                {console.log(props)}
                 <div className={classNames(
                     'max-w-[219px] w-[100%] h-auto',
                     'max-h-[123px] mt-[8px] mx-auto'
