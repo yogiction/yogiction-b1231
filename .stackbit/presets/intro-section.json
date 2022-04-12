@@ -18,39 +18,7 @@
                            "$$ref": "5nzUIZe6uXznvUjz0YmP3x"
                         },
                         "styles": {
-                            "self": {
-                                "width": "wide",
-                                "height": "auto",
-                                "margin": [
-                                    "mt-0",
-                                    "mb-0",
-                                    "ml-0",
-                                    "mr-0"
-                                ],
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "justifyContent": "center"
-                            },
-                            "text": {
-                                "textAlign": "left"
-                            },
-                            "title": {
-                                "color": "#ffffff",
-                                "textAlign": "left",
-                                "fontFamily": "Poppins",
-                                "fontWeight": "600"
-                            },
-                            "actions": {
-                                "marginRight": "16%",
-                                "justifyContent": "flex-end"
-                            },
-                            "subtitle": {
-                                "textAlign": "left"
-                            }
-                        },
-                        "subtitle": "One platform, one community.",
-                        "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.\nAenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet\nerat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat\nvitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
-                        "title": "Health Habits for Life"
+                            "self"
                     }
                     
         }
