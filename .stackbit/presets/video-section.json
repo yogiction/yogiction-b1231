@@ -1,0 +1,25 @@
+{
+    "model": "TestimonialsSection",
+    "presets": [
+        {
+            "label": "Default Testimonial Section",
+            "thumbnail": "images/testimonialsection.png",
+              "data":   {
+                        "internalName": "Default Testimonial Section",
+             "testimonials": [
+                            {
+                                "$$ref": "666CXoQVpErDUklVU0F687"
+                            },
+                            {
+                                "$$ref": "1TbXMPsSgWPZ8Tluua0b5M"
+                            },
+                            {
+                                "$$ref": "666CXoQVpErDUklVU0F687"
+                            }
+                        ],
+                        "title": "Here is what our participants are saying",
+                        "variant": "variant-a"
+              }
+        }
+    ]
+}
