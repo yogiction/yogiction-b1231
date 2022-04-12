@@ -178,6 +178,52 @@
                         "$$type": "VideoSection",
                         "internalName": "Video Section",
                         "videoLink": "https://player.vimeo.com/video/686836566?h=46706a9218"
+                    },
+                    {
+                        "$$type": "Footer",
+                        "label": "Default Footer Section",
+                        "thumbnail": "images/footer-section.png",
+                          "data":   {
+                                   "internalName": "Default Footer Section",
+                                    "colors": "colors-h",
+                                    "title": "Newtopia",
+                                    "contacts": {
+                                        "$$ref": "3qdyiTHNBPH6uHugpdjOV4"
+                                    },
+                                    "copyrightText": "Powered by [Stackbit](https://www.stackbit.com/)",
+                                    "legalLinks": [
+                                        {
+                                            "$$ref": "2CfRrwRst5VzrvdnfoR2gb"
+                                        },
+                                        {
+                                            "$$ref": "42TvNaSA9LBlK1yJHXLXeb"
+                                        }
+                                    ],
+                                    "primaryLinks": [
+                                        { "$$ref": "4ScmAw8GTNOQaHgq3xcB0t" },
+                                        { "$$ref": "SpSENVlQ5mqgGkgS8Tbaq" },
+                                        { "$$ref": "40DUY7peQA4fgMycvFEjm7" },
+                                        { "$$ref": "43EdqpYM83tOolfuidXVcd" }
+                                    ],
+                                    "socialLinks": [
+                                        { "$$ref": "5TrW3CK97Qd0FBwMt3g9Je" },
+                                        { "$$ref": "62rxx1zTKPhTJPEGDgyuLK" },
+                                        { "$$ref": "1yByujjR3WggshHSOLehSN" },
+                                        { "$$ref": "564996V1uB57C4NLuZOK1b" }
+                                    ],
+                                    "text": "A description of your brand",
+                                    "styles": {
+                                        "self": {
+                                            "width": "narrow",
+                                            "padding": [
+                                                "pt-16",
+                                                "pb-16",
+                                                "pr-[140px]",
+                                                "pl-[140px]"
+                                            ]
+                                        }
+                                    }
+                          }
                     }
                 ]
             }
