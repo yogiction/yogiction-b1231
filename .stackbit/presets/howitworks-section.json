@@ -21,16 +21,16 @@
                         "title": "How it works",
                         "steps": [
                             {
-                                "$$": "62vZ8qbUf09XMuJfsJRfTE"
+                                "$$ref": "62vZ8qbUf09XMuJfsJRfTE"
                             },
                             {
-                                "$$type": "VgjjVVBpP8nT8m8Cmtb1c"
+                                "$$ref": "VgjjVVBpP8nT8m8Cmtb1c"
                             },
                             {
-                                "$$type": "2wpuFdCyfBDE43Vye1l5N5"
+                                "$$ref": "2wpuFdCyfBDE43Vye1l5N5"
                             },
                             {
-                                "$$type": "4pfsObt2oo4KryxZnuaGQz"
+                                "$$ref": "4pfsObt2oo4KryxZnuaGQz"
                             }
                         ]
                     }
