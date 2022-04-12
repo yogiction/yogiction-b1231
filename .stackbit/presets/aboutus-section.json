@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Aboutus Default Section",
-            "thumbnail": "images/contact-light-no-media.png",
+            "thumbnail": "images/.png",
             "data": {
                 "colors": "colors-h",
                 "title": "Contact us",
