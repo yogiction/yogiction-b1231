@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Default Intro Section",
-            "thumbnail": "images/hero-section.png",
+            "thumbnail": "images/intro-section.png",
             "data":   {
                         "internalName": "Default Hero Section",
                         "actions": [ 
