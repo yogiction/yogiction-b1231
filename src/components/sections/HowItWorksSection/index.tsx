@@ -105,12 +105,14 @@ export default function HowItWorksSection(props) {
                         'text-[#173450]'
                     )} style={{
                     }}>{props.benefit1Title}</h1>
-                    <p className={classNames('mb-[50px] md:mb-[55px] leading-[27px]',
+                    <p className={classNames(
+                        'mb-[50px] md:mb-[55px] leading-[27px]',
                         'md:leading-[60px] mx-[30px] md:mx-[55px] text-center',
                         'font-[Poppins]',
                         'font-normal',
                         'text-[18px] md:text-[40px]',
-                        'text-[#173450]')}>{props.benefit1Description}</p>
+                        'text-[#173450]'
+                    )}>{props.benefit1Description}</p>
                 </div>
                 <div
                     className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] xl:mt-0 xl:ml-[25px] bg-[#a6bf36]")}>

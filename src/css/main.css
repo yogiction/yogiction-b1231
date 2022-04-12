@@ -694,3 +694,11 @@
     background-size: 154px 200px, 156px 201px;
     background-position: -18px 832px, 100% 253px;
 }
+
+.greenbg {
+    width: 201px;
+    height: 201px;
+    background: transparent radial-gradient(closest-side at 50% 50%, var(--unnamed-color-c1ece7) 0%, #F5E1CC00 100%, #F5E1CC00 100%) 0% 0% no-repeat padding-box;
+    background: transparent radial-gradient(closest-side at 50% 50%, #C1ECE7 0%, #F5E1CC00 100%, #F5E1CC00 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}

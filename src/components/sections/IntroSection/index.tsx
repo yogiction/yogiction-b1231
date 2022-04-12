@@ -57,8 +57,8 @@ export default function IntroSection(props) {
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.margin,
                     'bg-no-repeat bg-center bg-[#e1e6ea] bg-cover',
-                    'lg:pl-[140px] pl-0 pb-[60px] md:pb-[200px] relative',
-                    'introsectionbg',
+                    ' pl-0 pb-[60px] md:pb-[200px] relative',
+                    'introsectionbg ',
                     sectionStyles.borderColor,
                     sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
                     sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
@@ -85,7 +85,6 @@ export default function IntroSection(props) {
                         'leading-[46px] max-w-[557px] mb-4 mt-4 xl:mb-0 mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px] font-medium'
                     )} style={{
                         fontFamily: 'Poppins',
-                        fontStyle: 'normal',
                         fontSize: '30px',
                         color: 'rgba(23,52,80,1)'
                     }}>{props.headerBoxTitle}</div>
@@ -107,7 +106,6 @@ export default function IntroSection(props) {
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
-                            fontStyle: "normal",
                             fontSize: "60px",
                             color: "rgba(23,52,80,1)"
                         }}>{title}</div>
@@ -118,7 +116,6 @@ export default function IntroSection(props) {
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
-                            fontStyle: "normal",
                             fontWeight: "normal",
                             color: "rgba(23,52,80,1)",
                         }}>{description}</div>
