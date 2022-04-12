@@ -30,36 +30,6 @@
                             "url": { "$$ref": "3SZifNNSyfp39WZJD2WuQC"}
                         },
                         "styles": {
-                            "self": {
-                                "width": "wide",
-                                "height": "auto",
-                                "margin": [
-                                    "mt-0",
-                                    "mb-0",
-                                    "ml-0",
-                                    "mr-0"
-                                ],
-                                "alignItems": "center",
-                                "flexDirection": "row",
-                                "justifyContent": "center"
-                            },
-                            "text": {
-                                "textAlign": "left"
-                            },
-                            "title": {
-                                "color": "#ffffff",
-                                "textAlign": "left",
-                                "fontFamily": "Poppins",
-                                "fontWeight": "600"
-                            },
-                            "actions": {
-                                "marginRight": "16%",
-                                "justifyContent": "flex-end"
-                            },
-                            "subtitle": {
-                                "textAlign": "left"
-                            }
-                        }
                     }
         }
     ]
