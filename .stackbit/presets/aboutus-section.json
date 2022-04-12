@@ -2,7 +2,6 @@
     "model": "AboutusSection",
     "presets": [
         {
-                        "$$type": "HeroSection",
                         "actions": [ 
                         {
                             "$$type": "Button",
