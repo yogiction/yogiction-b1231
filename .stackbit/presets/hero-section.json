@@ -15,10 +15,7 @@
                             "$$ref": "3FxjW9cVzJQGltHUcgxysZ" 
                         },
                         "logo": {
-                            "$$type": "ImageBlock",
-                            "altText": "altText of the image",
-                            "caption": "Caption of the image",
-                            "url": { "$$ref": "3SZifNNSyfp39WZJD2WuQC"}
+                           "$$ref": "3SZifNNSyfp39WZJD2WuQC"
                         },
                         "styles": {
                             "self": {
