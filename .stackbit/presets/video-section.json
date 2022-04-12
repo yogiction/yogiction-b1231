@@ -5,7 +5,7 @@
             "label": "Default Video Section",
             "thumbnail": "images/testimonialsection.png",
               "data":   {
-                        "internalName": "Default Testimonial Section",
+                        "internalName": "Default Video Section",
              "testimonials": [
                             {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
