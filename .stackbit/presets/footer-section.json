@@ -2,7 +2,7 @@
     "model": "FooterSection",
     "presets": [
         {
-            "label": "Default Video Section",
+            "label": "Default Footer Section",
             "thumbnail": "images/video-section.png",
               "data":   {
                         "internalName": "Default Video Section",
