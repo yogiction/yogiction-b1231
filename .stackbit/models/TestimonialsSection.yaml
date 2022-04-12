@@ -1,7 +1,7 @@
 type: object
 name: TestimonialsSection
-label: Testimonials
-labelField: title
+label: Testimonials Section
+labelField: title 
 thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
 extends:
   - Section
