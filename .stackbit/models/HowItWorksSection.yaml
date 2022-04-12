@@ -1,6 +1,6 @@
 type: object
 name: HowItWorksSection
-label: Aboutus
+label: HowItWorksSection
 labelField: title
 thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
 extends:
