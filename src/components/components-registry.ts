@@ -62,5 +62,5 @@ const components = {
     'HowItWorksSection': dynamic(() => import('./sections/HowItWorksSection')),
     'VideoSection': dynamic(() => import('./sections/VideoSection')),
     'IntroSection': dynamic(() => import('./sections/IntroSection')),
-    'Footer': dynamic(() => import('./sections/IntroSection'))
+    'Footer': dynamic(() => import('./sections/Footer'))
 };
