@@ -2,7 +2,7 @@
     "model": "TestimonialsSection",
     "presets": [
         {
-            "label": "Default Intro Section",
+            "label": "Default Testimonial Section",
             "thumbnail": "images/intro-section.png",
              "testimonials": [
                             {
