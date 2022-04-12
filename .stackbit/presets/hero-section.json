@@ -7,12 +7,9 @@
             "data":   {
                         "internalName": "Default Hero Section",
                         "actions": [ 
-                        {
-                            "$$type": "Button",
-                            "label": "SIGN UP NOW",
-                            "style": "secondary",
-                            "url": "https://member.dev.newtopia.com/a/account-creation"
-                        }
+                         {
+                              "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
+                            }
                         ],
                         "backgroundImage": {
                             "$$type": "ImageBlock",
