@@ -1,5 +1,5 @@
 {
-    "model": "HowSection",
+    "model": "HowItWorksSection",
     "presets": [
         {
             "label": "Default Intro Section",
