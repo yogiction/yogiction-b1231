@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Hero light - image right",
-            "thumbnail": "images/hero-light-image-right.png",
+            "thumbnail": "images/hero-section.png",
             "data": {
                 "colors": "colors-a",
                 "badge": {
