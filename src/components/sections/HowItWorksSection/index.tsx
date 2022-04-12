@@ -58,7 +58,7 @@ export default function HowItWorksSection(props) {
             )}
             >{props.description}</p>
             <div className={classNames('pt-[60px] z-20 md:pt-[156px] howitworksmobilebg')}>
-                {props.steps.map((step, index) => {
+                {steps.map((step, index) => {
                     return (<div key={index} className={classNames('flex mb-[50px]  px-[41px] flex-col md:flex-row justify-center',
                         (index === 3 ? ' md:mb-[118px]' : ' md:mb-[130px]'))}>
                         <div className={classNames(
