@@ -5,6 +5,7 @@
             "label": "Hero light - image right",
             "thumbnail": "images/hero-section.png",
             "data":   {
+                        "internalName": ""
                         "actions": [ 
                         {
                             "$$type": "Button",
