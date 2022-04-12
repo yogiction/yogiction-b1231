@@ -2,7 +2,7 @@
     "model": "IntroSection",
     "presets": [
         {
-            "label": "Hero light - image right",
+            "label": "Default Intro Section",
             "thumbnail": "images/hero-section.png",
             "data":   {
                         "internalName": "Default Hero Section",
