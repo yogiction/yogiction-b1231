@@ -1,6 +1,6 @@
 type: object
 name: IntroSection
-label: Aboutus
+label: IntroSection
 labelField: title
 thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
 extends:
