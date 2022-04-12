@@ -1,5 +1,5 @@
 {
-    "model": "FooterSection",
+    "model": "Footer",
     "presets": [
         {
             "label": "Default Footer Section",
