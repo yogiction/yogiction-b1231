@@ -1,5 +1,5 @@
 {
-    "model": "VideoSection",
+    "model": "FooterSection",
     "presets": [
         {
             "label": "Default Video Section",
