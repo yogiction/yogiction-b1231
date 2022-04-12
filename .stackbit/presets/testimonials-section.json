@@ -3,7 +3,7 @@
     "presets": [
         {
             "label": "Default Testimonial Section",
-            "thumbnail": "images/intro-section.png",
+            "thumbnail": "images/testimonialsection.png",
              "testimonials": [
                             {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
