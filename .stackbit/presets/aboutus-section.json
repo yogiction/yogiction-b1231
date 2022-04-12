@@ -6,6 +6,7 @@
             "thumbnail": "images/aboutus-section-default.png",
             "data": 
             {
+                        "$$type": "HeroSection",
                         "actions": [ 
                         {
                             "$$type": "Button",
