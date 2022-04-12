@@ -5,12 +5,19 @@
             "label": "Aboutus Default Section",
             "thumbnail": "images/aboutus-section-default.png",
             "data": 
-            {
-                        "$$type": "AboutusSection",
-                        "subtitle": "One platform, one community.",
-                        "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.\nAenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet\nerat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat\nvitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
-                        "title": "Health Habits for Life"
-            }
+            "internalName": "Aboutus Section",
+                        "text": "Newtopia inspires healthy habit change through personalized one-on-one coaching. You'll learn to eat healthier, stay active, lower your stress, and lose weight to become your best self.",
+                        "text1": "You will be personality matched with a Newtopia Inspirator (health coach). We provide you with personalized recommendations tailored to fit your personality, lifestyle and genetic profile. You'll also receive a free Fitbit [for clients that offer], smart scale and mobile app to track your goals, nutrition, activity, and weight progress all in one place.",
+                        "title": "This isn't your traditional weight loss program. It's so much more!",
+                        "titleHeader": "Our Story",
+                        "actions": [
+                            {
+                                "$$type": "Button",
+                                "label": "SIGN UP NOW",
+                                "style": "secondary",
+                                "url": "/"
+                            }
+                        ]
         }
     ]
 }
