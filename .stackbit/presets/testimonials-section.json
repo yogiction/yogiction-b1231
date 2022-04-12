@@ -2,21 +2,6 @@
     "model": "TestimonialsSection",
     "presets": [
         {
-            "label": "Testimonials light - with big image, text left",
-            "thumbnail": "images/testimonials-light-big-image.png",
-            "data": {
-                "colors": "colors-a",
-                "variant": "variant-a",
-                "title": "",
-                "subtitle": "",
-                "testimonials": [
-                    {
-                        "$$type": "Testimonial",
-                        "quote": "Such a great experience to be using this product. It really helped with what I needed help with.",
-                        "name": "Carla Rogers",
-                        "title": "Happy customer",
-                        "image": {
-
         }
     ]
 }
