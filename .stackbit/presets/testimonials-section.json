@@ -2,6 +2,8 @@
     "model": "TestimonialsSection",
     "presets": [
         {
+            "label": "Default Intro Section",
+            "thumbnail": "images/intro-section.png",
              "testimonials": [
                             {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
