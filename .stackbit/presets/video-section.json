@@ -5,6 +5,7 @@
             "label": "Default Video Section",
             "thumbnail": "images/testimonialsection.png",
               "data":   {
+                  {
                         "internalName": "Video Section",
                         "videoLink": "https://player.vimeo.com/video/686836566?h=46706a9218"
               }
