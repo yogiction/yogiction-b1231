@@ -11,10 +11,8 @@
                         "titleHeader": "Our Story",
                         "actions": [
                             {2Nq8j6W20VlT5I9bjfxFwV
-                                "$$type": "Button",
-                                "label": "SIGN UP NOW",
-                                "style": "secondary",
-                                "url": "/"
+                               
+                            "url": { "$$ref": "3SZifNNSyfp39WZJD2WuQC"}
                             }
                         ]
             }
