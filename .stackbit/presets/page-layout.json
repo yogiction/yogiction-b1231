@@ -2,7 +2,6 @@
     "model": "PageLayout",
     "presets": [
         {
-            "internalName": "Newtopia Default Page",
             "label": "Newtopia Template",
             "thumbnail": "images/newtopia.png",
             "data": {
