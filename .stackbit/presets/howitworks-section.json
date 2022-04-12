@@ -5,7 +5,7 @@
             "label": "Default HowItWorks Section",
             "thumbnail": "images/howitworksection.png",
             "data":   {
-                        "internalName": "Default Intro Section",
+                        "internalName": "Default HowItWorksSection Section",
                         "actions": [ 
                          {
                               "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
