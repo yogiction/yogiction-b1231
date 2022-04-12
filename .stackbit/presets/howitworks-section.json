@@ -17,7 +17,21 @@
                         "benefit2Title": "Genetics Testing",
                         "benefitsTitle": "ADDITIONAL BENEFITS",
                         "description": "The missing link to better health is often from not knowing enough about yourself. Join Newtopia for personalized health coaching based on your personality, lifestyle, motivation and genetic makeup! A few quick steps will unlock your deeply personalized experience, complete with access to a personality-matched coach to support your best self",
-                        "title": "How it works"
+                        "title": "How it works",
+                        "steps": [
+                            {
+                                "$$ref": "62vZ8qbUf09XMuJfsJRfTE"
+                            },
+                            {
+                                "$$ref": "VgjjVVBpP8nT8m8Cmtb1c"
+                            },
+                            {
+                                "$$ref": "2wpuFdCyfBDE43Vye1l5N5"
+                            },
+                            {
+                                "$$ref": "4pfsObt2oo4KryxZnuaGQz"
+                            }
+                        ]
                     }
                     
         }
