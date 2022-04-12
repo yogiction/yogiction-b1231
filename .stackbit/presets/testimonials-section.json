@@ -4,6 +4,8 @@
         {
             "label": "Default Testimonial Section",
             "thumbnail": "images/testimonialsection.png",
+              "data":   {
+                        "internalName": "Default Intro Section",
              "testimonials": [
                             {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
