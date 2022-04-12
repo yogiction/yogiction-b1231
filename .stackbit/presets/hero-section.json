@@ -4,58 +4,64 @@
         {
             "label": "Hero light - image right",
             "thumbnail": "images/hero-section.png",
-            "data": {
-                "colors": "colors-a",
-                "badge": {
-                    "$$type": "Badge",
-                    "label":"This is The badge"
-                },
-                "title": "Love where you work",
-                "subtitle": "",
-                "text": "One platform, one community, getting to the bottom line of everything employment.  Figure out your benefits, practice for interviews, get mentored, help peers, get helped in return.",
-                "actions": [
-                    {
-                        "$$type": "Button",
-                        "label": "Sign Up",
-                        "url": "/",
-                        "style": "primary"
-                    }
-                ],
-                "media": {
-                    "$$type": "ImageBlock",
-                    "url": {
-                        "$$ref": "qUVr161WvmcBvHHKj08uh"
-                    },
-                    "altText": "Hero image",
-                    "styles": {
-                        "self": {
+            "data":   {
+                        "$$type": "HeroSection",
+                        "actions": [ 
+                        {
+                            "$$type": "Button",
+                            "label": "SIGN UP NOW",
+                            "style": "secondary",
+                            "url": "https://member.dev.newtopia.com/a/account-creation"
                         }
-                    }
-                },
-                "styles": {
-                    "self": {
-                        "height": "auto",
-                        "width": "wide",
-                        "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                        "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
-                        "alignItems": "center",
-                        "justifyContent": "center",
-                        "flexDirection": "row"
+                        ],
+                        "backgroundImage": {
+                            "$$type": "ImageBlock",
+                            "altText": "altText of the image",
+                            "caption": "Caption of the image",
+                            "url": { "$$ref": "ozaTxtiv6kUtbrPdr0efJ" }
+                        },
+                        "logo": {
+                            "$$type": "ImageBlock",
+                            "altText": "altText of the image",
+                            "caption": "Caption of the image",
+                            "url": { "$$ref": "3SZifNNSyfp39WZJD2WuQC"}
+                        },
+                        "styles": {
+                            "self": {
+                                "width": "wide",
+                                "height": "auto",
+                                "margin": [
+                                    "mt-0",
+                                    "mb-0",
+                                    "ml-0",
+                                    "mr-0"
+                                ],
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                                "justifyContent": "center"
+                            },
+                            "text": {
+                                "textAlign": "left"
+                            },
+                            "title": {
+                                "color": "#ffffff",
+                                "textAlign": "left",
+                                "fontFamily": "Poppins",
+                                "fontWeight": "600"
+                            },
+                            "actions": {
+                                "marginRight": "16%",
+                                "justifyContent": "flex-end"
+                            },
+                            "subtitle": {
+                                "textAlign": "left"
+                            }
+                        },
+                        "subtitle": "One platform, one community.",
+                        "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.\nAenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet\nerat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat\nvitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
+                        "title": "Health Habits for Life"
                     },
-                    "title": {
-                        "textAlign": "left"
-                    },
-                    "subtitle": {
-                        "textAlign": "left"
-                    },
-                    "text": {
-                        "textAlign": "left"
-                    },
-                    "actions": {
-                        "justifyContent": "flex-start"
-                    }
-                }
-            }
+                    
         }
     ]
 }
