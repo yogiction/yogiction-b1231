@@ -25,7 +25,7 @@ export default function FeatureHighlightSection(props) {
                 'sb-component',
                 'sb-component-section',
                 'sb-component-feature-highlight-section',
-                bgSize === 'inset' ? 'flex': null,
+                bgSize === 'inset' ? 'flex' : null,
                 bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                 sectionStyles.margin
             )}
@@ -37,7 +37,7 @@ export default function FeatureHighlightSection(props) {
                     'flex-col',
                     'justify-center',
                     'relative',
-                    bgSize === 'inset' ? 'w-full': null,
+                    bgSize === 'inset' ? 'w-full' : null,
                     bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.padding || 'py-12 px-4',
@@ -54,7 +54,7 @@ export default function FeatureHighlightSection(props) {
                     className={classNames(
                         'relative',
                         'w-full',
-                        bgSize === 'full' ? 'flex': null,
+                        bgSize === 'full' ? 'flex' : null,
                         bgSize === 'full' ? mapStyles({ justifyContent: sectionJustifyContent }) : null
                     )}
                 >
@@ -77,7 +77,7 @@ export default function FeatureHighlightSection(props) {
                             )}
                         >
                             <div className="flex-1 w-full">
-                                <div
+                                {/* <div
                                     className={classNames({
                                         'lg:pr-1/4': props.media && sectionFlexDirection === 'row',
                                         'lg:pl-1/4': props.media && sectionFlexDirection === 'row-reverse',
@@ -85,7 +85,7 @@ export default function FeatureHighlightSection(props) {
                                 >
                                     {featureHighlightBody(props)}
                                     {featureHighlightActions(props)}
-                                </div>
+                                </div> */}
                             </div>
                             {props.media && (
                                 <div className="flex-1 w-full">
@@ -122,7 +122,7 @@ function featureHighlightBody(props) {
                     {props.title}
                 </h2>
             )}
-            
+
             {props.text && (
                 <Markdown
                     options={{ forceBlock: true, forceWrapper: true }}
