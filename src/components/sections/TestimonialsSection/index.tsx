@@ -1,20 +1,43 @@
+/* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
-import Markdown from 'markdown-to-jsx';
 import classNames from 'classnames';
-
-import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
-import ImageBlock from '../../molecules/ImageBlock';
+import { useSwipeable } from 'react-swipeable';
+
 
 export default function TestimonialsSection(props) {
     const cssId = props.elementId || null;
-    const variant = props.variant || 'variant-a';
     const colors = props.colors || 'colors-a';
     const styles = props.styles || {};
-    const sectionWidth = styles.self?.width || 'wide';
     const sectionHeight = styles.self?.height || 'auto';
-    const sectionJustifyContent = styles.self?.justifyContent || 'center';
     const testimonials = props.testimonials || [];
+    const [slideIndex, setSlideIndex] = React.useState(0)
+    const nextSlide = () => {
+        if (slideIndex !== (testimonials.length - 1)) {
+            setSlideIndex(slideIndex + 1)
+        }
+        else if (slideIndex === (testimonials.length - 1)) {
+            setSlideIndex(0);
+        }
+    }
+    const prevSlide = () => {
+        if (slideIndex === 0) {
+            const i = testimonials.length - 1;
+            setSlideIndex(i);
+        } else
+            if (slideIndex !== 1) {
+                setSlideIndex(slideIndex - 1)
+            }
+            else if (slideIndex === 1) {
+                setSlideIndex(slideIndex - 1)
+            }
+    }
+    const handlers = useSwipeable({
+        onSwipedLeft: () => nextSlide(),
+        onSwipedRight: () => prevSlide(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
     return (
         <div
             id={cssId}
@@ -29,192 +52,120 @@ export default function TestimonialsSection(props) {
                 'justify-center',
                 'relative',
                 mapMinHeightStyles(sectionHeight),
-                styles.self?.margin,
-                styles.self?.padding || 'py-12 px-4',
-                styles.self?.borderColor,
-                styles.self?.borderStyle ? mapStyles({ borderStyle: styles.self?.borderStyle }) : 'border-none',
-                styles.self?.borderRadius ? mapStyles({ borderRadius: styles.self?.borderRadius }) : null
+                'pt-[60px] md:pt-[200px] pb-[60px] md:pb-[197px] px-[41px] md:px-[140px]',
+                'sliderbg',
+                'bg-[#e1e6ea] '
             )}
             style={{
                 borderWidth: styles.self?.borderWidth ? `${styles.self?.borderWidth}px` : null
             }}
         >
-            <div className={classNames('flex', 'w-full', mapStyles({ justifyContent: sectionJustifyContent }))}>
-                <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
-                    {props.title && (
-                        <h2 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
-                            {props.title}
-                        </h2>
-                    )}
-                    {props.subtitle && (
-                        <p
-                            className={classNames('text-lg', 'sm:text-xl', styles.subtitle ? mapStyles(styles.subtitle) : null, { 'mt-6': props.title })}
-                            data-sb-field-path=".subtitle"
-                        >
-                            {props.subtitle}
-                        </p>
-                    )}
-                    {testimonials.length > 0 && (
-                        <div className={classNames('space-y-12', { 'mt-12': props.title || props.subtitle })} data-sb-field-path=".testimonials">
-                            {testimonials.map((testimonial, index) => {
-                                switch (variant) {
-                                    case 'variant-a':
-                                        return testimonialVariantA(testimonial, index);
-                                    case 'variant-b':
-                                        return testimonialVariantB(testimonial, index);
-                                    case 'variant-c':
-                                        return testimonialVariantC(testimonial, index);
-                                }
-                            })}
-                        </div>
-                    )}
-                </div>
+            <div className={classNames(
+                'w-[20px] hidden md:block z-20 h-[34px] absolute',
+                'bg-rightArrow cursor-pointer top-[1056px] right-[140px]',
+            )} onClick={() => {
+                nextSlide();
+            }} />
+            <div className={classNames(
+                'w-[20px] hidden md:block z-20 h-[34px] absolute',
+                'bg-leftArrow cursor-pointer top-[1055px] left-[140px]',
+            )} onClick={() => {
+                prevSlide();
+            }} />
+            <div className={classNames(
+                'text-center',
+                'font-[Poppins]',
+                'font-semibold',
+                'text-[25px] md:text-[60px]',
+                'leading-[38px] md:leading-[90px]',
+                'text-[#173450]'
+            )}>
+                {props.title}
+            </div>
+            <div {...handlers}>
+                {testimonials && testimonials.map((testimonial, index) => (
+                    <div key={index} className={classNames(
+                        '',
+                        slideIndex === index ? 'block animate-fade' : 'hidden animate-fade'
+                    )}>{testimonialSection(testimonial, index)}</div>))}
+                {testimonials && (
+                    <div className='flex justify-center mt-[60px] md:mt-[30px]'>
+                        {testimonials.map((testim, index) => {
+                            return <div key={index}
+                                className={classNames(
+                                    'mx-[5px] hover:cursor-pointer md:mx-[10px] h-[15px] w-[15px] rounded-lg',
+                                    slideIndex === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
+                                )} onClick={() => {
+                                    setSlideIndex(index);
+                                }} />
+                        })}
+                    </div>
+                )}
             </div>
         </div>
     );
 }
 
-function testimonialVariantA(testimonial, index) {
-    const styles = testimonial.styles || {};
+function testimonialSection(testimonial, index) {
     return (
-        <blockquote
-            key={index}
-            className="flex flex-col md:items-center md:flex-row"
-            data-sb-field-path={`.${index}`}
-        >
-            {testimonial.image && (
-                <div className="flex-shrink-0 max-w-lg mb-8 md:mb-0 md:mr-8 md:w-2/5" data-sb-field-path=".image">
-                    <ImageBlock {...testimonial.image} className="w-full rounded-2xl" />
-                </div>
-            )}
-            <div className="flex-grow">
-                {testimonial.quote && (
-                    <Markdown
-                        options={{ forceBlock: true, forceWrapper: true }}
-                        className="sb-markdown text-3xl sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
-                        data-sb-field-path=".quote"
-                    >
-                        {testimonial.quote}
-                    </Markdown>
-                )}
-                {(testimonial.name || testimonial.title) && (
-                    <footer className="mt-8 md:mt-12">
-                        {testimonial.name && (
-                            <div className={classNames('text-xl', 'sm:text-2xl', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
-                                {testimonial.name}
-                            </div>
-                        )}
-                        {testimonial.title && (
-                            <div className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-2': testimonial.name })} data-sb-field-path=".title">
-                                {testimonial.title}
-                            </div>
-                        )}
-                    </footer>
-                )}
+        <div className={classNames(
+            'flex flex-col justify-start mt-[60px] md:mt-[99px] ',
+            'max-w-[1258px] w-auto mx-auto md:min-h-[972px]',
+
+        )} key={index}>
+            <div className={classNames(
+                'overflow-hidden rounded-[50%]',
+                'max-w-[169px] md:max-w-[250px] w-full mx-auto',
+                'max-h-[169px] md:max-h-[250px] h-full',
+                'border-[15px] border-[#a6bf36]'
+            )}>
+                <img className={classNames(
+                    'h-full'
+                )} src={testimonial.clientImage.url} alt={testimonial.clientImage.altText} />
             </div>
-        </blockquote>
-    );
+            <h2 className={classNames(
+                'mt-[60px] md:mt-[50px]',
+                'font-[Poppins]',
+                'leading-[27px] md:leading-[60px]',
+                'text-[18px] md:text-[40px]',
+                'text-center',
+                'font-semibold',
+                'text-[#173450]',
+            )}>{testimonial.reviewTitle}</h2>
+            <h4 className={classNames(
+                'mt-[35px] md:mt-[50px]',
+                'font-normal',
+                'text-[18px] md:text-[40px]',
+                'leading-[27px] md:leading-[60px]',
+                'text-center',
+                'text-[#173450]',
+            )}>{testimonial.reviewDescription}</h4>
+            <h1 className={classNames(
+                'mt-[35px] md:mt-[50px]',
+                'text-[18px] md:text-[30px]',
+                'text-center',
+                'leading-[27px] md:leading-[46px]',
+                'font-semibold',
+                'text-[#173450]'
+            )}>{testimonial.clientName}</h1>
+            <h1 className={classNames(
+                'mt-[10px] md:mt-0 leading-[27px] md:leading-[46px]',
+                'text-[18px] md:text-[30px]',
+                'text-center',
+                'text-[#173450]',
+                'font-normal'
+            )}>{testimonial.clientDesignation}</h1>
+        </div>
+    )
 }
 
-function testimonialVariantB(testimonial, index) {
-    const styles = testimonial.styles || {};
-    return (
-        <blockquote
-            key={index}
-            data-sb-field-path={`.${index}`}
-        >
-            {testimonial.quote && (
-                <Markdown
-                    options={{ forceBlock: true, forceWrapper: true }}
-                    className="sb-markdown text-3xl sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
-                    data-sb-field-path=".quote"
-                >
-                    {testimonial.quote}
-                </Markdown>
-            )}
-            {(testimonial.name || testimonial.title || testimonial.image) && (
-                <footer className="flex items-center mt-12 md:mt-16">
-                    {testimonial.image && (
-                        <div className="flex-shrink-0 mr-8 w-20 sm:w-28" data-sb-field-path=".image">
-                            <ImageBlock {...testimonial.image} className="w-full" />
-                        </div>
-                    )}
-                    {(testimonial.name || testimonial.title) && (
-                        <div className="flex-grow">
-                            {testimonial.name && (
-                                <div className={classNames('text-xl', 'sm:text-2xl', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
-                                    {testimonial.name}
-                                </div>
-                            )}
-                            {testimonial.title && (
-                                <div className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-2': testimonial.name })} data-sb-field-path=".title">
-                                    {testimonial.title}
-                                </div>
-                            )}
-                        </div>
-                    )}
-                </footer>
-            )}
-        </blockquote>
-    );
-}
 
-function testimonialVariantC(testimonial, index) {
-    const styles = testimonial.styles || {};
-    return (
-        <blockquote
-            key={index}
-            className="text-center"
-            data-sb-field-path={`.${index}`}
-        >
-            {testimonial.quote && (
-                <Markdown
-                    options={{ forceBlock: true, forceWrapper: true }}
-                    className="sb-markdown text-3xl sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
-                    data-sb-field-path=".quote"
-                >
-                    {testimonial.quote}
-                </Markdown>
-            )}
-            {(testimonial.name || testimonial.title || testimonial.image) && (
-                <footer className="mt-12 md:mt-16">
-                    {testimonial.image && (
-                        <div className={classNames('mx-auto', 'w-20', 'sm:w-28', { 'mb-6': testimonial.name || testimonial.title })} data-sb-field-path=".image">
-                            <ImageBlock {...testimonial.image} className="w-full" />
-                        </div>
-                    )}
-                    {testimonial.name && (
-                        <div className={classNames('text-xl', 'sm:text-2xl', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
-                            {testimonial.name}
-                        </div>
-                    )}
-                    {testimonial.title && (
-                        <div className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-2': testimonial.name })} data-sb-field-path=".title">
-                            {testimonial.title}
-                        </div>
-                    )}
-                </footer>
-            )}
-        </blockquote>
-    );
-}
+
 
 function mapMinHeightStyles(height) {
     switch (height) {
         case 'screen':
             return 'min-h-screen';
-    }
-    return null;
-}
-
-function mapMaxWidthStyles(width) {
-    switch (width) {
-        case 'narrow':
-            return 'max-w-screen-md';
-        case 'wide':
-            return 'max-w-screen-xl';
-        case 'full':
-            return 'max-w-full';
     }
     return null;
 }

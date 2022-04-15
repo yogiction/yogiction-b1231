@@ -41,7 +41,23 @@ module.exports = {
                 bgbottomright: "url('/images/aboutusrightbg.png')",
                 aboutusbg1: "url('/images/aboutusbg1.png')",
                 aboutusbg2: "url('/images/aboutusbg2.png')",
-                howitworksbgsticker: "url('/images/howitworksbg1.png')"
+                howitworksbgsticker: "url('/images/howitworksbg1.png')",
+                rightArrow: "url('/images/righticon.png')",
+                leftArrow: "url('/images/lefticon.png')",
+                graybg: "url('/images/graybg.png')"
+            },
+            animation: {
+                'fade': 'fadeIn .7s linear',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': {
+                        opacity: '0',
+                    },
+                    '100%': {
+                        opacity: '1',
+                    },
+                },
             }
         }
     },

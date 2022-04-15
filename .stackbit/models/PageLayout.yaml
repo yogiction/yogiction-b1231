@@ -5,6 +5,10 @@ hideContent: true
 thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
 fields:
   - type: string
+    name: internalName
+    label: Internal Name
+    default: New Page
+  - type: string
     name: title
     label: Title
     default: This is a new page

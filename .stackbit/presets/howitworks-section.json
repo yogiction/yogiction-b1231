@@ -1,0 +1,37 @@
+{
+    "model": "HowItWorksSection",
+    "presets": [
+        {
+            "label": "Default HowItWorks Section",
+            "thumbnail": "images/howitworksection.png",
+            "data":   {
+                        "internalName": "Default HowItWorks Section",
+                        "actions": {
+                            "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
+                        },
+                        "benefit1Description": "Learn from like-minded participants who are experiencing similar challenges on their own health journeys.",
+                        "benefit1Title": "Find Community",
+                        "benefit2Description": "Take an optional and simple saliva test to help us understand how your genes play a role in your health.",
+                        "benefit2Title": "Genetics Testing",
+                        "benefitsTitle": "ADDITIONAL BENEFITS",
+                        "description": "The missing link to better health is often from not knowing enough about yourself. Join Newtopia for personalized health coaching based on your personality, lifestyle, motivation and genetic makeup! A few quick steps will unlock your deeply personalized experience, complete with access to a personality-matched coach to support your best self",
+                        "title": "How it works",
+                        "steps": [
+                            {
+                                "$$ref": "62vZ8qbUf09XMuJfsJRfTE"
+                            },
+                            {
+                                "$$ref": "VgjjVVBpP8nT8m8Cmtb1c"
+                            },
+                            {
+                                "$$ref": "2wpuFdCyfBDE43Vye1l5N5"
+                            },
+                            {
+                                "$$ref": "4pfsObt2oo4KryxZnuaGQz"
+                            }
+                        ]
+                    }
+                    
+        }
+    ]
+}

@@ -28,7 +28,6 @@ export default function HeroSection(props) {
                     'sb-component',
                     'sb-component-section',
                     'sb-component-hero-section',
-                    colors,
                     'flex',
                     'flex-col z-0',
                     'justify-center',
@@ -50,7 +49,7 @@ export default function HeroSection(props) {
                     <div>{heroActions(props)}</div>
                 </div>
             </div>
-            <div className={classNames("md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
+            <div className={classNames("md:hidden w-full active:bg-[#2b4c68] hover:cursor-pointer bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
                 <div className='text-[25px] font-medium leading-[38px] text-white text-center'>SIGN UP NOW</div>
             </div>
         </>
@@ -92,7 +91,7 @@ function heroActions(props) {
                     style={actionStyle}
                 >
                     {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3 mx-2 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
+                        <Action key={index} {...action} className="mb-3 mx-2  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
                     ))}
                 </div>
             </div>

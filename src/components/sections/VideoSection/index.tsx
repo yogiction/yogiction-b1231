@@ -2,7 +2,7 @@
 import classNames from 'classnames'
 import React from 'react'
 
-export default function VedioSection() {
+export default function VedioSection(props) {
     return (
         <div>
             <iframe
@@ -10,7 +10,7 @@ export default function VedioSection() {
                 className={classNames(
                     'h-[241px] md:h-[1080px]'
                 )}
-                src="https://www.youtube.com/embed/gbRmdgNfv3g"
+                src={props.videoLink}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
