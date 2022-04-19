@@ -62,7 +62,7 @@ fields:
     default: Your Brand
   - type: string
     name: leftTitle
-    label: Title
+    label: Left Section Title
     default: Your Brand
   - type: markdown
     name: text
