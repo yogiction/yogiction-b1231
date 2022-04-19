@@ -67,7 +67,7 @@ fields:
   - type: string
     name: rightTitle
     label: Right Section Title
-    default: Contact Us
+    default: Cobb
   - type: markdown
     name: text
     label: Text
