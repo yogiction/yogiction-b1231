@@ -29,13 +29,13 @@ export default function CtaSection(props) {
                 }}
             >
                 <div
-                    className={classNames("pl-[74px] md:pl-[140px] w-[100%] max-w-[385px] md:w-[748px] h-[175px] md:h-[333px] md:max-w-[750px] relative")}
+                    className={classNames("pl-[17%] md:pl-[140px] w-[100%] max-w-[385px] md:w-[748px] h-[175px] md:h-[333px] md:max-w-[750px] relative")}
                 >
                     <div className={classNames('absolute md:w-[333px] w-[175px] md:h-[333px] h-[175px] bg-[#2C5D87] rounded-[50%]')} />
                     <div className={classNames(
-                        'leading-[36px] md:leading-[80px]',
-                        'md:text-[65px] text-[35px]',
-                        'top-[32px] left-[116px] md:left-[224px]',
+                        'leading-[41px] md:leading-[80px]',
+                        'md:text-[65px] text-[2.14rem]',
+                        'top-[32px] left-[28vw] md:left-[224px]',
                         'text-white',
                         'font-[PoppinsMedium]',
                         'font-semibold',
