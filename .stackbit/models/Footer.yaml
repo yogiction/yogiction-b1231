@@ -60,6 +60,10 @@ fields:
     name: title
     label: Title
     default: Your Brand
+  - type: string
+    name: title
+    label: Title
+    default: Your Brand
   - type: markdown
     name: text
     label: Text
