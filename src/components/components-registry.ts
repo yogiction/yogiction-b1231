@@ -31,7 +31,6 @@ export function getComponent(key: string): ComponentType {
  */
 const components = {
     'CheckboxFormControl': dynamic(() => import('./molecules/FormBlock/CheckboxFormControl')),
-    'ContactSection': dynamic(() => import('./sections/ContactSection')),
     'CtaSection': dynamic(() => import('./sections/CtaSection')),
     'EmailFormControl': dynamic(() => import('./molecules/FormBlock/EmailFormControl')),
     'FaqSection': dynamic(() => import('./sections/FaqSection')),
