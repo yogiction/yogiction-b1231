@@ -63,7 +63,7 @@ fields:
   - type: string
     name: leftTitle
     label: Left Section Title
-    default: o
+    default: Contact Us
   - type: markdown
     name: text
     label: Text
