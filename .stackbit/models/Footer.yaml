@@ -65,7 +65,7 @@ fields:
     label: Left Section Title
     default: Contact Us
   - type: string
-    name: leftTitle
+    name: rightTitle
     label: Left Section Title
     default: Contact Us
   - type: markdown
