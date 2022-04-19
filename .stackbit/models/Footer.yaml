@@ -64,6 +64,10 @@ fields:
     name: leftTitle
     label: Left Section Title
     default: Contact Us
+  - type: string
+    name: leftTitle
+    label: Left Section Title
+    default: Contact Us
   - type: markdown
     name: text
     label: Text
