@@ -72,15 +72,6 @@ fields:
     name: text
     label: Text
     default: A description of your brand
-  - type: model
-    name: contacts
-    label: Contacts
-    models: [ContactBlock]
-    default:
-      phoneNumber: '850-123-5021'
-      phoneAltText: 'Call us'
-      email: 'john@doe.com'
-      emailAltText: 'Email us'
   - type: markdown
     name: copyrightText
     label: Copyright text
