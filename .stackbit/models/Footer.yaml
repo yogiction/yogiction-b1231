@@ -61,7 +61,7 @@ fields:
     label: Title
     default: Your Brand
   - type: string
-    name: title
+    name: leftTitle
     label: Title
     default: Your Brand
   - type: markdown
