@@ -77,9 +77,11 @@ function ctaActions(props) {
 }
 
 function mobileCTA(props) {
-    const actions = props.actions || [];
+    let actions = props.actions || [];
     if (actions.length === 0) {
         return null;
+    } else {
+        actions = props.actions[0];
     }
     return (
         <div className={classNames("active:bg-[#2b4c68] hover:cursor-pointer md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
