@@ -76,7 +76,7 @@ export default function HowItWorksSection(props) {
                                 'text-center md:text-left font-semibold',
                                 'md:text-[40px] text-[18px]',
                                 'font-[Poppins] font-normal text-[#173450]'
-                            )}>{step.title}</div>
+                            )}>{step.textTile}</div>
                             <div className={classNames("leading-[27px] md:leading-[60px] text-center md:text-left ",
                                 'font-[Poppins] not-italic',
                                 'font-normal max-w-[1037px] w-full',
