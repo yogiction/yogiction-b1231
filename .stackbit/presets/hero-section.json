@@ -5,7 +5,7 @@
             "label": "Hero light - image right",
             "thumbnail": "images/hero-section.png",
             "data":   {
-                        "internalName": "Default Hero Section",
+                        "title": "Default Hero Section",
                         "actions": [ 
                          {
                               "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
