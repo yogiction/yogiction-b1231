@@ -12,28 +12,16 @@ fields:
     default: Contact details
   - type: string
     name: phoneNumber
-    label: Phone number
+    label: Phone Number
     default: '850-123-5021'
   - type: string
-    name: phoneAltText
-    label: Phone alt text
-    default: 'Phone'
-  - type: string
     name: email
-    label: Email address
+    label: Email Address
     default: 'john@doe.com'
   - type: string
-    name: emailAltText
-    label: Email address alt text
-    default: 'Email'
-  - type: string
-    name: address
-    label: Address
-    default: '312 Lovely Street, NY'
-  - type: string
-    name: addressAltText
-    label: Address alt text
-    default: 'Address'
+    name: siteUrl
+    label: Site Url
+    default: 'https://www.newtopia.com/'
   - type: string
     name: elementId
     group: settings
