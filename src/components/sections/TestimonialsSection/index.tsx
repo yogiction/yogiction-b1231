@@ -94,7 +94,7 @@ export default function TestimonialsSection(props) {
                 'leading-[38px] md:leading-[90px]',
                 'text-[#173450]'
             )}>
-                {props.title}
+                {title}
             </div>
             <Carousel
                 infiniteLoop={true}
