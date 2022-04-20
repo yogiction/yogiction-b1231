@@ -70,7 +70,6 @@ export default function IntroSection(props) {
                 )} style={{
                     boxShadow: "0px 10px 30px #00000029"
                 }}>
-                    {console.log(props)}
                     <div className={classNames(
                         'max-w-[387px] w-[100%] h-auto',
                         'max-h-[218px] mx-auto xl:mr-[56px] xl:ml-[100px]'
