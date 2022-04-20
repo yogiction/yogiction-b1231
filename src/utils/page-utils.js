@@ -16,9 +16,9 @@ function getPageUrl(page) {
         return null;
     }
 
-    if (['PostLayout'].includes(page?.__metadata.modelName)) {
-        return `/blog${page.slug.startsWith('/') ? page.slug : `/${page.slug}`}`;
-    }
+    // if (['PostLayout'].includes(page?.__metadata.modelName)) {
+    //     return `/blog${page.slug.startsWith('/') ? page.slug : `/${page.slug}`}`;
+    // }
 
     return page.slug.startsWith('/') ? page.slug : `/${page.slug}`;
 }
