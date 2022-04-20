@@ -27,16 +27,15 @@ export function resolveStaticProps(urlPath, data) {
         ...data.props
     };
     return mapDeepAsync(
-      props,
-      async (value, keyPath, stack) => {
-          const objectType = value?.__metadata?.modelName;
-          if (objectType && StaticPropsResolvers[objectType]) {
-              const resolver = StaticPropsResolvers[objectType];
-              return resolver(value, data, { keyPath, stack });
-          }
-          return value;
-      },
-      { postOrder: true }
+        props,
+        async(value, keyPath, stack) => {
+            const objectType = value ? .__metadata ? .modelName;
+            //   if (objectType && StaticPropsResolvers[objectType]) {
+            //       const resolver = StaticPropsResolvers[objectType];
+            //       return resolver(value, data, { keyPath, stack });
+            //   }
+            return value;
+        }, { postOrder: true }
     );
 }
 
@@ -45,7 +44,7 @@ const StaticPropsResolvers = {
         return resolveReferences(props, ['author', 'category'], data.objects, debugContext);
     },
     PostFeedLayout: (props, data) => {
-        const numOfPostsPerPage = props.numOfPostsPerPage ?? 10;
+        const numOfPostsPerPage = props.numOfPostsPerPage ? ? 10;
         const allPosts = getAllPostsSorted(data.objects);
         const paginationData = getPagedItemsForPage(props, allPosts, numOfPostsPerPage);
         const items = resolveReferences(paginationData.items, ['author', 'category'], data.objects);
@@ -56,8 +55,8 @@ const StaticPropsResolvers = {
         };
     },
     PostFeedCategoryLayout: (props, data) => {
-        const categoryId = props.__metadata?.id;
-        const numOfPostsPerPage = props.numOfPostsPerPage ?? 10;
+        const categoryId = props.__metadata ? .id;
+        const numOfPostsPerPage = props.numOfPostsPerPage ? ? 10;
         const allCategoryPosts = getAllCategoryPostsSorted(data.objects, categoryId);
         const paginationData = getPagedItemsForPage(props, allCategoryPosts, numOfPostsPerPage);
         const items = resolveReferences(paginationData.items, ['author', 'category'], data.objects);
@@ -98,7 +97,7 @@ const StaticPropsResolvers = {
     FeaturedPeopleSection: (props, data, debugContext) => {
         return resolveReferences(props, ['people'], data.objects, debugContext);
     },
-    FormBlock: async (props) => {
+    FormBlock: async(props) => {
         if (!props.destination) {
             return props;
         }

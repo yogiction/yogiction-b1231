@@ -66,7 +66,7 @@ module.exports = {
                     return { site };
                 },
                 pages: (objects) => {
-                    const pageObjects = objects.filter((page) => ['PageLayout', 'PostFeedLayout', 'PostLayout'].includes(page.__metadata.modelName));
+                    const pageObjects = objects.filter((page) => ['PageLayout'].includes(page.__metadata.modelName));
                     const pages = pageObjects.map((page) => {
                         const { __metadata, ...restProps } = page;
                         const urlPath = getPageUrl(page);
