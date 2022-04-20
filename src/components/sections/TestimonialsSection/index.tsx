@@ -101,6 +101,8 @@ export default function TestimonialsSection(props) {
                 swipeable={true}
                 selectedItem={slideIndex}
                 showArrows={false}
+                showIndicators={false}
+                showStatus={false}
                 onChange={updateCurrentSlide}
             >
                 {testimonials && testimonials.map((testimonial, index) => (
