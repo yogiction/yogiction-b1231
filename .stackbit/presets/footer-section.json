@@ -5,7 +5,7 @@
             "label": "Default Footer Section",
             "thumbnail": "images/footer-section.png",
               "data":   {
-                       "titleText": "Default Footer Section",
+                       "titleText": "New Footer Section",
                         "colors": "colors-h",
                         "title": "Newtopia",
                         "contacts": {
