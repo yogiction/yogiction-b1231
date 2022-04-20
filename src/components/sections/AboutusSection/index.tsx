@@ -12,7 +12,7 @@ export default function AboutusSection(props) {
     const sectionWidth = sectionStyles.width || 'wide';
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
-    const sectionJustifyContent = sectionStyles.justifyContent || 'center';
+    const title = sectionStyles.justifyContent || 'center';
     return (
         <div>
             <div
