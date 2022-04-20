@@ -86,7 +86,7 @@ export default function AboutusSection(props) {
                         )}
                             style={{
                                 color: 'rgba(23,52,80,1)',
-                            }}>{props.title}</h1>
+                            }}>{title}</h1>
                         <div
                             className={classNames(
                                 'w-full block md:hidden  relative',
