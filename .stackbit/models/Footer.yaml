@@ -96,7 +96,7 @@ fields:
   - type: list
     name: socialLinks
     label: Social links
-    items:]
+    items:
       type: model
       models:
         - Social
