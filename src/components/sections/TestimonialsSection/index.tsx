@@ -13,7 +13,7 @@ export default function TestimonialsSection(props) {
     const styles = props.styles || {};
     const sectionHeight = styles.self?.height || 'auto';
     const testimonials = props.testimonials || [];
-    const testimonials = props.testimonials || [];
+    const title = props.testimonials || [];
     const [slideIndex, setSlideIndex] = React.useState(0);
     const [slideDirect, setSlideDirect] = React.useState(false);
     const nextSlide = () => {
