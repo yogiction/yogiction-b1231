@@ -10,14 +10,6 @@
                         "contacts": {
                             "$$ref": "3qdyiTHNBPH6uHugpdjOV4"
                         },
-                        "legalLinks": [
-                            {
-                                "$$ref": "2CfRrwRst5VzrvdnfoR2gb"
-                            },
-                            {
-                                "$$ref": "42TvNaSA9LBlK1yJHXLXeb"
-                            }
-                        ],
                         "primaryLinks": [
                             { "$$ref": "4ScmAw8GTNOQaHgq3xcB0t" },
                             { "$$ref": "SpSENVlQ5mqgGkgS8Tbaq" },
