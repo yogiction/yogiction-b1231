@@ -16,7 +16,7 @@
                             { "$$ref": "1yByujjR3WggshHSOLehSN" },
                             { "$$ref": "564996V1uB57C4NLuZOK1b" }
                         ],
-                        leftSectionText: "Have any questions? We are standing by to support you."
+                        "leftSectionText": "Have any questions? We are standing by to support you."
 leftSectionTitle: "Contact Us"
 rightSectionText: "Join us on our social channels to get tips on how to improve your nutrition, exercise and well-being."
 rightSectionTitle: "Connect with us"
