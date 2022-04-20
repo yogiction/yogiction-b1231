@@ -29,13 +29,13 @@ export default function CtaSection(props) {
                 }}
             >
                 <div
-                    className={classNames("pl-[74px] md:pl-[140px] w-[100%] max-w-[385px] md:w-[748px] h-[175px] md:h-[333px] md:max-w-[750px] relative")}
+                    className={classNames("pl-[17%] md:pl-[140px] w-[100%] max-w-[385px] md:w-[748px] h-[175px] md:h-[333px] md:max-w-[750px] relative")}
                 >
                     <div className={classNames('absolute md:w-[333px] w-[175px] md:h-[333px] h-[175px] bg-[#2C5D87] rounded-[50%]')} />
                     <div className={classNames(
-                        'leading-[36px] md:leading-[80px]',
-                        'md:text-[65px] text-[35px]',
-                        'top-[32px] left-[116px] md:left-[224px]',
+                        'leading-[41px] md:leading-[80px]',
+                        'md:text-[65px] text-[2.14rem]',
+                        'top-[49px] left-[28vw] md:left-[224px]',
                         'text-white',
                         'font-[PoppinsMedium]',
                         'font-semibold',
@@ -43,7 +43,7 @@ export default function CtaSection(props) {
                         'absolute z-10'
                     )}>{props.leftSectionTitle}</div>
                 </div>
-                <div className={classNames("pr-[140px] md:block hidden pt-[73px]")}>
+                <div className={classNames("pr-[140px] md:block hidden pt-[34px]")}>
                     <div className={classNames(
                         "md:leading-[90px] leading-[56px]",
                         "md:text-[60px] text-[45px] text-right",
@@ -77,9 +77,11 @@ function ctaActions(props) {
 }
 
 function mobileCTA(props) {
-    const actions = props.actions || [];
+    let actions = props.actions || [];
     if (actions.length === 0) {
         return null;
+    } else {
+        actions = props.actions[0];
     }
     return (
         <div className={classNames("active:bg-[#2b4c68] hover:cursor-pointer md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>

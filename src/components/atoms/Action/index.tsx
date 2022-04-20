@@ -29,7 +29,7 @@ export default function Action(props) {
             href={url}
             aria-label={altText}
             id={elementId}
-            className={classNames('border-t-[4px] border-b-[4px] border-l-0 border-r-0  sb-component', 'sb-component-block ', style === 'link' ? 'sb-component-link' : 'sb-component-button', className, {
+            className={classNames('border-t-[0px] border-b-[0px] border-l-0 border-r-0  sb-component', 'sb-component-block ', style === 'link' ? 'sb-component-link' : 'sb-component-button', className, {
                 'sb-component-button-primary': style === 'primary',
                 'sb-component-button-secondary': style === 'secondary'
             })}

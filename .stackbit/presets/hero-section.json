@@ -5,7 +5,7 @@
             "label": "Hero light - image right",
             "thumbnail": "images/hero-section.png",
             "data":   {
-                        "internalName": "Default Hero Section",
+                        "title": "New Hero Section",
                         "actions": [ 
                          {
                               "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
@@ -50,7 +50,7 @@
                         },
                         "subtitle": "One platform, one community.",
                         "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.\nAenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet\nerat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat\nvitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
-                        "title": "Health Habits for Life"
+                        "titleText": "Health Habits for Life"
                     }
                     
         }

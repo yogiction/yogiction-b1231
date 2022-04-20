@@ -47,7 +47,10 @@ module.exports = {
                 graybg: "url('/images/graybg.png')"
             },
             animation: {
-                'fade': 'fadeIn .7s linear',
+                'fade': 'fadeIn .5s linear',
+                'slide': 'slideLeft .5s ease-out',
+                'left': 'animateright 600ms ease-in-out',
+                'right': 'animateleft 600ms ease-in-out',
             },
             keyframes: {
                 fadeIn: {
@@ -58,6 +61,30 @@ module.exports = {
                         opacity: '1',
                     },
                 },
+                slideLeft: {
+                    '0%': {
+                        transform: "translateX(100%)"
+                    },
+                    '100%': {
+                        transform: "translateX(0%)"
+                    }
+                },
+                animateright: {
+                    '0%': {
+                        transform: 'translateX(0)'
+                    },
+                    '100%': {
+                        transform: 'translateX(100%)'
+                    }
+                },
+                animateleft: {
+                    '100%': {
+                        transform: 'translateX(-100%)'
+                    },
+                    '0%': {
+                        transform: 'translateX(0)'
+                    }
+                }
             }
         }
     },
@@ -65,7 +92,7 @@ module.exports = {
         extend: {}
     },
     plugins: [
-        plugin(function ({ addBase, addComponents, theme }) {
+        plugin(function({ addBase, addComponents, theme }) {
             addBase({
                 body: {
                     fontFamily: theme(`fontFamily.${themeStyle.fontBody}`)

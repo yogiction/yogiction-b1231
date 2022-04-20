@@ -3,6 +3,8 @@ import * as React from 'react';
 import classNames from 'classnames';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
 import { useSwipeable } from 'react-swipeable';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 export default function TestimonialsSection(props) {
@@ -11,8 +13,12 @@ export default function TestimonialsSection(props) {
     const styles = props.styles || {};
     const sectionHeight = styles.self?.height || 'auto';
     const testimonials = props.testimonials || [];
-    const [slideIndex, setSlideIndex] = React.useState(0)
+    const title = props.titleText || "";
+    const [slideIndex, setSlideIndex] = React.useState(0);
+    const [slideDirect, setSlideDirect] = React.useState(false);
     const nextSlide = () => {
+
+        setSlideDirect(true);
         if (slideIndex !== (testimonials.length - 1)) {
             setSlideIndex(slideIndex + 1)
         }
@@ -21,6 +27,8 @@ export default function TestimonialsSection(props) {
         }
     }
     const prevSlide = () => {
+
+        setSlideDirect(false);
         if (slideIndex === 0) {
             const i = testimonials.length - 1;
             setSlideIndex(i);
@@ -38,6 +46,12 @@ export default function TestimonialsSection(props) {
         preventDefaultTouchmoveEvent: true,
         trackMouse: true
     });
+    const updateCurrentSlide = (index) => {
+
+        if (slideIndex !== index) {
+            setSlideIndex(index);
+        }
+    };
     return (
         <div
             id={cssId}
@@ -61,14 +75,14 @@ export default function TestimonialsSection(props) {
             }}
         >
             <div className={classNames(
-                'w-[20px] hidden md:block z-20 h-[34px] absolute',
-                'bg-rightArrow cursor-pointer top-[1056px] right-[140px]',
+                'w-[20px] hidden xl:block z-20 h-[34px] absolute',
+                'bg-rightArrow cursor-pointer top-[50%] right-[140px]',
             )} onClick={() => {
                 nextSlide();
             }} />
             <div className={classNames(
-                'w-[20px] hidden md:block z-20 h-[34px] absolute',
-                'bg-leftArrow cursor-pointer top-[1055px] left-[140px]',
+                'w-[20px] hidden xl:block z-20 h-[34px] absolute',
+                'bg-leftArrow cursor-pointer top-[50%] left-[140px]',
             )} onClick={() => {
                 prevSlide();
             }} />
@@ -80,28 +94,35 @@ export default function TestimonialsSection(props) {
                 'leading-[38px] md:leading-[90px]',
                 'text-[#173450]'
             )}>
-                {props.title}
+                {title}
             </div>
-            <div {...handlers}>
+            <Carousel
+                infiniteLoop={true}
+                showThumbs={false}
+                swipeable={true}
+                selectedItem={slideIndex}
+                showArrows={false}
+                showIndicators={false}
+                showStatus={false}
+                onChange={updateCurrentSlide}
+            >
                 {testimonials && testimonials.map((testimonial, index) => (
                     <div key={index} className={classNames(
-                        '',
-                        slideIndex === index ? 'block animate-fade' : 'hidden animate-fade'
                     )}>{testimonialSection(testimonial, index)}</div>))}
-                {testimonials && (
-                    <div className='flex justify-center mt-[60px] md:mt-[30px]'>
-                        {testimonials.map((testim, index) => {
-                            return <div key={index}
-                                className={classNames(
-                                    'mx-[5px] hover:cursor-pointer md:mx-[10px] h-[15px] w-[15px] rounded-lg',
-                                    slideIndex === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
-                                )} onClick={() => {
-                                    setSlideIndex(index);
-                                }} />
-                        })}
-                    </div>
-                )}
-            </div>
+            </Carousel>
+            {testimonials && (
+                <div className='flex justify-center mt-[60px] md:mt-[30px]'>
+                    {testimonials.map((testim, index) => {
+                        return <div key={index}
+                            className={classNames(
+                                'mx-[5px] hover:cursor-pointer md:mx-[10px] h-[15px] w-[15px] rounded-lg',
+                                slideIndex === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
+                            )} onClick={() => {
+                                setSlideIndex(index);
+                            }} />
+                    })}
+                </div>
+            )}
         </div>
     );
 }
@@ -111,7 +132,6 @@ function testimonialSection(testimonial, index) {
         <div className={classNames(
             'flex flex-col justify-start mt-[60px] md:mt-[99px] ',
             'max-w-[1258px] w-auto mx-auto md:min-h-[972px]',
-
         )} key={index}>
             <div className={classNames(
                 'overflow-hidden rounded-[50%]',

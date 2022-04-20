@@ -11,7 +11,7 @@ export default function IntroSection(props) {
     const sectionStyles = props.styles?.self || {};
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionImage = props.sectionImage.url || '';
-    const title = props.title || '';
+    const title = props.titleText || '';
     const description = props.description || '';
     const bottomTitle = props.bottomTitle || '';
     return (

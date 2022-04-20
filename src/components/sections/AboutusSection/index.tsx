@@ -12,6 +12,7 @@ export default function AboutusSection(props) {
     const sectionWidth = sectionStyles.width || 'wide';
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
+    const title =  props.titleText || '';
     return (
         <div>
             <div
@@ -85,7 +86,7 @@ export default function AboutusSection(props) {
                         )}
                             style={{
                                 color: 'rgba(23,52,80,1)',
-                            }}>{props.title}</h1>
+                            }}>{title}</h1>
                         <div
                             className={classNames(
                                 'w-full block md:hidden  relative',
@@ -186,9 +187,11 @@ function mapMaxWidthStyles(width) {
 }
 
 function mobileCTA(props) {
-    const actions = props.actions || [];
+    let actions = props.actions || [];
     if (actions.length === 0) {
         return null;
+    } else {
+        actions = props.actions[0];
     }
     return (
         <div className={classNames("active:bg-[#2b4c68] hover:cursor-pointer md:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>

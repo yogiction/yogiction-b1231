@@ -11,6 +11,7 @@ export default function HowItWorksSection(props) {
     const sectionStyles = props.styles?.self || {};
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
     const steps = props.steps || [];
+    const title = props.titleText || [];
     return (
         <div
             id={cssId}
@@ -40,7 +41,7 @@ export default function HowItWorksSection(props) {
             )}
                 style={{
                     color: 'rgba(23,52,80,1)',
-                }}>{props.title}</h1>
+                }}>{title}</h1>
             <img src={`/images/howitworksbg1.png`}
                 className={classNames(
                     "lg:hidden w-full max-w-[219.5px]",

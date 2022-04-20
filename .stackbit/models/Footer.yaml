@@ -60,19 +60,18 @@ fields:
     name: title
     label: Title
     default: Your Brand
+  - type: string
+    name: leftTitle
+    label: Left Section Title
+    default: Contact Us
+  - type: string
+    name: rightTitle
+    label: Right Section Title
+    default: Connect with us
   - type: markdown
     name: text
     label: Text
     default: A description of your brand
-  - type: model
-    name: contacts
-    label: Contacts
-    models: [ContactBlock]
-    default:
-      phoneNumber: '850-123-5021'
-      phoneAltText: 'Call us'
-      email: 'john@doe.com'
-      emailAltText: 'Email us'
   - type: markdown
     name: copyrightText
     label: Copyright text

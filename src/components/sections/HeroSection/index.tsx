@@ -14,7 +14,7 @@ export default function HeroSection(props) {
     const sectionHeight = sectionStyles.height || 'auto';
     const bgImage = props.backgroundImage || '';
     const logo = props.logo || '';
-    const title = props.title || '';
+    const title = props.titleText || '';
     return (
         <>
             <div
