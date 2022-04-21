@@ -19,16 +19,7 @@ export default function PostFeedLayout(props) {
     return (
         <BaseLayout page={page} site={site}>
             <main id="main" className="layout page-layout">
-                {title && (
-                    <div className={classNames('flex', 'py-12', 'lg:py-14', 'px-4', postFeedColors, mapStyles({ justifyContent: postFeedJustifyContent }))}>
-                        <h1 className={classNames('w-full', mapMaxWidthStyles(postFeedWidth), page?.styles?.title ? mapStyles(page?.styles?.title) : null)} data-sb-field-path="title">
-                            {title}
-                        </h1>
-                    </div>
-                )}
-                {renderSections(topSections, 'topSections')}
-                <PostFeedSection {...postFeed} posts={items} pageLinks={pageLinks} data-sb-field-path="postFeed" />
-                {renderSections(bottomSections, 'bottomSections')}
+
             </main>
         </BaseLayout>
     );

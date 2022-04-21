@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import * as React from 'react';
 import classNames from 'classnames';
 
@@ -11,12 +12,28 @@ export default function Footer(props) {
     const rightSectionText = props.rightSectionText || '';
     const primaryLinks = props.primaryLinks || [];
     const socialLinks = props.socialLinks || [];
+    const needHelMouseEnterHandler = () => {
+    }
+    const needHelpCloseHandler = () => {
+        //let endDate = new Date().setDate(new Date().getDate() + 30);
+        let endDate = new Date().getTime() + 60000;
+
+        if (typeof window !== "undefined") {
+            localStorage.setItem('endDate', endDate.toString());
+        }
+    }
     return (
         <footer
             className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[60px] px-0 md:py-[100px] md:px-[140px]')}
         >
             <div className={classNames('')}>
-
+                <div className="needHelp fixed bottom-[2.75rem] right-[2.75rem] z-[9999]">
+                    <a href="/" onMouseEnter={needHelMouseEnterHandler} className="flex justify-center items-center text-[1rem] font-normal font-SofiaProBold leading-[1.375rem] text-white w-[10.438rem] h-[3rem] shadow-3xl bg-black rounded-[6.25rem]">
+                        <svg className="mr-[0.75rem] relative top-[0.1rem]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 0H0V20H2V2H18V14H4V16H2V18H4V16H20V0H18ZM4 5H16V7H4V5ZM12 9H4V11H12V9Z" fill="white" />
+                        </svg>
+                        Need Help</a>
+                </div>
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
                     <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
                         <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-0 md:mx-0">

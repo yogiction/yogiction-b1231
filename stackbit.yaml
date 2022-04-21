@@ -28,9 +28,3 @@ models:
   PageLayout:
     type: page
     urlPath: '/{slug}'
-  PostLayout:
-    type: page
-    urlPath: '/blog/{slug}'
-  PostFeedLayout:
-    type: page
-    urlPath: '/blog'

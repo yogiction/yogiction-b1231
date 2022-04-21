@@ -3,9 +3,9 @@ import * as React from 'react';
 import classNames from 'classnames';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
 import { useSwipeable } from 'react-swipeable';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-
+import 'slick-carousel/slick/slick.css';
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 export default function TestimonialsSection(props) {
     const cssId = props.elementId || null;
@@ -14,10 +14,11 @@ export default function TestimonialsSection(props) {
     const sectionHeight = styles.self?.height || 'auto';
     const testimonials = props.testimonials || [];
     const title = props.titleText || "";
+    let slider;
     const [slideIndex, setSlideIndex] = React.useState(0);
     const [slideDirect, setSlideDirect] = React.useState(false);
     const nextSlide = () => {
-
+        slider.slickNext();
         setSlideDirect(true);
         if (slideIndex !== (testimonials.length - 1)) {
             setSlideIndex(slideIndex + 1)
@@ -27,7 +28,7 @@ export default function TestimonialsSection(props) {
         }
     }
     const prevSlide = () => {
-
+        slider.slickPrev();
         setSlideDirect(false);
         if (slideIndex === 0) {
             const i = testimonials.length - 1;
@@ -52,6 +53,43 @@ export default function TestimonialsSection(props) {
             setSlideIndex(index);
         }
     };
+    function PrevArrow(props) {
+        return (
+            <div className={classNames(
+                'w-[20px] hidden 2xl:block z-20 h-[34px] absolute',
+                'bg-leftArrow cursor-pointer top-[50%] left-[0px]',
+            )} onClick={() => {
+                prevSlide();
+            }} />
+        );
+    }
+    function NextArrow(props) {
+        return (
+            <div className={classNames(
+                'w-[20px] hidden 2xl:block z-20 h-[34px] absolute',
+                'bg-rightArrow cursor-pointer top-[50%] right-[0px]',
+            )} onClick={() => {
+                nextSlide();
+            }} />
+        );
+    }
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        onSwipe: (e) => {
+            if (e === 'Left') {
+                prevSlide();
+            } else {
+                nextSlide();
+            }
+        },
+        arrows: true,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <div
             id={cssId}
@@ -74,18 +112,8 @@ export default function TestimonialsSection(props) {
                 borderWidth: styles.self?.borderWidth ? `${styles.self?.borderWidth}px` : null
             }}
         >
-            <div className={classNames(
-                'w-[20px] hidden xl:block z-20 h-[34px] absolute',
-                'bg-rightArrow cursor-pointer top-[50%] right-[140px]',
-            )} onClick={() => {
-                nextSlide();
-            }} />
-            <div className={classNames(
-                'w-[20px] hidden xl:block z-20 h-[34px] absolute',
-                'bg-leftArrow cursor-pointer top-[50%] left-[140px]',
-            )} onClick={() => {
-                prevSlide();
-            }} />
+
+
             <div className={classNames(
                 'text-center',
                 'font-[Poppins]',
@@ -96,20 +124,14 @@ export default function TestimonialsSection(props) {
             )}>
                 {title}
             </div>
-            <Carousel
-                infiniteLoop={true}
-                showThumbs={false}
-                swipeable={true}
-                selectedItem={slideIndex}
-                showArrows={false}
-                showIndicators={false}
-                showStatus={false}
-                onChange={updateCurrentSlide}
+            <Slider
+                {...settings}
+                ref={c => (slider = c)}
             >
                 {testimonials && testimonials.map((testimonial, index) => (
                     <div key={index} className={classNames(
                     )}>{testimonialSection(testimonial, index)}</div>))}
-            </Carousel>
+            </Slider>
             {testimonials && (
                 <div className='flex justify-center mt-[60px] md:mt-[30px]'>
                     {testimonials.map((testim, index) => {
