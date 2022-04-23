@@ -43,7 +43,7 @@ export default function CtaSection(props) {
                         'absolute z-10'
                     )}>{props.leftSectionTitle}</div>
                 </div>
-                <div className={classNames("pr-[140px] md:block hidden pt-[34px]")}>
+                <div className={classNames("pr-[140px] md:block hidden pt-[54px]")}>
                     <div className={classNames(
                         "md:leading-[90px] leading-[56px]",
                         "md:text-[60px] text-[45px] text-right",
