@@ -30,8 +30,8 @@ export default function Footer(props) {
         >
             <div className={classNames('')}>
                 <div className="hidden md:block fixed bottom-[2.75rem] right-[2.75rem] z-[9999]">
-                    <ChatIcon className="" />
-                    <CheckIcon className="" />
+                    <div><ChatIcon className="" /></div>
+                    <div><CheckIcon className="" /></div>
                     {/* <a href="/" onMouseEnter={needHelMouseEnterHandler} className="flex justify-center items-center text-white w-[70px] h-[3rem] shadow-3xl bg-black">
                         
                     </a> */}

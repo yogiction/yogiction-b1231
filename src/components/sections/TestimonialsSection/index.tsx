@@ -2,7 +2,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
-import { useSwipeable } from 'react-swipeable';
 import 'slick-carousel/slick/slick.css';
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
@@ -14,12 +13,11 @@ export default function TestimonialsSection(props) {
     const sectionHeight = styles.self?.height || 'auto';
     const testimonials = props.testimonials || [];
     const title = props.titleText || "";
-    let slider;
+    const [slider, setslider] = React.useState(undefined);
     const [slideIndex, setSlideIndex] = React.useState(0);
-    const [slideDirect, setSlideDirect] = React.useState(false);
+    const [cuurentSlide, setCurrentSlide] = React.useState(0);
     const nextSlide = () => {
         slider.slickNext();
-        setSlideDirect(true);
         if (slideIndex !== (testimonials.length - 1)) {
             setSlideIndex(slideIndex + 1)
         }
@@ -29,7 +27,6 @@ export default function TestimonialsSection(props) {
     }
     const prevSlide = () => {
         slider.slickPrev();
-        setSlideDirect(false);
         if (slideIndex === 0) {
             const i = testimonials.length - 1;
             setSlideIndex(i);
@@ -41,18 +38,6 @@ export default function TestimonialsSection(props) {
                 setSlideIndex(slideIndex - 1)
             }
     }
-    const handlers = useSwipeable({
-        onSwipedLeft: () => nextSlide(),
-        onSwipedRight: () => prevSlide(),
-        preventDefaultTouchmoveEvent: true,
-        trackMouse: true
-    });
-    const updateCurrentSlide = (index) => {
-
-        if (slideIndex !== index) {
-            setSlideIndex(index);
-        }
-    };
     function PrevArrow(props) {
         return (
             <div className={classNames(
@@ -88,7 +73,7 @@ export default function TestimonialsSection(props) {
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
     };
     return (
         <div
@@ -112,8 +97,6 @@ export default function TestimonialsSection(props) {
                 borderWidth: styles.self?.borderWidth ? `${styles.self?.borderWidth}px` : null
             }}
         >
-
-
             <div className={classNames(
                 'text-center',
                 'font-[Poppins]',
@@ -126,7 +109,7 @@ export default function TestimonialsSection(props) {
             </div>
             <Slider
                 {...settings}
-                ref={c => (slider = c)}
+                ref={c => setslider(c)}
             >
                 {testimonials && testimonials.map((testimonial, index) => (
                     <div key={index} className={classNames(
@@ -138,9 +121,10 @@ export default function TestimonialsSection(props) {
                         return <div key={index}
                             className={classNames(
                                 'mx-[5px] hover:cursor-pointer md:mx-[10px] h-[15px] w-[15px] rounded-lg',
-                                slideIndex === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
+                                cuurentSlide === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
                             )} onClick={() => {
-                                setSlideIndex(index);
+                                setCurrentSlide(index);
+                                slider.slickGoTo(index);
                             }} />
                     })}
                 </div>
