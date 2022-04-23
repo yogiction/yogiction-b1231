@@ -162,7 +162,7 @@ function testimonialSection(testimonial, index) {
                 'border-[15px] border-[#a6bf36]'
             )}>
                 <img className={classNames(
-                    'h-full'
+                    'h-auto'
                 )} src={testimonial.clientImage.url} alt={testimonial.clientImage.altText} />
             </div>
             <h2 className={classNames(
