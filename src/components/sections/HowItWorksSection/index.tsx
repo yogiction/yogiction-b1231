@@ -27,7 +27,7 @@ export default function HowItWorksSection(props) {
                 'howitworksbg howitworksbg1'
             )}
         >
-            <div className=' max-w-[353px] max-h-[365px] absolute top-[-7.5vh] left-[138px] w-full'>
+            <div className=' max-w-[353px] max-h-[365px] absolute top-[-5.5vh] left-[138px] w-full'>
                 <img src={`/images/howitworksbg1.png`} className={classNames("",
                     ' z-40',
                     'howitworkstopsticker')} width="353px" height="365px" alt="" />
