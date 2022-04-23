@@ -121,9 +121,9 @@ export default function TestimonialsSection(props) {
                         return <div key={index}
                             className={classNames(
                                 'mx-[5px] hover:cursor-pointer md:mx-[10px] h-[15px] w-[15px] rounded-lg',
-                                cuurentSlide === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
+                                slideIndex === index ? 'bg-[#173450] animate-fade' : 'bg-[#17345066] animate-fade'
                             )} onClick={() => {
-                                setCurrentSlide(index);
+                                setSlideIndex(index);
                                 slider.slickGoTo(index);
                             }} />
                     })}
