@@ -12,7 +12,7 @@ export default function AboutusSection(props) {
     const sectionWidth = sectionStyles.width || 'wide';
     const sectionHeight = sectionStyles.height || 'auto';
     const sectionJustifyContent = sectionStyles.justifyContent || 'center';
-    const title =  props.titleText || '';
+    const title = props.titleText || '';
     return (
         <div>
             <div
@@ -61,7 +61,7 @@ export default function AboutusSection(props) {
                         <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
                         <img className=' max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[-419px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                         <div className={classNames(
-                            'hidden md:block  h-[319px]',
+                            ' aboutusbottoms  h-[319px]',
                             'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
                             "content-[''] w-[434px] bg-aboutusbg1"
                         )} />
@@ -125,7 +125,8 @@ export default function AboutusSection(props) {
                     <div className={classNames(
                         'aboutusbottoms absolute h-[370px]',
                         'top-[-5vh] lg:right-[-0.7vw] xl:right-[2%]  bg-no-repeat bg-contain bg-left',
-                        "content-[''] w-[488px] z-[10]  bg-aboutusbg2"
+                        "content-[''] w-[488px] z-[10]  bg-aboutusbg2",
+                        ''
                     )} />
                 </div>
             </div>

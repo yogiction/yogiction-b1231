@@ -186,8 +186,6 @@ function testimonialSection(testimonial, index) {
 }
 
 
-
-
 function mapMinHeightStyles(height) {
     switch (height) {
         case 'screen':

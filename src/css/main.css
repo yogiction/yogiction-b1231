@@ -614,7 +614,7 @@
     display: block;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1759px) {
     .aboutusbottoms {
         display: none;
     }
@@ -689,10 +689,10 @@
 }
 
 .aboutusSmBg {
-    background-image: url('/images/aboutusrightbg.png'), url('/images/howitworkscolorbg.png');
+    background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
     background-repeat: no-repeat, no-repeat;
-    background-size: 154px 200px, 156px 201px;
-    background-position: -18px 832px, 100% 253px;
+    background-size: 154px 200px, 426px 1018px;
+    background-position: -18px 832px, 110% 1000px;
 }
 
 .greenbg {
