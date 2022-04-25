@@ -651,6 +651,13 @@
     background-position: -115px 582px, 100% 100px;
 }
 
+.aboutusSmBg {
+    background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 154px 200px, 426px 1018px;
+    background-position: -18px 630px, 110% 1000px;
+}
+
 @media screen and (max-width: 768px) {
     .aboutusbottomrightbg {
         background-image: url('/images/howitworkscolorbg.png');
@@ -682,17 +689,16 @@
         background-size: 154px 200px;
         background-position: -40px 230px;
     }
+    .aboutusSmBg {
+        background-image: url('/images/howitworkscolorbg.png'), url('/images/aboutusrightbg.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 156px 201px, 154px 200px;
+        background-position: 101% 260px, -18px 828px;
+    }
 }
 
 .slidertransi {
     transform: translate3d(-50%, -40%, 70px);
-}
-
-.aboutusSmBg {
-    background-image: url('/images/aboutusrightbg.png'), url('/images/aboutusleftbg.png');
-    background-repeat: no-repeat, no-repeat;
-    background-size: 154px 200px, 426px 1018px;
-    background-position: -18px 832px, 110% 1000px;
 }
 
 .greenbg {
