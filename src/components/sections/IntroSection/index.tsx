@@ -126,29 +126,27 @@ export default function IntroSection(props) {
                     )} style={{
                         overflowX: "hidden"
                     }}>
-                        {/* <div className={classNames(
-                            'bg-white  h-[351px] rounded-[50%] mt-[436px] w-[351px] mr-auto ml-[18%]',
-                            'absolute top-[-9px] left-[4vw]',
-                        )}> </div> */}
                         <img src={sectionImage} className={classNames(
                             "h-auto md:max-h-[798px] md:max-w-[800px]  w-full",
                             'max-h-[227px] max-w-[238px] mx-auto',
                         )} alt="" />
                     </div>
                 </div>
-                <div className={classNames(
-                    'bg-gray-600 h-[1px] md:block hidden max-w-[1395px] w-[100%]',
-                    'mx-auto mt-[200px] mb-[200px]',
-                )} style={{
-                    opacity: '0.35',
-                    fill: 'transparent',
-                    stroke: 'rgba(23,52,80,1)',
-                    strokeWidth: '1px',
-                    strokeLinejoin: 'miter',
-                    strokeLinecap: 'butt',
-                    strokeMiterlimit: '4',
-                    shapeRendering: 'auto',
-                }} />
+                <div className='flex'>
+                    <div className={classNames(
+                        'bg-gray-600 h-[1px] md:block hidden w-[100%]',
+                        'mx-[13.7%] mt-[200px] mb-[200px]',
+                    )} style={{
+                        opacity: '0.35',
+                        fill: 'transparent',
+                        stroke: 'rgba(23,52,80,1)',
+                        strokeWidth: '1px',
+                        strokeLinejoin: 'miter',
+                        strokeLinecap: 'butt',
+                        strokeMiterlimit: '4',
+                        shapeRendering: 'auto',
+                    }} />
+                </div>
                 <div className={classNames(
                     'md:leading-[90px]',
                     'md:text-[60px] font-normal',
