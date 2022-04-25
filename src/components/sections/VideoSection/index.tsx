@@ -12,7 +12,7 @@ export default function VedioSection(props) {
                 )}
                 src={props.videoLink}
                 title="YouTube video player"
-                frameBorder="0px"
+                border="0px"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen />
             {/* <div className="vidcontainer">
