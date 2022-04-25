@@ -687,7 +687,7 @@
         background-image: url('/images/aboutusrightbg.png'), url('/images/sliderbg.png');
         background-repeat: no-repeat, no-repeat;
         background-size: 154px 200px, 156px 201px;
-        background-position: -40px 230px, 100% 124px;
+        background-position: -40px 230px, 105% 124px;
     }
     .aboutusSmBg {
         background-image: url('/images/howitworkscolorbg.png'), url('/images/aboutusrightbg.png');

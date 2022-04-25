@@ -31,11 +31,10 @@ export default function IntroSection(props) {
                     )} alt="" />
                 </div>
                 <div className={classNames(
-                    'leading-[27px] max-w-[346px] mb-[29px] mx-auto w-full '
+                    'leading-[27px] font-medium text-center max-w-[346px] mb-[29px] mx-auto w-full '
                 )} style={{
                     fontFamily: 'Poppins',
                     fontStyle: 'normal',
-                    fontWeight: 'normal',
                     fontSize: '18px',
                     color: 'rgba(23,52,80,1)'
                 }}>{props.headerBoxTitle}</div>
@@ -180,12 +179,11 @@ export default function IntroSection(props) {
             {mobileCTA(props)}
             <div className={classNames(
                 'leading-[38px] pt-[60px]',
-                'text-[25px] block md:hidden bg-[#e1e6ea] '
+                'text-[25px] font-semibold block md:hidden bg-[#e1e6ea] '
             )} style={{
                 textAlign: "center",
                 fontFamily: "Poppins",
                 fontStyle: "normal",
-                fontWeight: "bold",
                 color: "rgba(23,52,80,1)"
             }}>{bottomTitle}</div>
             <div className={classNames("bg-[#e1e6ea] flex pb-[60px] md:hidden flex-col lg:flex-row justify-center")}>
