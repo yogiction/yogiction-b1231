@@ -87,8 +87,8 @@ export default function AboutusSection(props) {
                                 'w-full block md:hidden  relative',
                             )}
                         >
-                            <img className=' mx-auto ml-[15px] max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
-                            <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[33%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
+                            <img className=' mx-auto ml-[5px] max-w-[292px]  md:ml-0 mt-[60px] object-cover w-full	 max-h-[935px]' src="/images/aboutus2.png" alt="" />
+                            <img className=' max-w-[218px] object-cover w-full max-h-[698px] mt-[-199px] ml-[30%] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                             <div className={classNames(
                                 'hidden md:block  h-[319px]',
                                 'mt-[-100px] ml-[-30px] bg-no-repeat bg-contain bg-left',
