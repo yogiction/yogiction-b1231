@@ -58,7 +58,7 @@ export default function Footer(props) {
                                             color: '#a6bf36',
                                             transform: 'matrix(1,0,0,1,0,0)',
                                         }}>
-                                            <Social {...link} className="md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]" data-sb-field-path={`.${index}`} />
+                                            <Social {...link} className="md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]" />
                                         </li>
                                     ))}
                                 </ul>
