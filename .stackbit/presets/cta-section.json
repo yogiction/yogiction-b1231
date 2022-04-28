@@ -5,7 +5,7 @@
         "thumbnail": "images/cta-section.png",
         "data": {
             "backgroundColor": "#173450",
-            "title": "Default CTA Section",
+            "title": "New CTA Section",
             "leftSectionTitle": "Healthier habits to last you a lifetime.",
             "rightSectionTitle": "Get Started Today!",
             "actions": [{
