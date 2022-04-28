@@ -2,7 +2,7 @@
 import React from 'react'
 
 export default function FloatingButtonSection(props) {
-    const icons = props.icons;
+    const icons = props.icons ;
     return (
         <div className="hidden md:block fixed bottom-[2.75rem] right-[2.75rem] z-[9999]">
             {icons && icons.map((icon, index) => {
