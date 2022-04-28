@@ -5,7 +5,7 @@
             "label": "Default Intro Section",
             "thumbnail": "images/intro-section.png",
             "data":   {
-                        "tu=": "Default Intro Section",
+                        "title": "Default Intro Section",
                         "actions": [ 
                          {
                               "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
