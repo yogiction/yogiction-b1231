@@ -1,20 +1,16 @@
 {
     "model": "CtaSection",
-    "presets": [
-        {
-            "label": "Default Cta Section",
-            "thumbnail": "images/cta-section.png",
-            "data": {
-                "backgroundColor": "#173450",
-                "internalName": "Default CTA Section",
-                "leftSectionTitle": "Healthier habits to last you a lifetime.",
-                "rightSectionTitle": "Get Started Today!",
-                "actions": [
-                    {
-                        "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
-                    }
-                ]
-            }
+    "presets": [{
+        "label": "New Cta Section",
+        "thumbnail": "images/cta-section.png",
+        "data": {
+            "backgroundColor": "#173450",
+            "title": "Default CTA Section",
+            "leftSectionTitle": "Healthier habits to last you a lifetime.",
+            "rightSectionTitle": "Get Started Today!",
+            "actions": [{
+                "$$ref": "1vX2zeuyc7R9XJRZ2nKQJE"
+            }]
         }
-    ]
+    }]
 }
