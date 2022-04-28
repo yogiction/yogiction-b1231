@@ -1,4 +1,14 @@
 {
     "model": "FloatingButtonSection",
-    "presets": []
+    "presets": [{
+        "label": "New FloatingButtonSection",
+        "thumbnail": "images/cta-section.png",
+        "data": {
+            "title": "New Floating Button Section",
+            "icons": [
+                "3ebX2UpxTzXYJ91NeNUwPp",
+                "jJ06zmEfIHtlGfLfRN1bD"
+            ]
+        }
+    }]
 }
