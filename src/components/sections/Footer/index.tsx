@@ -29,13 +29,7 @@ export default function Footer(props) {
             className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[60px] px-0 md:py-[100px] md:px-[140px]')}
         >
             <div className={classNames('')}>
-                <div className="hidden md:block fixed bottom-[2.75rem] right-[2.75rem] z-[9999]">
-                    <div><ChatIcon className="" /></div>
-                    <div><CheckIcon className="" /></div>
-                    {/* <a href="/" onMouseEnter={needHelMouseEnterHandler} className="flex justify-center items-center text-white w-[70px] h-[3rem] shadow-3xl bg-black">
-                        
-                    </a> */}
-                </div>
+
                 {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
                     <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
                         <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-0 md:mx-0">

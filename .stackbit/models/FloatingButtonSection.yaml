@@ -1,0 +1,26 @@
+type: object
+name: FloatingButtonSection
+label: Floating Buttons
+labelField: title
+thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
+extends:
+  - Section
+groups:
+  - sectionComponent
+fieldGroups:
+  - name: styles
+    label: Styles
+  - name: settings
+    label: Settings
+fields:
+  - type: model
+    name: media
+    label: Media
+    models:
+      - ImageBlock
+      - VideoBlock
+    default:
+      type: ImageBlock
+      url: https://assets.stackbit.com/components/images/default/hero.png
+      altText: Hero section image
+  

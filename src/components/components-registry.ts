@@ -45,6 +45,7 @@ const components = {
     'JobsSection': dynamic(() => import('./sections/JobsSection')),
     'MediaGallerySection': dynamic(() => import('./sections/MediaGallerySection')),
     'PostFeedSection': dynamic(() => import('./sections/PostFeedSection')),
+    'FloatingButtonSection': dynamic(() => import('./sections/FloatingButtonSection')),
     'FeaturedPostsSection': dynamic(() => import('./sections/FeaturedPostsSection')),
     'RecentPostsSection': dynamic(() => import('./sections/RecentPostsSection')),
     'QuoteSection': dynamic(() => import('./sections/QuoteSection')),
