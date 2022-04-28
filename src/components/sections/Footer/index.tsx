@@ -25,59 +25,68 @@ export default function Footer(props) {
         }
     }
     return (
-        <footer
-            className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[60px] px-0 md:py-[100px] md:px-[140px]')}
-        >
-            <div className={classNames('')}>
+        <>
+            <div className="hidden md:block fixed bottom-[2.75rem] right-[2.75rem] z-[9999]">
+                <div><ChatIcon className="" /></div>
+                <div><CheckIcon className="" /></div>
+                {/* <a href="/" onMouseEnter={needHelMouseEnterHandler} className="flex justify-center items-center text-white w-[70px] h-[3rem] shadow-3xl bg-black">
+                        
+                    </a> */}
+            </div>
+            <footer
+                className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[60px] px-0 md:py-[100px] md:px-[140px]')}
+            >
+                <div className={classNames('')}>
 
-                {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
-                    <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
-                        <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-0 md:mx-0">
-                            <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-semibold' style={{ fontFamily: "Poppins" }}>{leftSectionTitle}</div>
-                            <div className='flex h-full flex-col justify-between'>
-                                <div className='leading-[27px] md:mb-[48px] mb-8 md:leading-[46px]  md:text-[30px] text-[18px]'
-                                    style={{
-                                        textAlign: "left",
-                                        fontFamily: "Poppins",
-                                        fontStyle: "normal",
-                                        fontWeight: "normal",
-                                        color: 'rgba(255,255,255,1)',
-                                    }}>
-                                    {leftSectionText}</div>
-                                <div>
-                                    {props.contacts && <Contacts {...props.contacts} />}
+                    {(primaryLinks.length > 0 || socialLinks.length > 0 || props.contacts) && (
+                        <div className="sm:flex flex-col  lg:flex-row sm:justify-between sm:items-start">
+                            <div className="max-w-[680px] mx-[41px] mb-[53px] md:mb-0 md:mx-0">
+                                <div className='mb-[40px] md:mb-[60px] leading-[38px] md:leading-[60px] text-[25px] md:text-[40px] md:text-left text-center font-semibold' style={{ fontFamily: "Poppins" }}>{leftSectionTitle}</div>
+                                <div className='flex h-full flex-col justify-between'>
+                                    <div className='leading-[27px] md:mb-[48px] mb-8 md:leading-[46px]  md:text-[30px] text-[18px]'
+                                        style={{
+                                            textAlign: "left",
+                                            fontFamily: "Poppins",
+                                            fontStyle: "normal",
+                                            fontWeight: "normal",
+                                            color: 'rgba(255,255,255,1)',
+                                        }}>
+                                        {leftSectionText}</div>
+                                    <div>
+                                        {props.contacts && <Contacts {...props.contacts} />}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="md:mb-0 mb-[0px] md:w-full mt-[120px] md:mt-0 md:max-w-[680px] mx-[41px]">
+                                <div className='md:mb-[60px] mb-[40px] leading-[38px] md:leading-[60px]  md:text-left text-center text-[25px] md:text-[40px]   font-semibold' style={{ fontFamily: "Poppins" }}>{rightSectionTitle}</div>
+                                {socialLinks.length > 0 && (
+                                    <ul className="flex justify-evenly md:space-x-[34.18px] md:px-0 px-[27.79px] md:justify-start items-center mb-[40.5px] md:mb-[83px]" data-sb-field-path=".socialLinks">
+                                        {socialLinks.map((link, index) => (
+                                            <li className='md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]' key={index} style={{
+                                                color: '#a6bf36',
+                                                transform: 'matrix(1,0,0,1,0,0)',
+                                            }}>
+                                                <Social {...link} className="md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]" data-sb-field-path={`.${index}`} />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                                <div className='text-[18px] leading-[27px] md:text-[30px] md:leading-[46px]' style={{
+                                    textAlign: 'left',
+                                    fontFamily: 'Poppins',
+                                    fontStyle: 'normal',
+                                    overflow: "auto",
+                                    fontWeight: 'normal',
+                                    color: 'rgba(255,255,255,1)',
+                                }}>
+                                    {rightSectionText}
                                 </div>
                             </div>
                         </div>
-                        <div className="md:mb-0 mb-[0px] md:w-full mt-[120px] md:mt-0 md:max-w-[680px] mx-[41px]">
-                            <div className='md:mb-[60px] mb-[40px] leading-[38px] md:leading-[60px]  md:text-left text-center text-[25px] md:text-[40px]   font-semibold' style={{ fontFamily: "Poppins" }}>{rightSectionTitle}</div>
-                            {socialLinks.length > 0 && (
-                                <ul className="flex justify-evenly md:space-x-[34.18px] md:px-0 px-[27.79px] md:justify-start items-center mb-[40.5px] md:mb-[83px]" data-sb-field-path=".socialLinks">
-                                    {socialLinks.map((link, index) => (
-                                        <li className='md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]' key={index} style={{
-                                            color: '#a6bf36',
-                                            transform: 'matrix(1,0,0,1,0,0)',
-                                        }}>
-                                            <Social {...link} className="md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]" data-sb-field-path={`.${index}`} />
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                            <div className='text-[18px] leading-[27px] md:text-[30px] md:leading-[46px]' style={{
-                                textAlign: 'left',
-                                fontFamily: 'Poppins',
-                                fontStyle: 'normal',
-                                overflow: "auto",
-                                fontWeight: 'normal',
-                                color: 'rgba(255,255,255,1)',
-                            }}>
-                                {rightSectionText}
-                            </div>
-                        </div>
-                    </div>
-                )}
-            </div>
-        </footer>
+                    )}
+                </div>
+            </footer>
+        </>
     );
 }
 
