@@ -2,7 +2,7 @@
     "model": "IntroSection",
     "presets": [
         {
-            "label": "Default Intro Section",
+            "label": "New Intro Section",
             "thumbnail": "images/intro-section.png",
             "data":   {
                         "title": "New Intro Section",
