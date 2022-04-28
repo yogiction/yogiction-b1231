@@ -55,8 +55,7 @@ export default function Footer(props) {
                             {socialLinks.length > 0 && (
                                 <ul className="flex justify-evenly md:space-x-[34.18px] md:px-0 px-[27.79px] md:justify-start items-center mb-[40.5px] md:mb-[83px]" data-sb-field-path=".socialLinks">
                                     {socialLinks.map((link, index) => (
-                                        <li className='md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]' key={index} style={{
-                                            color: '#a6bf36',
+                                        <li className='md:w-[50px] w-[38.5px] md:h-[50px] text-white hover:text-[#a6bf36] h-[38.5px]' key={index} style={{
                                             transform: 'matrix(1,0,0,1,0,0)',
                                         }}>
                                             <Social {...link} className="md:w-[50px] w-[38.5px] md:h-[50px] h-[38.5px]" />
@@ -90,12 +89,11 @@ function Contacts(props) {
                 fontFamily: "Poppins",
                 fontStyle: "normal",
                 fontWeight: "normal",
-                color: '#a6bf36',
-                textDecoration: "underline",
             }}>
             {props.phoneNumber && (
                 <p>
                     <a
+                        className='hover:text-[#a6bf36] no-underline hover:underline'
                         href={`tel:${props.phoneNumber}`}
                         aria-label={props.phoneAltText}
                         title={props.phoneAltText}
@@ -108,6 +106,7 @@ function Contacts(props) {
             {props.email && (
                 <p>
                     <a
+                        className='hover:text-[#a6bf36] no-underline hover:underline'
                         href={`mailto:${props.email}`}
                         aria-label={props.emailAltText}
                         title={props.emailAltText}
@@ -120,6 +119,7 @@ function Contacts(props) {
             {props.siteUrl && (
                 <p>
                     <a
+                        className='hover:text-[#a6bf36] no-underline hover:underline'
                         href={props.siteUrl}
                         aria-label={props.siteUrl}
                         title={props.siteUrl}
