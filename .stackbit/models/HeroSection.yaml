@@ -54,8 +54,6 @@ fields:
         label: Learn More
         url: '/'
         style: secondary
-    default:
-      type: ImageBlock
       url: https://assets.stackbit.com/components/images/default/hero.png
       altText: Hero section image
   - type: style
