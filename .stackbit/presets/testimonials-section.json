@@ -5,7 +5,7 @@
             "label": "Default Testimonial Section",
             "thumbnail": "images/testimonialsection.png",
               "data":   {
-                        "internalName" : "Default Testimonial Section",
+                        "ttile" : "Default Testimonial Section",
                         "internalName" : "Default Testimonial Section",
              "testimonials": [
                             {
