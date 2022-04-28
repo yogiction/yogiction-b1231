@@ -6,7 +6,7 @@
             "thumbnail": "images/testimonialsection.png",
               "data":   {
                         "title" : "New Testimonial Section",
-                        "titleText" : "Default Testimonial Section",
+                        "titleText" : "Let's get personal about your health with a plan that works for you.",
              "testimonials": [
                             {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
