@@ -6,6 +6,7 @@
             "thumbnail": "images/testimonialsection.png",
               "data":   {
                         "internalName" : "Default Testimonial Section",
+                        "internalName" : "Default Testimonial Section",
              "testimonials": [
                             {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
