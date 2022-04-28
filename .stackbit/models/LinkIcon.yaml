@@ -1,0 +1,23 @@
+type: object
+name: LinkIcon
+label: Link Icon
+labelField: new link icon
+fieldGroups:
+  - name: styles
+    label: Styles
+  - name: settings
+    label: Settings
+fields:
+  - type: string
+    name: link
+    label: Link
+    default: Learn more
+  - type: model
+    name: frontimage
+    label: Media
+    models:
+      - ImageBlock
+    default:
+      type: ImageBlock
+      url: https://assets.stackbit.com/components/images/default/contact.png
+      altText: Aboutus form image
