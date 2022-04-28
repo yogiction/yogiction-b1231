@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import * as React from 'react';
 import classNames from 'classnames';
-
 import { Social } from '../../atoms';
-import ChatIcon from '../../svgs/chaticons';
-import CheckIcon from '../../svgs/checkicons';
+import { getDataAttrs } from '../../../utils/get-data-attrs';
 
 export default function Footer(props) {
     const colors = props.colors || 'colors-a';
@@ -16,6 +14,7 @@ export default function Footer(props) {
     const socialLinks = props.socialLinks || [];
     const needHelMouseEnterHandler = () => {
     }
+    const cssId = props.elementId || null;
     const needHelpCloseHandler = () => {
         //let endDate = new Date().setDate(new Date().getDate() + 30);
         let endDate = new Date().getTime() + 60000;
@@ -26,6 +25,8 @@ export default function Footer(props) {
     }
     return (
         <footer
+            id={cssId}
+            {...getDataAttrs(props)}
             className={classNames('sb-component', 'sb-component-footer bg-[#173450] text-white', colors, 'py-[60px] px-0 md:py-[100px] md:px-[140px]')}
         >
             <div className={classNames('')}>
