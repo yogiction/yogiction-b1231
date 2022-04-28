@@ -8,7 +8,7 @@
                         "title" : "New Testimonial Section",
                         "titleText" : "Here is what our participants are saying",
                         "testimonials": [
-                            {
+                                            {
                                 "$$ref": "666CXoQVpErDUklVU0F687"
                             },
                             {
