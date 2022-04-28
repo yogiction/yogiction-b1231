@@ -54,13 +54,6 @@ fields:
         label: Learn More
         url: '/'
         style: secondary
-  - type: model
-    name: media
-    label: Media
-    models:
-      - FormBlock
-      - ImageBlock
-      - VideoBlock
     default:
       type: ImageBlock
       url: https://assets.stackbit.com/components/images/default/hero.png
