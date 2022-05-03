@@ -63,23 +63,23 @@ export default function IntroSection(props) {
                 )}>
 
                 <div className={classNames(
-                    'max-w-[63%] md:flex  w-[100%] h-auto min-h-[250px]',
-                    'hidden flex-col xl:flex-row absolute top-[-125px] mx-auto left-[18.5vw]',
+                    'max-w-[1200px] md:flex  w-auto h-auto min-h-[250px]',
+                    'hidden flex-col xl:flex-row  mx-auto',
                     'bg-white'
                 )} style={{
                     boxShadow: "0px 10px 30px #00000029"
                 }}>
                     <div className={classNames(
                         'max-w-[387px] w-[100%] h-auto',
-                        'max-h-[218px] mx-auto xl:mr-[56px] xl:ml-[100px]'
+                        'max-h-[218px] mx-auto xl:mr-[56px] my-auto xl:ml-[100px]'
                     )}>
                         <img src={props.headerBoxImage.url} className={classNames(
-                            'w-[100%] h-auto mt-[16px]]',
-                            'max-h-[218px] mt-[16px]'
+                            'w-[100%] h-auto',
+                            'max-h-[218px]'
                         )} alt="" />
                     </div>
                     <div className={classNames(
-                        'leading-[46px] font-medium max-w-[557px] mb-4 mt-4 xl:mb-0 mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]'
+                        'leading-[46px]  mb-[80px] font-medium  mt-4 mx-[10%] xl:mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]'
                     )} style={{
                         fontFamily: 'Poppins',
                         fontSize: '30px',
@@ -221,7 +221,7 @@ function heroActions(props) {
         <>
             <div
                 className={classNames('overflow-x-hidden hidden md:block', {
-                    'mt-8': props.title || props.subtitle || props.text || props.badge
+                    'mt-[70px]': props.title || props.subtitle || props.text || props.badge
                 })}
             >
                 <div
@@ -229,7 +229,7 @@ function heroActions(props) {
                     data-sb-field-path=".actions"
                 >
                     {actions.map((action, index) => (
-                        <Action key={index} {...action} className="mb-3 mx-2  max-w-[456px] w-full max-h-[95px]  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
+                        <Action key={index} {...action} className="mb-0 mx-2  max-w-[456px] w-full max-h-[95px]  border-t-0 border-b-0 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
                     ))}
                 </div>
             </div>
