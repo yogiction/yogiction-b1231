@@ -121,7 +121,7 @@ export default function IntroSection(props) {
                     <div className={classNames(
                         'w-full',
                         'order-1 xl:order-last',
-                        'mt-0 md:mt-[300px]'
+                        'mt-0 md:mt-[385px]'
                     )} style={{
                         overflowX: "hidden"
                     }}>
