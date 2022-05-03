@@ -63,8 +63,8 @@ export default function IntroSection(props) {
                 )}>
 
                 <div className={classNames(
-                    'max-w-[1200px] md:flex  w-auto h-auto min-h-[250px]',
-                    'hidden flex-col xl:flex-row  mx-auto',
+                    'max-w-[63%] md:flex  w-[100%] h-auto min-h-[250px]',
+                    'hidden flex-col xl:flex-row absolute top-[-125px] mx-auto left-[18.5vw]',
                     'bg-white'
                 )} style={{
                     boxShadow: "0px 10px 30px #00000029"
@@ -121,7 +121,7 @@ export default function IntroSection(props) {
                     <div className={classNames(
                         'w-full',
                         'order-1 xl:order-last',
-                        'mt-0 md:mt-[385px]'
+                        'mt-0 md:mt-[375px]'
                     )} style={{
                         overflowX: "hidden"
                     }}>
