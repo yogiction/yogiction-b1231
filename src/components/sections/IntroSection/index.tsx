@@ -64,7 +64,7 @@ export default function IntroSection(props) {
 
                 <div className={classNames(
                     'max-w-[63%] md:flex  w-[100%] h-auto min-h-[250px]',
-                    'hidden flex-col xl:flex-row absolute top-[-125px] border-2 border-black left-[18.5vw]',
+                    'hidden flex-col xl:flex-row absolute top-[-125px]  left-[18.5vw]',
                     'bg-white'
                 )} style={{
                     boxShadow: "0px 10px 30px #00000029"
