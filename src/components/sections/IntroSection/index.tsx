@@ -79,7 +79,7 @@ export default function IntroSection(props) {
                         )} alt="" />
                     </div>
                     <h1 className={classNames(
-                        'leading-[46px] text-center border-2 border-black mb-[80px]',
+                        'leading-[46px] text-center mb-[80px]',
                         'font-medium  mt-4 mx-[10%]  xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]',
                         'max-w-[80%] '
                     )} style={{
