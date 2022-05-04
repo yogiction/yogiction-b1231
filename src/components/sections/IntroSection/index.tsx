@@ -64,7 +64,7 @@ export default function IntroSection(props) {
 
                 <div className={classNames(
                     'max-w-[63%] md:flex  w-[100%] h-auto min-h-[250px]',
-                    'hidden flex-col xl:flex-row absolute top-[-125px] mx-auto left-[18.5vw]',
+                    'hidden flex-col xl:flex-row absolute top-[-125px] border-2 border-black left-[18.5vw]',
                     'bg-white'
                 )} style={{
                     boxShadow: "0px 10px 30px #00000029"
@@ -78,13 +78,15 @@ export default function IntroSection(props) {
                             'max-h-[218px]'
                         )} alt="" />
                     </div>
-                    <div className={classNames(
-                        'leading-[46px]  mb-[80px] font-medium  mt-4 mx-[10%] xl:mx-auto xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]'
+                    <h1 className={classNames(
+                        'leading-[46px] text-center border-2 border-black mb-[80px]',
+                        'font-medium  mt-4 mx-[10%]  xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]',
+                        'max-w-[80%] '
                     )} style={{
                         fontFamily: 'Poppins',
                         fontSize: '30px',
                         color: 'rgba(23,52,80,1)'
-                    }}>{props.headerBoxTitle}</div>
+                    }}>{props.headerBoxTitle}</h1>
                 </div>
                 <div className={classNames(
                     "mt-[60px] md:mt-0 block md:hidden",
