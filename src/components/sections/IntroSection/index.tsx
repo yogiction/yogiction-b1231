@@ -55,7 +55,7 @@ export default function IntroSection(props) {
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.margin,
                     'bg-no-repeat bg-center bg-[#e1e6ea] bg-cover',
-                    ' pl-0 pb-[60px] md:pb-[200px] relative',
+                    ' pl-0 pb-[140px] 2xl:pb-[200px] relative',
                     'introsectionbg ',
                     sectionStyles.borderColor,
                     sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
@@ -79,9 +79,9 @@ export default function IntroSection(props) {
                         )} alt="" />
                     </div>
                     <h1 className={classNames(
-                        'leading-[46px] text-center mb-[80px]',
-                        'font-medium  mt-4 mx-[10%]  xl:ml-0 xl:mr-[100px] w-full xl:mt-[81px]',
-                        'max-w-[80%] '
+                        'leading-[46px] text-center 2xl:mb-[80px]',
+                        'font-medium  mx-[10%] my-[38px]  xl:ml-0 xl:mr-[100px] w-full 2xl:mt-[81px]',
+                        'max-w-[80%]'
                     )} style={{
                         fontFamily: 'Poppins',
                         fontSize: '30px',
@@ -101,17 +101,17 @@ export default function IntroSection(props) {
                         "max-w-[899px] w-full order-last xl:order-1"
                     )}>
                         <div className={classNames(
-                            "text-[60px] hidden md:block font-semibold leading-[90px] mt-0 xl:mt-[305px]"
+                            "2xl:text-[60px] hidden md:block font-semibold 2xl:leading-[90px] mt-0 xl:mt-[305px]",
+                            "text-[45px] leading-[60px]"
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
-                            fontSize: "60px",
                             color: "rgba(23,52,80,1)"
                         }}>{title}</div>
                         <div className={classNames(
-                            "max-w-[346px] md:max-w-[899px] mx-auto md:leading-[60px] mt-[60px]",
-                            "text-[18px] md:text-[40px]",
-                            'leading-[27px]'
+                            "max-w-[346px] md:max-w-[899px] mx-auto 2xl:leading-[60px] mt-[60px]",
+                            "text-[30px] 2xl:text-[40px] ",
+                            'leading-[50px]'
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
@@ -136,7 +136,8 @@ export default function IntroSection(props) {
                 <div className='flex'>
                     <div className={classNames(
                         'bg-gray-600 h-[1px] md:block hidden w-[100%]',
-                        'mx-[13.7%] mt-[200px] mb-[200px]',
+                        'mx-[13.7%] 2xl:mt-[200px] 2xl:mb-[200px]',
+                        'my-[150px]'
                     )} style={{
                         opacity: '0.35',
                         fill: 'transparent',
@@ -149,27 +150,28 @@ export default function IntroSection(props) {
                     }} />
                 </div>
                 <div className={classNames(
-                    'md:leading-[90px]',
-                    'md:text-[60px] font-normal',
+                    '2xl:leading-[90px] md:leading-[60px]',
+                    '2xl:text-[60px] md:text-[45px] font-normal',
                     'text-center font-semibold',
                     'md:block hidden'
                 )} style={{
                     fontFamily: "Poppins",
                     color: "rgba(23,52,80,1)"
                 }}>{bottomTitle}</div>
-                <div className={classNames("md:flex hidden items-center	 flex-col lg:flex-row justify-center")}>
+                <div className={classNames("md:flex hidden items-center	 flex-col 2xl:flex-row justify-center")}>
                     {props.benefits.map((item, index) => {
                         return (
                             <div key={index} className={classNames(
-                                'flex mt-[68px]',
+                                'flex 2xl:mt-[68px] md:mt-[48px]',
                                 index !== 0 ? "ml-0 lg:ml-[89px]" : "ml-0"
                             )}>
                                 <CheckedCircle className={classNames(
-                                    'mt-2 h-[40px] w-[40px]'
+                                    '2xl:mt-2 mt-0 h-[40px] w-[40px]'
                                 )} />
                                 <div className={classNames(
                                     'text-left font-sans',
-                                    'text-[40px] leading-[60px] ml-[20px] font-normal'
+                                    '2xl:text-[40px] 2xl:leading-[60px] ml-[20px] font-normal',
+                                    'md:text-[35px] md:leading-[40px]'
                                 )} style={{
                                     color: "rgba(23,52,80,1)"
                                 }}>{item}</div>
