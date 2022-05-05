@@ -111,7 +111,7 @@ export default function IntroSection(props) {
                         <div className={classNames(
                             "max-w-[346px] md:max-w-[899px] mx-auto 2xl:leading-[60px] mt-[60px]",
                             "md:text-[30px] text-[18px] 2xl:text-[40px] ",
-                            'leading-[45px]'
+                            'md:leading-[45px] leading-[27px]'
                         )} style={{
                             textAlign: "left",
                             fontFamily: "Poppins",
