@@ -63,7 +63,7 @@ export default function HowItWorksSection(props) {
                     return (<div key={index} className={classNames('flex mb-[50px]  px-[41px] flex-col md:flex-row justify-center',
                         (index === 3 ? ' md:mb-[110px]' : ' md:mb-[90px]'))}>
                         <div className={classNames(
-                            "pt-0 md:text-left text-center mr-0 md:mr-[40px]",
+                            "pt-[60px] md:pt-0 md:text-left text-center mr-0 md:mr-[40px]",
                             "md:mb-[40px] mb-[30px] min-h-[140px] md:min-h-full min-w-[132px]",
                             "text-[100px] 2xl:text-[200px] md:text-[150px] 2xl:leading-[150px] md:leading-[120px]",
                             'font-[Poppins] font-normal',
