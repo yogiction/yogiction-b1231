@@ -35,7 +35,7 @@ export default function CtaSection(props) {
                     <div className={classNames(
                         'leading-[41px] md:leading-[80px]',
                         'md:text-[65px] text-[2.14rem]',
-                        'md:top-[49px] top-[27px] left-[28vw] md:left-[164px] 2xl:left-[225px]',
+                        'md:top-[49px] top-[27px] left-[28vw] md:left-[132px] 2xl:left-[225px]',
                         'text-white',
                         'font-[PoppinsMedium]',
                         'font-semibold',
