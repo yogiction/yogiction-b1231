@@ -55,8 +55,8 @@ export default function IntroSection(props) {
                     mapMinHeightStyles(sectionHeight),
                     sectionStyles.margin,
                     'bg-no-repeat bg-center bg-[#e1e6ea] bg-cover',
-                    ' pl-0 pb-[140px] 2xl:pb-[200px] relative',
-                    'introsectionbg ',
+                    'pl-0 pb-[140px] 2xl:pb-[200px] relative',
+                    'introsectionbg',
                     sectionStyles.borderColor,
                     sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
                     sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null
@@ -95,7 +95,7 @@ export default function IntroSection(props) {
                     color: "rgba(23,52,80,1)"
                 }}>{title}</div>
                 <div className={classNames(
-                    'flex xl:flex-row pl-0 md:pl-[140px] flex-col justify-center'
+                    'flex xl:flex-row pl-0 md:pl-[80px] 2xl:pl-[140px] flex-col justify-center'
                 )}>
                     <div className={classNames(
                         "max-w-[899px] w-full order-last xl:order-1"

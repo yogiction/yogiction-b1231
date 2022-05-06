@@ -22,7 +22,7 @@ export default function AboutusSection(props) {
                     'sb-component  bg-white',
                     'sb-component-section relative',
                     'sb-component-contact-section',
-                    'pt-[60px] md:pt-[200px] px-[41px] md:px-[140px] pb-[60px] md:pb-[306px]',
+                    'pt-[60px] md:pt-[200px] px-[41px] md:px-[70px] 2xl:px-[140px] pb-[60px] md:pb-[306px]',
                     bgSize === 'inset' ? 'flex' : null,
                     bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                     sectionStyles.margin,
@@ -50,7 +50,7 @@ export default function AboutusSection(props) {
                 >
                     <div
                         className={classNames(
-                            'max-w-[741px] md:mt-[60px] w-full hidden md:block z-30 relative mx-[56px] xl:ml-0 md:mx-auto md:mr-[82px]',
+                            'max-w-[741px] md:mt-[60px] w-full hidden md:block z-30 relative mx-[56px] 2xl:ml-0 lg:mx-auto xl:mr-[82px]',
                         )}
                     >
                         <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
@@ -61,23 +61,23 @@ export default function AboutusSection(props) {
                             "content-[''] w-[434px] bg-aboutusbg1"
                         )} />
                     </div>
-                    <div className={classNames('max-w-[899px]')}>
+                    <div className={classNames('max-w-[899px] mx-auto xl:mt-0 md:mt-16')}>
                         <h1 className={classNames(
                             'uppercase',
                             'text-center md:text-left',
                             'font-[Poppins] md:font-[Poppins]',
                             'font-semibold leading-[38px] md:leading-[60px]',
-                            'mb-[30px]',
+                            'mb-[30px] ',
                             'text-[25px] md:text-[40px]',
                         )}
                             style={{
                                 color: "rgba(166,191,54,1)",
                             }}>{props.titleHeader}</h1>
-                        <h1 className={classNames('leading-[38px] md:leading-[90px]',
+                        <h1 className={classNames('leading-[38px] md:leading-[68px] 2xl:leading-[90px]',
                             'text-center md:text-left',
                             'font-[Poppins]',
                             'font-semibold',
-                            'text-[25px] md:text-[60px]',
+                            'text-[25px] md:text-[50px] 2xl:text-[60px]',
                         )}
                             style={{
                                 color: 'rgba(23,52,80,1)',
@@ -97,20 +97,20 @@ export default function AboutusSection(props) {
                         </div>
                         <p className={classNames(
                             'md:mt-[60px] mt-[60px]',
-                            'md:leading-[60px] leading-[27px]',
+                            'md:leading-[50px] 2xl:leading-[60px] leading-[27px]',
                             'text-left',
                             'font-[Poppins]',
                             'font-normal',
-                            'md:text-[40px] text-[18px]',
+                            'md:text-[30px] 2xl:text-[40px] text-[18px]',
                             'text-[#173450]',
                         )}>{props.text}</p>
                         <p className={classNames(
                             'md:mt-[60px] mt-[28px]',
-                            'md:leading-[60px] leading-[27px]',
+                            'md:leading-[50px] 2xl:leading-[60px] leading-[27px]',
                             'text-left',
                             'font-[Poppins]',
                             'font-normal',
-                            'md:text-[40px] text-[18px]',
+                            'md:text-[30px] 2xl:text-[40px] text-[18px]',
                             'text-[#173450]'
                         )}>{props.text1}</p>
                     </div>

@@ -19,25 +19,25 @@ export default function HowItWorksSection(props) {
             className={classNames(
                 'sb-component  bg-white relative',
                 'sb-component-section',
-                'sb-component-contact-section',
-                'pt-[60px] md:pt-[200px] md:px-[140px] pb-[60px] md:pb-[306px]',
+                'sb-component-contact-section md:pb-[140px]',
+                'pt-[60px] 2xl:pt-[200px] md:pt-[150px] 2xl:px-[140px] md:px-[80px] pb-[60px] 2xl:pb-[306px]',
                 bgSize === 'inset' ? 'flex' : null,
                 bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
                 sectionStyles.margin,
                 'howitworksbg howitworksbg1'
             )}
         >
-            <div className=' max-w-[353px] max-h-[365px] absolute top-[-5.5vh] left-[138px] w-full'>
+            <div className=' max-w-[353px] max-h-[365px] absolute 2xl:top-[-5.5vh] top-[-8vh] left-[138px] w-full'>
                 <img src={`/images/howitworksbg1.png`} className={classNames("",
-                    ' z-40',
-                    'howitworkstopsticker')} width="353px" height="365px" alt="" />
+                    'z-40 2xl:w-[353px] 2xl:h-[365px] h-[310px] w-[310px]',
+                    'howitworkstopsticker')} alt="" />
             </div>
             <h1 className={classNames(
                 'text-center',
                 'font-[PoppinsMedium]',
                 'font-semibold  px-[41px]',
-                'text-[25px] md:text-[60px]',
-                'leading-[38px] md:leading-[90px]'
+                'text-[25px] 2xl:text-[60px] md:text-[45px]',
+                'leading-[38px] 2xl:leading-[90px] md:leading-[60px]'
             )}
                 style={{
                     color: 'rgba(23,52,80,1)',
@@ -53,34 +53,34 @@ export default function HowItWorksSection(props) {
                 'text-left md:text-center',
                 'font-[Poppins]',
                 'font-normal',
-                'text-[18px] md:text-[40px]',
+                'text-[18px] 2xl:text-[40px] md:text-[30px]',
                 'text-[#173450]',
-                'leading-[27px] md:leading-[60px]',
+                'leading-[27px] 2xl:leading-[60px] md:leading-[50px]',
             )}
             >{props.description}</p>
-            <div className={classNames('pt-[60px] z-20 md:pt-[156px] howitworksmobilebg')}>
+            <div className={classNames('pt-[60px] z-20 2xl:pt-[156px] md:pt-[120px] howitworksmobilebg')}>
                 {steps.map((step, index) => {
                     return (<div key={index} className={classNames('flex mb-[50px]  px-[41px] flex-col md:flex-row justify-center',
-                        (index === 3 ? ' md:mb-[118px]' : ' md:mb-[130px]'))}>
+                        (index === 3 ? ' md:mb-[110px]' : ' md:mb-[90px]'))}>
                         <div className={classNames(
                             "pt-0 md:text-left text-center mr-0 md:mr-[40px]",
                             "md:mb-[40px] mb-[30px] min-h-[140px] md:min-h-full min-w-[132px]",
-                            "text-[100px] md:text-[200px] leading-[150px]",
+                            "text-[100px] 2xl:text-[200px] md:text-[150px] 2xl:leading-[150px] md:leading-[120px]",
                             'font-[Poppins] font-normal',
                             'font-semibold text-[#a6bf36]'
                         )}>
                             {index + 1}
                         </div>
                         <div className='flex flex-col max-w-[1048px]'>
-                            <div className={classNames('leading-[27px] md:leading-[60px] mb-[20px] md:mb-[30px]',
+                            <div className={classNames('leading-[27px] 2xl:leading-[60px] md:leading-[40px] mb-[20px] md:mb-[30px]',
                                 'text-center md:text-left font-semibold',
-                                'md:text-[40px] text-[18px]',
+                                '2xl:text-[40px] md:text-[32px] text-[18px]',
                                 'font-[Poppins] font-normal text-[#173450]'
                             )}>{step.titleText}</div>
-                            <div className={classNames("leading-[27px] md:leading-[60px] text-center md:text-left ",
-                                'font-[Poppins] not-italic',
+                            <div className={classNames("leading-[27px] 2xl:leading-[60px] text-center md:text-left ",
+                                'font-[Poppins] not-italic md:leading-[40px]',
                                 'font-normal max-w-[1037px] w-full',
-                                'md:text-[40px] text-[18px] text-[#173450]')}>
+                                '2xl:text-[40px] md:text-[30px] text-[18px] text-[#173450]')}>
                                 {step.description}</div>
                         </div>
                     </div>)
@@ -99,7 +99,8 @@ export default function HowItWorksSection(props) {
             <div className={classNames('flex mt-[35px] px-[41px] lg:mt-[60px] flex-col  xl:flex-row justify-center')}>
                 <div
                     className={classNames("max-w-[585px] w-full ml-auto mr-auto xl:mr-[25px] lg:mt-0 bg-[#a6bf36]")}>
-                    <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] lg:leading-[60px]",
+                    <h1 className={classNames("text-center mb-[24px] mt-[55px]",
+                        "leading-[27px] h-auto md:leading-[60px]",
                         'font-sans',
                         'not-italic',
                         'font-semibold',
@@ -109,16 +110,18 @@ export default function HowItWorksSection(props) {
                     }}>{props.benefit1Title}</h1>
                     <p className={classNames(
                         'mb-[50px] md:mb-[55px] leading-[27px]',
-                        'md:leading-[60px] mx-[30px] md:mx-[55px] text-center',
+                        '2xl:leading-[60px] md:leading-[50px] mx-[30px] md:mx-[55px] text-center',
                         'font-[Poppins]',
                         'font-normal',
-                        'text-[18px] md:text-[40px]',
+                        'text-[18px] md:text-[36px] 2xl:text-[40px]',
                         'text-[#173450]'
                     )}>{props.benefit1Description}</p>
                 </div>
                 <div
-                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] xl:mt-0 xl:ml-[25px] bg-[#a6bf36]")}>
-                    <h1 className={classNames("text-center mb-[24px] mt-[55px] leading-[27px] md:leading-[60px]",
+                    className={classNames("max-w-[585px] w-full ml-auto mr-auto mt-[35px] xl:mt-0 xl:ml-[25px] bg-[#a6bf36]")}
+                    style={{ height: "fit-content" }}>
+                    <h1 className={classNames("text-center mb-[24px] mt-[55px]",
+                        "leading-[27px] lg:leading-[60px]",
                         'font-sans',
                         'not-italic',
                         'font-semibold',
@@ -126,7 +129,11 @@ export default function HowItWorksSection(props) {
                         'text-[#173450]'
                     )}
                     >{props.benefit2Title}</h1>
-                    <p className={classNames('mb-[50px] md:mb-[55px] leading-[27px] md:leading-[60px] mx-[30px] md:mx-[55px] text-center', 'font-[Poppins]', 'font-normal', 'text-[18px] md:text-[40px]', 'text-[#173450]')}>{props.benefit2Description}</p>
+                    <p className={classNames('mb-[50px] md:mb-[55px] leading-[27px] 2xl:leading-[60px] md:leading-[50px]  mx-[30px] md:mx-[55px] text-center',
+                        'font-[Poppins]',
+                        'font-normal',
+                        'text-[18px] md:text-[36px] 2xl:text-[40px]', 'text-[#173450]')}
+                    >{props.benefit2Description}</p>
                 </div>
             </div>
         </div>
