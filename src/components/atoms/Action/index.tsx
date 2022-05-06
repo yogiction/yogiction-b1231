@@ -29,7 +29,9 @@ export default function Action(props) {
             href={url}
             aria-label={altText}
             id={elementId}
-            className={classNames('border-t-[0px] max-h-[95px] h-full w-full max-w-[456px] border-b-[0px] border-l-0 border-r-0  sb-component', 'sb-component-block ', style === 'link' ? 'sb-component-link' : 'sb-component-button', className, {
+            className={classNames('border-t-[0px] max-h-[95px] h-full w-full max-w-[456px] border-b-[0px] border-l-0 border-r-0  sb-component',
+                'sb-component-block hover:bg-[#2f6899]',
+                style === 'link' ? 'sb-component-link' : 'sb-component-button', className, {
                 'sb-component-button-primary': style === 'primary',
                 'sb-component-button-secondary': style === 'secondary'
             })}
