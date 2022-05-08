@@ -53,7 +53,7 @@ export default function AboutusSection(props) {
                             'max-w-[741px] md:mt-[60px] w-full hidden md:block z-30 relative mx-[56px] 2xl:ml-0 lg:mx-auto xl:mr-[82px]',
                         )}
                     >
-                        <img className=' max-w-[292px] ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0' src="/images/aboutus2.png" alt="" />
+                        <img className={classNames(' max-w-[292px] h-auto w-full ml-[-25px] md:ml-0 md:max-w-[610px] max-h-[935px] mt-[225px] md:mt-0')} src="/images/aboutus2.png" alt="" />
                         <img className=' max-w-[218px] md:max-w-[455px] max-h-[698px] mt-[474px]  md:mt-[-419px] ml-[70px] md:ml-[204px]' src="/images/aboutus1.png" alt="" />
                         <div className={classNames(
                             ' aboutusbottoms  h-[319px]',
@@ -67,17 +67,16 @@ export default function AboutusSection(props) {
                             'text-center md:text-left',
                             'font-[Poppins] md:font-[Poppins]',
                             'font-semibold leading-[38px] md:leading-[60px]',
-                            'mb-[30px] ',
+                            'mb-[30px]',
                             'text-[25px] md:text-[40px]',
                         )}
                             style={{
                                 color: "rgba(166,191,54,1)",
                             }}>{props.titleHeader}</h1>
-                        <h1 className={classNames('leading-[38px] md:leading-[68px] 2xl:leading-[90px]',
+                        <h1 className={classNames('aboutustitle',
                             'text-center md:text-left',
                             'font-[Poppins]',
-                            'font-semibold',
-                            'text-[25px] md:text-[50px] 2xl:text-[60px]',
+                            'font-semibold'
                         )}
                             style={{
                                 color: 'rgba(23,52,80,1)',
@@ -97,20 +96,18 @@ export default function AboutusSection(props) {
                         </div>
                         <p className={classNames(
                             'md:mt-[60px] mt-[60px]',
-                            'md:leading-[50px] 2xl:leading-[60px] leading-[27px]',
                             'text-left',
                             'font-[Poppins]',
                             'font-normal',
-                            'md:text-[30px] 2xl:text-[40px] text-[18px]',
+                            'aboutustext',
                             'text-[#173450]',
                         )}>{props.text}</p>
                         <p className={classNames(
                             'md:mt-[60px] mt-[28px]',
-                            'md:leading-[50px] 2xl:leading-[60px] leading-[27px]',
                             'text-left',
                             'font-[Poppins]',
                             'font-normal',
-                            'md:text-[30px] 2xl:text-[40px] text-[18px]',
+                            'aboutustext',
                             'text-[#173450]'
                         )}>{props.text1}</p>
                     </div>
