@@ -84,7 +84,7 @@ function mobileCTA(props) {
         actions = props.actions[0];
     }
     return (
-        <div className={classNames("active:bg-[#2b4c68] hover:bg-[#2f6899] hover:cursor-pointer xl:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
+        <div className={classNames("active:bg-[#2f6899] hover:bg-[#2f6899] hover:cursor-pointer xl:hidden w-full bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
             <div className='text-[25px]  font-medium leading-[38px] text-white text-center'>{actions.label}</div>
         </div>
     );
