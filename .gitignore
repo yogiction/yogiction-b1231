@@ -39,6 +39,5 @@ yarn-error.log*
 # IDE
 *.code-workspace
 .idea
-/content/data/style.json
 .devcontainer/
 .cache/

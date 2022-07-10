@@ -1,0 +1,188 @@
+{
+    "fontHeadlines": "sans",
+    "h1": {
+        "size": "6xl",
+        "weight": "normal",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "normal",
+        "__metadata": {
+            "id": "3N4eAFB5idS1SBw5SkbKT7",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleHeading",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:21.495Z",
+            "updatedAt": "2022-02-09T06:49:04.797Z"
+        }
+    },
+    "h2": {
+        "size": "5xl",
+        "weight": "normal",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "normal",
+        "__metadata": {
+            "id": "3JoBKVeAYbqY0QrSBgxcL4",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleHeading",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:21.580Z",
+            "updatedAt": "2022-02-09T06:49:05.263Z"
+        }
+    },
+    "h3": {
+        "size": "3xl",
+        "weight": "normal",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "normal",
+        "__metadata": {
+            "id": "7F0C6ZNAsggQSsVDGAlZUC",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleHeading",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:19.919Z",
+            "updatedAt": "2022-02-09T06:49:05.803Z"
+        }
+    },
+    "h4": {
+        "size": "2xl",
+        "weight": "bold",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "normal",
+        "__metadata": {
+            "id": "4MpuNuwMqPiR9Ar6qnyfr4",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleHeading",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:19.924Z",
+            "updatedAt": "2022-02-09T06:49:06.224Z"
+        }
+    },
+    "h5": {
+        "size": "xl",
+        "weight": "bold",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "normal",
+        "__metadata": {
+            "id": "25k4XmQ6eyk1xme8qMyhm",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleHeading",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:19.925Z",
+            "updatedAt": "2022-02-09T06:49:06.656Z"
+        }
+    },
+    "h6": {
+        "size": "lg",
+        "weight": "bold",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "normal",
+        "__metadata": {
+            "id": "7FyecFLPhkps6WtXTHz1Fu",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleHeading",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:20.912Z",
+            "updatedAt": "2022-02-09T06:49:07.094Z"
+        }
+    },
+    "fontBody": "sans",
+    "main": "#f6f1ed",
+    "light": "#bf9d9d",
+    "onLight": "#000000",
+    "dark": "#282828",
+    "onDark": "#ffffff",
+    "primary": "#344ff1",
+    "onPrimary": "#ffffff",
+    "secondary": "#101637",
+    "onSecondary": "#ffffff",
+    "complementary": "#f6f1ed",
+    "onComplementary": "#000000",
+    "buttonPrimary": {
+        "title": "Primary Button",
+        "case": "none",
+        "letterSpacing": "normal",
+        "borderStyle": "none",
+        "horizontalPadding": 30,
+        "verticalPadding": 12,
+        "shadow": "none",
+        "__metadata": {
+            "id": "8G2cmPodhnTDG1rYpL5AD",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleButton",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:20.922Z",
+            "updatedAt": "2022-03-02T10:18:15.052Z"
+        }
+    },
+    "buttonSecondary": {
+        "title": "Secondary Button Style",
+        "case": "none",
+        "borderRadius": "20px",
+        "letterSpacing": "normal",
+        "borderStyle": "solid",
+        "horizontalPadding": 91,
+        "verticalPadding": 20,
+        "shadow": "none",
+        "font": "normal normal 500 40px/60px Poppins",
+        "backgroundColor": "#2c5d87",
+        "color": "#ffffff",
+        "__metadata": {
+            "id": "7vDsI4ajCGHBTnkANKJebC",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleButton",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:26.906Z",
+            "updatedAt": "2022-03-08T14:49:29.916Z"
+        }
+    },
+    "link": {
+        "title": "Link Button",
+        "case": "uppercase",
+        "letterSpacing": "normal",
+        "borderStyle": "none",
+        "horizontalPadding": 30,
+        "verticalPadding": 12,
+        "shadow": "none",
+        "__metadata": {
+            "id": "3WExLJrBwiDHGWhH3kf3ZZ",
+            "source": "sourcebit-source-contentful",
+            "modelName": "ThemeStyleButton",
+            "projectId": "gxd6i571w01a",
+            "projectEnvironment": "master",
+            "tags": [],
+            "createdAt": "2022-02-01T17:45:20.916Z",
+            "updatedAt": "2022-03-02T10:18:24.179Z"
+        }
+    },
+    "__metadata": {
+        "id": "1MZJRBeITBM18j4MGKdE92",
+        "source": "sourcebit-source-contentful",
+        "modelName": "ThemeStyle",
+        "projectId": "gxd6i571w01a",
+        "projectEnvironment": "master",
+        "tags": [],
+        "createdAt": "2022-02-01T17:45:33.451Z",
+        "updatedAt": "2022-03-10T15:21:40.656Z"
+    }
+}
