@@ -171,7 +171,7 @@ export default function IntroSection(props) {
                 <div className={classNames('md:flex hidden items-center	 flex-col 2xl:flex-row justify-center')}>
                     {props.benefits.map((item, index) => {
                         return (
-                            <div key={index} className={classNames('flex 2xl:mt-[68px] md:mt-[48px]', index !== 0 ? 'ml-0 lg:ml-[89px]' : 'ml-0')}>
+                            <div key={index} className={classNames('flex 2xl:mt-[68px] md:mt-[48px]', index !== 0 ? 'ml-0 lg:ml-[16px]' : 'ml-0')}>
                                 <CheckedCircle className={classNames('2xl:mt-2 mt-0 h-[40px] w-[40px]')} />
                                 <div
                                     className={classNames(
