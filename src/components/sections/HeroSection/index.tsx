@@ -22,7 +22,7 @@ export default function HeroSection(props) {
                 {...getDataAttrs(props)}
                 style={{
                     borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null,
-                    backgroundImage: `url('${bgImage.url}')`,
+                    backgroundImage: `url('${bgImage.image}')`
                 }}
                 className={classNames(
                     'sb-component',
@@ -42,20 +42,30 @@ export default function HeroSection(props) {
             >
                 <div>
                     <div>
-                        <img src={logo.url} className="h-[50px] w-[94px] md:h-[142px] md:w-[284px]" alt="" />
-                        <div style={titleStyles} className={classNames('mt-[15px]  md:mt-[85px] text-[35px] leading-[53px] md:leading-[150px] md:text-[100px]',
-                            "max-w-[300px]  md:max-w-[805px]")}>{title}</div>
+                        <img src={logo.image} className="h-[50px] w-[94px] md:h-[142px] md:w-[284px]" alt="" />
+                        <div
+                            style={titleStyles}
+                            className={classNames(
+                                'mt-[15px]  md:mt-[85px] text-[35px] leading-[53px] md:leading-[150px] md:text-[100px]',
+                                'max-w-[300px]  md:max-w-[805px]'
+                            )}
+                        >
+                            {title}
+                        </div>
                     </div>
                     <div>{heroActions(props)}</div>
                 </div>
             </div>
-            <div className={classNames("md:hidden w-full active:bg-[#2f6899] hover:bg-[#2f6899] hover:cursor-pointer bg-[#2c5d87] h-[60px] items-center flex justify-center")}>
-                <div className='text-[25px] font-medium leading-[38px]  text-white text-center'>SIGN UP NOW</div>
+            <div
+                className={classNames(
+                    'md:hidden w-full active:bg-[#2f6899] hover:bg-[#2f6899] hover:cursor-pointer bg-[#2c5d87] h-[60px] items-center flex justify-center'
+                )}
+            >
+                <div className="text-[25px] font-medium leading-[38px]  text-white text-center">SIGN UP NOW</div>
             </div>
         </>
     );
 }
-
 
 function heroBody(props) {
     const styles = props.styles || {};
