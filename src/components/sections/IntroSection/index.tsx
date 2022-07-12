@@ -17,8 +17,8 @@ export default function IntroSection(props) {
     return (
         <>
             <div className={classNames('md:hidden max-w-[1200px]  w-auto  h-auto ', 'flex flex-col  mx-auto ', 'bg-white containershadow')}>
-                <div className={classNames('max-w-[219px] w-[100%] h-auto', 'max-h-[123px] mt-[8px] mx-auto')}>
-                    <img src={props.headerBoxImage.image} className={classNames('w-[100%] h-auto mt-[16px]]', 'max-h-[218px]')} alt="" />
+                <div className={classNames('max-w-[219px] w-[100%] h-auto', 'max-h-[234px] mt-[8px] mx-auto')}>
+                    <img src={props.headerBoxImage.image} className={classNames('w-[200px] mx-auto h-auto mt-[16px]', 'max-h-[218px]')} alt="" />
                 </div>
                 <div
                     className={classNames('leading-[27px] font-medium text-center max-w-[346px] mb-[29px] mx-auto w-full ')}
@@ -66,12 +66,12 @@ export default function IntroSection(props) {
                     }}
                 >
                     <div className={classNames('max-w-[387px] w-[100%] h-auto', 'max-h-[218px] mx-auto xl:mr-[56px] my-auto xl:ml-[100px]')}>
-                        <img src={props.headerBoxImage.image} className={classNames('w-[100%] h-auto', 'max-h-[218px]')} alt="" />
+                        <img src={props.headerBoxImage.image} className={classNames('w-[200px] mx-auto h-auto', 'max-h-[218px]')} alt="" />
                     </div>
                     <h1
                         className={classNames(
                             'leading-[46px] text-center 2xl:mb-[80px]',
-                            'font-medium  mx-[10%] my-[38px]  xl:ml-0 xl:mr-[100px] w-full 2xl:mt-[81px]',
+                            'font-medium  mx-[10%] my-[60px]  xl:ml-0 xl:mr-[100px] w-full 2xl:mt-[81px]',
                             'max-w-[80%]'
                         )}
                         style={{
