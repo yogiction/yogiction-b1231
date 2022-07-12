@@ -5,7 +5,7 @@ import { getComponent } from '../../components-registry';
 
 export default function PageLayout(props) {
     const { page, site } = props;
-    const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
+    const BaseLayout = getBaseLayoutComponent('', '');
     const sections = page.sections || [];
 
     return (

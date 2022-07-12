@@ -16,9 +16,7 @@ export default function DefaultBaseLayout(props) {
                     <title>{page.title}</title>
                     <meta name="description" content="Stackbit Theme" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    {site.favicon && <link rel="icon" href={site.favicon} />}
                 </Head>
-                {site.header && <Header {...site.header} annotationPrefix={siteMeta.id} />}
                 {props.children}
                 {/* {site.footer && <Footer {...site.footer} annotationPrefix={siteMeta.id} />} */}
             </div>
